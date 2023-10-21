@@ -1,6 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
-    scroll-behavior: smooth;
-    font-family: roboto, sans-serif;
+  scroll-behavior: smooth;
+  font-family: roboto, sans-serif;
 }
+
+[data-theme="purple"] {
+  --text: #a600cf;
+  --shadow: #a78bfa;
+}
+
+[data-theme="green"] {
+  --text: #22c55e;
+  --shadow: #4ade80;
+}
+
+[data-theme="blue"] {
+  --text: #27cbff;
+  --shadow: #48cae4;
+}
+
+[data-theme="yellow"] {
+  --text: #eab308;
+  --shadow: #facc15;
+}
+
+.theme-shadow:hover {
+  box-shadow: 0px 13px 20px var(--text) !important;
+}
+
+.theme-shadow-hover:hover {
+  box-shadow: 0px 13px 20px var(--text) !important;
+}
+
+.theme-shadow-button:hover {
+  box-shadow: 0px 6px 20px var(--text) !important;
+}
+
+.theme-text {
+  color: var(--text) !important;
+}
+
+.theme-text-hover:hover {
+  color: var(--text) !important;
+}
+
+.theme-bg {
+  background-color: var(--text) !important;
+}
+
+.theme-bg-hover:hover {
+  background-color: var(--text) !important;
+}
+
+.theme-border {
+  border-color: var(--text) !important;
+}
+
+/* .textoutlined {
+  font-style: italic;
+  -webkit-text-stroke-color: var(--text);
+  -webkit-text-stroke-width: 1px;
+} */

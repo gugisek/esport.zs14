@@ -35,7 +35,8 @@
             <path class="text-indigo-700 text-opacity-40" fill="currentColor" d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z" />
           </svg>
         </div>
-        <div class="relative">
+        <div data-aos="fade-up"
+     data-aos-anchor-placement="top-center" class="relative">
           <div class="sm:text-center">
             <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Get notified when we&rsquo;re launching.</h2>
             <p class="mx-auto mt-6 max-w-2xl text-lg text-indigo-200">Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque.</p>
