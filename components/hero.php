@@ -9,10 +9,10 @@
             </div>
         </section>
         <section data-aos="zoom-out-up" data-aos-duration="500" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom" class="absolute 2xl:w-[70vw] w-[80vw] mx-auto bottom-6 left-0 right-0 grid grid-cols-4 2xl:gap-6 gap-4 pb-8">
-            <div onclick="motyw('purple')" class="cursor-pointer theme-shadow rounded-lg aspect-video bg-cover bg-center hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-green-500" style="background-image: url('public/img/purple.jpg');"></div>
-            <div onclick="motyw('green')" class="cursor-pointer theme-shadow rounded-lg aspect-video bg-cover bg-center hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-green-500" style="background-image: url('public/img/green.jpg');"></div>
-            <div onclick="motyw('yellow')" class="cursor-pointer theme-shadow rounded-lg aspect-video bg-cover bg-center hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-green-500" style="background-image: url('public/img/yellow.jpg');"></div>
-            <div onclick="motyw('blue')" class="cursor-pointer theme-shadow rounded-lg aspect-video bg-cover bg-center hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-green-500" style="background-image: url('public/img/blue.jpg');"></div>
+            <div onclick="motyw('purple')" class="cursor-pointer hover:shadow-[#a600cf] rounded-lg aspect-video bg-cover bg-center hover:scale-105 transition-all duration-300 hover:shadow-xl" style="background-image: url('public/img/purple.jpg');"></div>
+            <div onclick="motyw('green')" class="cursor-pointer hover:shadow-[#22c55e] rounded-lg aspect-video bg-cover bg-center hover:scale-105 transition-all duration-300 hover:shadow-xl" style="background-image: url('public/img/green.jpg');"></div>
+            <div onclick="motyw('yellow')" class="cursor-pointer hover:shadow-[#eab308] rounded-lg aspect-video bg-cover bg-center hover:scale-105 transition-all duration-300 hover:shadow-xl" style="background-image: url('public/img/yellow.jpg');"></div>
+            <div onclick="motyw('blue')" class="cursor-pointer hover:shadow-[#27cbff] rounded-lg aspect-video bg-cover bg-center hover:scale-105 transition-all duration-300 hover:shadow-xl" style="background-image: url('public/img/blue.jpg');"></div>
         </section>
     </section>
 </section>

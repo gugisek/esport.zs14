@@ -41,7 +41,7 @@
 }
 
 .theme-text-hover:hover {
-  color: var(--text) !important;
+  color: var(--shadow) !important;
 }
 
 .theme-bg {
@@ -61,3 +61,12 @@
   -webkit-text-stroke-color: var(--text);
   -webkit-text-stroke-width: 1px;
 } */
+
+.bg-zoom {
+  background-size: auto 120%;
+  transition: all 0.3s ease-in-out;
+}
+
+.bg-zoom:hover {
+  background-size: auto 100%;
+}

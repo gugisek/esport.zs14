@@ -6,8 +6,14 @@
         <?php include 'components/navbar.php'; ?>
         <?php include 'components/hero.php'; ?>
         <?php include 'components/events_main.php'; ?>
+        <?php include 'components/schedule.php'; ?>
         <?php include 'components/sponsors.php'; ?>
-        <?php include 'components/newsletter.php'; ?>
+        <section style="background-image: url('public/img/cs_grafik.webp');" class="bg-cover bg-fixed bg-center bg-no-repeat bg-top bg-gray-50 w-full">
+          <section class="bg-[#fffffff4]">
+            <?php include 'components/faq.php'; ?>
+            <?php// include 'components/stream.php'; ?>
+          </section>
+        </section>
         <?php include 'components/footer.php'; ?>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
