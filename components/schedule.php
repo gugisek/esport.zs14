@@ -1,7 +1,7 @@
 <section id="bg" style="background-image: url('public/img/green.jpg');" class="bg-cover bg-fixed w-full">
-    <section class="bg-[#000000c0] min-h-[95vh] w-full px-[10%] 2xl:px[15%] pb-12 pt-8">
+    <section class="bg-[#000000c0] min-h-[95vh] w-full px-[10%] 2xl:px-[15%] pb-12 pt-16">
         <div class="flex items-center justify-between">
-            <h1 id="schedule_title" class="font-[poppins] 2xl:text-4xl text-2xl font-bold text-gray-100">Turniej ZS14 CS2 2023</h1>
+            <h1 id="schedule_title" class="font-[poppins] 2xl:text-3xl text-2xl font-bold text-gray-100">Turniej ZS14 CS2 2023</h1>
             <div class="uppercase text-sm flex flex-row gap-4 2xl:text-lg text-gray-600">
                 <a id="schedule_nav" onclick="openShedule('cs')" class="font-medium cursor-pointer theme-text-hover duration-300 font-[poppins] theme-text">CS2</a>
                 <a id="schedule_nav" onclick="openShedule('lol')"class="font-medium text-gray-500 cursor-pointer theme-text-hover duration-300 font-[poppins]">LoL</a>

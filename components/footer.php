@@ -1,6 +1,6 @@
-<section class="bg-[#0e0e0e] w-full 2xl:px-[15%] px-[10%]">
-  <section class="py-8 w-full grid grid-cols-4 gap-6 text-gray-200">
-      <div class="md:pr- py-4 col-span-">
+<section class="bg-[#0e0e0e] w-full 2xl:px-[15%] md:px-[10%] px-[5%]">
+  <section class="py-8 w-full grid md:grid-cols-4 grid-cols-1 gap-6 text-gray-200">
+      <div class="py-4">
         <img src="public/img/logo.png" alt="">
         <p class="py-4 text-sm font-[poppins] text-gray-300">Strona ta jest efektem starań grupy z klasy 5pi w roczniku 2023/2024.<br> Stworzona od uczniów dla uczniów.</p>
       </div>
@@ -21,15 +21,15 @@
       <div class="flex flex-col">
         <h1 class="font-bold text-lg font-[poppins] py-4 uppercase italic">Media społecznościowe</h1>
         <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Discord</a>
-        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="400" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Twitch</a>
-        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Instagram Spotted</a>
-        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Strona szkoły</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Twitch</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Instagram Spotted</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="400" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Strona szkoły</a>
       </div>
   </section>
   <hr class="border-gray-600">
-  <section class="flex w-full flex-row justify-between items-center py-12">
-    <p class="text-gray-300 text-xs font-[poppins] font-light">ZS14 events 2023 - powered by RGBpc.pl designed and created by <a href="https://ui.gugisek.pl" target="_blank" class="font-[poppins] text-gray-100 theme-text-hover duration-300">gugisek</a> and <a href="https://ui.gugisek.pl" target="_blank" class="font-[poppins] text-gray-100 theme-text-hover duration-300">leff</a></p>
-     <div class="flex items-center space-x-6 md:order-2">
+  <section class="flex w-full md:flex-row flex-col-reverse justify-between items-center py-12">
+    <p class="text-gray-300 text-xs font-[poppins] font-light text-center md:text-left">ZS14 events 2023 - powered by RGBpc.pl designed and created by <a href="https://ui.gugisek.pl" target="_blank" class="font-[poppins] text-gray-100 theme-text-hover duration-300">gugisek</a> and <a href="https://ui.gugisek.pl" target="_blank" class="font-[poppins] text-gray-100 theme-text-hover duration-300">leff</a></p>
+     <div class="flex items-center space-x-6 md:order-2 pb-12 md:pb-0">
         <a href="#" class="text-[#4e4e4e] duration-300 hover:text-pink-500">
           <span class="sr-only">Instagram</span>
           <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
