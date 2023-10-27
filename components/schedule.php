@@ -1,16 +1,21 @@
 <section id="bg" style="background-image: url('public/img/green.jpg');" class="bg-cover bg-fixed w-full">
-    <section class="bg-[#000000c0] w-full px-[10%] 2xl:px[15%] pb-12 pt-8">
+    <section class="bg-[#000000c0] min-h-[95vh] w-full px-[10%] 2xl:px[15%] pb-12 pt-8">
         <div class="flex items-center justify-between">
             <h1 id="schedule_title" class="font-[poppins] 2xl:text-4xl text-2xl font-bold text-gray-100">Turniej ZS14 CS2 2023</h1>
             <div class="uppercase text-sm flex flex-row gap-4 2xl:text-lg text-gray-600">
                 <a id="schedule_nav" onclick="openShedule('cs')" class="font-medium cursor-pointer theme-text-hover duration-300 font-[poppins] theme-text">CS2</a>
-                <a id="schedule_nav" onclick="openShedule('lol')"class="font-medium text-gray-300 cursor-pointer theme-text-hover duration-300 font-[poppins]">LoL</a>
-                <a id="schedule_nav" onclick="openShedule('events')"class="font-medium text-gray-300 cursor-pointer theme-text-hover duration-300 font-[poppins]">Eventy</a>
+                <a id="schedule_nav" onclick="openShedule('lol')"class="font-medium text-gray-500 cursor-pointer theme-text-hover duration-300 font-[poppins]">LoL</a>
+                <a id="schedule_nav" onclick="openShedule('events')"class="font-medium text-gray-500 cursor-pointer theme-text-hover duration-300 font-[poppins]">Eventy</a>
             </div>
         </div>
         <hr class="my-4 border-gray-500">
         <section id="schedule_cs" class="duration-300 schedule grid grid-cols-3 gap-4">
             <div class="col-span-2">
+                <div class="bg-[#0e0e0e] rounded-xl uppercase text-sm flex flex-row items-center justify-center w-full gap-4 2xl:text-lg text-gray-600 py-2 mb-2">
+                    <a id="schedule_nav_cs" onclick="openScheduleCs('1')" class="cursor-pointer text-gray-400 theme-text-hover duration-300 font-[poppins] theme-text font-medium">Faza grupowa</a>
+                    <a id="schedule_nav_cs" onclick="openScheduleCs('2')" class="cursor-pointer text-gray-500 theme-text-hover duration-300 font-[poppins] font-medium">System szwajcarski</a>
+                    <a id="schedule_nav_cs" onclick="openScheduleCs('3')" class="cursor-pointer text-gray-500 theme-text-hover duration-300 font-[poppins] font-medium">Finały</a>
+                </div>
                 <section id="schedule_cs_1" class="schedule_cs grid grid-cols-4 gap-2">
                     <div  class="border-black flex flex-col rounded-xl shadow-xl">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA ŚMIERCI</h1>
@@ -262,11 +267,7 @@
 
                     </div>
                 </section>
-                <div class="uppercase text-sm flex flex-row items-center justify-center w-full gap-4 2xl:text-lg text-gray-600 pt-4">
-                    <a id="schedule_nav_cs" onclick="openScheduleCs('1')" class="cursor-pointer text-gray-400 theme-text-hover duration-300 font-[poppins] theme-text font-medium">Faza grupowa</a>
-                    <a id="schedule_nav_cs" onclick="openScheduleCs('2')" class="cursor-pointer text-gray-400 theme-text-hover duration-300 font-[poppins] font-medium">System szwedzki</a>
-                    <a id="schedule_nav_cs" onclick="openScheduleCs('3')" class="cursor-pointer text-gray-400 theme-text-hover duration-300 font-[poppins] font-medium">Finały</a>
-                </div>
+                
             </div>
             <div id="bg" class="bg-[#0e0e0e] rounded-2xl text-white bg-top bg-cover bg-fixed shadow-xl">
                 <div class="bg-[#0e0e0e] py-4 px-4 h-full w-full rounded-2xl flex flex-col justify-between">
