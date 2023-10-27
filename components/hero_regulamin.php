@@ -1,5 +1,5 @@
 
-<section style="background-image: url('public/img/green.jpg');" class="bg-cover bg-fixed">
+<section id="bg" style="background-image: url('public/img/green.jpg');" class="bg-cover bg-fixed">
     <section class="py-4 px-[10%] bg-[#00000099]">
         <?php include 'components/navbar.php'; ?>
        <section class="py-32">

@@ -6,6 +6,13 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+
+    var theme = localStorage.getItem("theme");
+    if (theme == null) {
+      motyw("green");
+    } else {
+      motyw(theme);
+    }
   </script>
 </body>
 </html>

@@ -6,29 +6,29 @@
       </div>
       <div class="md:pl-8 flex flex-col">
         <h1 class="font-bold text-lg font-[poppins] py-4 uppercase italic">Informacje</h1>
-        <a href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Regulamin</a>
-        <a href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Polityka prywatności</a>
-        <a href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Zasoby</a>
-        <a href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Autorzy</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Regulamin</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Polityka prywatności</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Zasoby</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Autorzy</a>
       </div>
       <div class="md:pl-8 flex flex-col">
         <h1 class="font-bold text-lg font-[poppins] py-4 uppercase italic">Akcje</h1>
-        <a href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Lista eventów</a>
-        <a href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Stream</a>
-        <a href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Zapisy</a>
-        <a href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Kontakt</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Lista eventów</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Stream</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Zapisy</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Kontakt</a>
       </div>
       <div class="flex flex-col">
         <h1 class="font-bold text-lg font-[poppins] py-4 uppercase italic">Media społecznościowe</h1>
-        <a href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Facebook Pana Jarka</a>
-        <a href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Instagram Spotted</a>
-        <a href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Strona szkoły</a>
-        <a href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Twitch</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Facebook Pana Jarka</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Instagram Spotted</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Strona szkoły</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Twitch</a>
       </div>
   </section>
   <hr class="border-gray-600">
   <section class="flex w-full flex-row justify-between items-center py-12">
-    <p class="text-gray-300 text-xs font-[poppins] font-light">©ZS14 events 2023 - powered by RGBpc.pl designed and created by <a href="https://ui.gugisek.pl" target="_blank" class="font-[poppins] text-gray-100 theme-text-hover duration-300">gugisek</a> and <a href="https://ui.gugisek.pl" target="_blank" class="font-[poppins] text-gray-100 theme-text-hover duration-300">leff</a></p>
+    <p class="text-gray-300 text-xs font-[poppins] font-light">ZS14 events 2023 - powered by RGBpc.pl designed and created by <a href="https://ui.gugisek.pl" target="_blank" class="font-[poppins] text-gray-100 theme-text-hover duration-300">gugisek</a> and <a href="https://ui.gugisek.pl" target="_blank" class="font-[poppins] text-gray-100 theme-text-hover duration-300">leff</a></p>
      <div class="flex items-center space-x-6 md:order-2">
         <a href="#" class="text-[#4e4e4e] duration-300 hover:text-pink-500">
           <span class="sr-only">Instagram</span>
