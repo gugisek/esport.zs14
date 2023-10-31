@@ -1,22 +1,22 @@
 <section class="bg-[#0e0e0e] w-full 2xl:px-[15%] md:px-[10%] px-[5%]">
   <section class="py-8 w-full grid md:grid-cols-4 grid-cols-1 gap-6 text-gray-200">
       <div class="py-4">
-        <img src="public/img/logo.png" alt="">
+        <a href="index.php"><img src="public/img/logo.png" alt=""></a>
         <p class="py-4 text-sm font-[poppins] text-gray-300">Strona ta jest efektem starań grupy z klasy 5pi w roczniku 2023/2024.<br> Stworzona od uczniów dla uczniów.</p>
       </div>
       <div class="md:pl-8 flex flex-col">
         <h1 class="font-bold text-lg font-[poppins] py-4 uppercase italic">Informacje</h1>
-        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Regulamin</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100" href="regulamin.php" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Regulamin</a>
         <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Polityka prywatności</a>
-        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Zasoby</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Pliki do pobrania</a>
         <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="400" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Autorzy</a>
       </div>
       <div class="md:pl-8 flex flex-col">
         <h1 class="font-bold text-lg font-[poppins] py-4 uppercase italic">Akcje</h1>
-        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Lista eventów</a>
-        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Stream</a>
-        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Zapisy</a>
-        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="400" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Kontakt</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100" href="events.php" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Lista eventów</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200" href="stream.php" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Stream</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300" href="zapisy.php" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Zapisy</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="400" href="kontakt.php" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Kontakt</a>
       </div>
       <div class="flex flex-col">
         <h1 class="font-bold text-lg font-[poppins] py-4 uppercase italic">Media społecznościowe</h1>
