@@ -1,4 +1,4 @@
-<section class="bg-[#0e0e0e] w-full 2xl:px-[15%] md:px-[10%] px-[5%]">
+<section class="bg-[#0e0e0e] w-full 2xl:px-[15%] md:px-[10%] px-[5%] z-20">
   <section class="py-8 w-full grid md:grid-cols-4 grid-cols-1 gap-6 text-gray-200">
       <div class="py-4">
         <a href="index.php"><img src="public/img/logo.png" alt=""></a>
