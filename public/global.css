@@ -29,7 +29,7 @@
 }
 
 .theme-shadow-hover:hover {
-  box-shadow: 0px 13px 20px var(--text) !important;
+  box-shadow: 0px 10px 20px var(--shadow) !important;
 }
 
 .theme-shadow-button:hover {
@@ -69,4 +69,27 @@
 
 .bg-zoom:hover {
   background-size: auto 100%;
+}
+.neo-shadow {
+  border-radius: 30px;
+  background: #171717;
+  box-shadow: 20px 20px 60px #171717, -20px -20px 60px #151515;
+}
+
+.input {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-bg-opacity: 1;
+  background-color: #292929;
+  border-radius: 0.75rem;
+  color: #ffffff;
+}
+
+.input:focus {
+  outline: 1px solid var(--text);
+  /* border: 1px solid #a84bbb; */
 }
