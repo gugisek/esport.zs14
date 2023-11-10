@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="theme.js"></script>
 </head>
-<body class="flex flex-col items-center justify-start w-screen overflow-x-hidden p-0 m-0" data-theme="green">
+<body class="flex flex-col items-center justify-start w-screen overflow-x-hidden p-0 m-0">
     <section class="w-screen flex flex-col items-center z-20 h-full">
         <?php include 'components/navbar.php'; ?>
         <?php include 'components/schedule.php'; ?>
