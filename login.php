@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <?php include 'components/head.php'; ?>
-<body data-theme="green">
+<body data-theme="">
     <?php include 'components/login/hero.php'; ?>
     <?php include 'components/footer.php'; ?>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
