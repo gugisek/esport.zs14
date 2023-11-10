@@ -1,7 +1,7 @@
 <section id="bg" style="background-image: url('public/img/green.jpg');" class="bg-cover bg-fixed w-full">
     <section class="bg-[#000000c0] min-h-[95vh] w-full px-[10%] 2xl:px-[15%] pb-12 pt-16">
         <div class="flex items-center justify-between">
-            <h1 id="schedule_title" class="font-[poppins] 2xl:text-3xl text-2xl font-bold text-gray-100">Turniej ZS14 CS2 2023</h1>
+            <h1 id="schedule_title" class="font-[poppins] 2xl:text-3xl text-2xl font-bold text-gray-100">Aktualne Turnieje w ZS14</h1>
             <div class="uppercase text-sm flex flex-row gap-4 2xl:text-lg text-gray-600">
                 <a id="schedule_nav" onclick="openShedule('cs')" class="font-medium cursor-pointer theme-text-hover duration-300 font-[poppins] theme-text">CS2</a>
                 <a id="schedule_nav" onclick="openShedule('lol')"class="font-medium text-gray-500 cursor-pointer theme-text-hover duration-300 font-[poppins]">LoL</a>
@@ -461,4 +461,13 @@
                 this.classList.add("theme-text");
             });
         }
+
+    var sections = document.querySelectorAll("section");
+    var href = window.location.href;
+    if(href.includes('events.php')){
+        sections[2].classList.remove('pt-16');
+        sections[2].classList.add('pt-36');
+        sections[2].classList.remove('min-h-[95vh]')
+        sections[2].classList.add('min-h-[100vh]');
+    }
 </script>
