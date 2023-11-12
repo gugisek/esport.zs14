@@ -63,7 +63,7 @@ if ($uploadOk == 0) {
     include "../../scripts/log.php";
     //log
     $_SESSION['alert'] = 'Zdjęcie profilowe zostało zmienione.';
-    $_SESSION['alert_type'] = 'ok';
+    $_SESSION['alert_type'] = 'success';
     echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
   } else {
     echo "Sorry, there was an error uploading your file.";
@@ -136,7 +136,7 @@ if ($uploadOk == 0) {
     include "../../scripts/log.php";
     //log
     $_SESSION['alert'] = 'Zdjęcie tła zostało zmienione.';
-    $_SESSION['alert_type'] = 'ok';
+    $_SESSION['alert_type'] = 'success';
     echo "The file ". htmlspecialchars( basename( $_FILES["background"]["name"])). " has been uploaded.";
   } else {
     echo "Sorry, there was an error uploading your file.";
@@ -144,7 +144,7 @@ if ($uploadOk == 0) {
 }
 if($uploadOk != 1){
     $_SESSION['alert'] = 'Przesyłanie zdjęcia nie powiodło się.';
-    $_SESSION['alert_type'] = 'warn';
+    $_SESSION['alert_type'] = 'warning';
 }
 header('Location: ../../panel.php');
 ?>

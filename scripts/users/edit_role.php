@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "../../scripts/conn_db.php";
 $id = $_POST['popup_role_id'];
 $role = $_POST['popup_role'];
@@ -32,16 +33,16 @@ if ($row['role_id'] != $role_id) {
         //echo $_SESSION['alert'][0];
         
 
-        //$_SESSION['alert'] = 'Rola została zmieniona.';
-       // $_SESSION['alert_type'] = 'ok';
-        header('Location: ../../panel.php?page=użytkownicy&action=edited');
+        $_SESSION['alert'] = 'Rola została zmieniona.';
+        $_SESSION['alert_type'] = 'success';
+        header('Location: ../../panel.php?page');
     } else {
-        header('Location: ../../panel.php?page=użytkownicy&action=error');
+        header('Location: ../../panel.php?page');
     }
 } else {
     
-    $_SESSION['alert'] = 'Nie wproawdzono zmian.';
-    $_SESSION['alert_type'] = 'warn';
-    header('Location: ../../panel.php?page=użytkownicy&action=same');
+    $_SESSION['alert'] = 'Nie wprowadzono zmian.';
+    $_SESSION['alert_type'] = 'warning';
+    header('Location: ../../panel.php?page');
 }
 ?>

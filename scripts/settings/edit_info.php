@@ -5,7 +5,7 @@
     header('Location: login.php');
     exit();
   }
-  
+  include "../../components/loading.php";
   $main_name = $_POST['main_name'];
   // zamienienie jednego apostrofu na dwa, żeby nie psuło zapytania
   $main_name = str_replace("'", "''", $main_name);
@@ -23,7 +23,8 @@
   $adm_name = $_POST['adm_name'];
 
   include "../conn_db.php";
-
+  if($main_name != '' or $description != '' or $meta_description != '' or $logo != '' or $discord != '' or $twitch != '' or $instagram != '' or $strona_szkoly != '' or $adres_email != '' or $adm_name != ''){
+   
     //log
     $sql = "select * from informations;";
     $result = mysqli_query($conn, $sql);
@@ -59,7 +60,7 @@
         mysqli_query($conn, $sql);
         $poprawnie++;
     }
-    if(isset($logo)){
+    if(($_FILES['fileToUpload']['name'] != "")){
 
         $target_dir = "../../public/img/";
         $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -92,6 +93,12 @@
         if ($_FILES["fileToUpload"]["size"] > 5000000) {
         echo "Sorry, your file is too large.";
         $uploadOk = 0;
+        // echo '<script type="text/javascript">
+        // localStorage.setItem("alert", "error");
+        // localStorage.setItem("alert_message", "Plik jest za duży");
+        // </script>';
+        $_SESSION['alert'] = 'Plik jest za duży';
+        $_SESSION['alert_type'] = 'error';
         }
 
         // Allow certain file formats
@@ -99,6 +106,13 @@
         && $imageFileType != "gif" ) {
         echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
         $uploadOk = 0;
+        // echo '<script type="text/javascript">
+        // localStorage.setItem("alert", "error");
+        // localStorage.setItem("alert_message", "Nieprawidłowy format pliku");
+        // </script>';
+        $_SESSION['alert'] = 'Nieprawidłowy format pliku';
+        $_SESSION['alert_type'] = 'error';
+
         }
 
         // Check if $uploadOk is set to 0 by an error
@@ -123,11 +137,17 @@
             include "../../scripts/log.php";
             //log
             echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
-            $edit_logo = 1;
+            // echo '<script type="text/javascript">
+            // localStorage.setItem("alert", "success");
+            // localStorage.setItem("alert_message", "Pomyślnie zmieniono logo strony");
+            // </script>';
+            $_SESSION['alert'] = 'Pomyślnie zmieniono logo strony';
+            $_SESSION['alert_type'] = 'success';
         } else {
             echo "Sorry, there was an error uploading your file.";
         }
-        }
+    }
+    $edit_logo = 1;
     }
 
 
@@ -183,7 +203,30 @@
         $desc="Edytowano informacje o stronie";
         include "../../scripts/log.php";
         //log
+        //alert
+        // echo '<script type="text/javascript">
+        // localStorage.setItem("alert", "success");
+        // localStorage.setItem("alert_message", "Pomyślnie edytowano informacje o stronie");
+        // </script>';
+        $_SESSION['alert'] = 'Pomyślnie edytowano informacje o stronie';
+        $_SESSION['alert_type'] = 'success';
+    }else
+    {
+        //alert
+        if($edit_logo != 1){
+        //     echo '<script type="text/javascript">
+        // localStorage.setItem("alert", "warning");
+        // localStorage.setItem("alert_message", "Nie wprowadzono żadnych zmian");
+        // </script>';
+        $_SESSION['alert'] = 'Nie wprowadzono żadnych zmian';
+        $_SESSION['alert_type'] = 'warning';
+        }
     }
-  header('Location: ../../panel.php');
-
+}else{
+    $_SESSION['alert'] = 'Nie wprowadzono wszystkich danych';
+    $_SESSION['alert_type'] = 'error';
+}
 ?>
+<script>
+    window.location.href = "../../panel.php";
+</script>

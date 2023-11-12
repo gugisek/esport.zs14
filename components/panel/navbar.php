@@ -106,7 +106,7 @@ while ($row = $result->fetch_assoc()) {
             <a href="#" class="w-[75%] flex items-center gap-x-4 px-6 py-3 text-sm font-medium leading-6 text-white  hover:bg-[#3d3d3d] duration-150 cursor-pointer">
               <img class="h-8 w-8 rounded-full bg-gray-800 object-cover" src="<?=$profile_picture?>" alt="">
               <span class="sr-only">Your profile</span>
-              <span aria-hidden="true" class="font-[poppins]"><?php echo $_SESSION['user']?></span>
+              <span aria-hidden="true" class="font-[poppins] text-xs 2xl:text-sm"><?php echo $_SESSION['user']?></span>
             </a>
             <a href="scripts/logout.php" class="w-[25%] h-full flex items-center justify-center gap-x-4 px-6 py-3 text-sm font-semibold leading-6 text-white  hover:bg-[#3d3d3d] duration-150 cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">

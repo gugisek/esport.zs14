@@ -28,13 +28,13 @@ if($name != $row_old['name'] || $name_2 != $row_old['sec_name'] || $sur_name != 
         include "../../scripts/log.php";
         //log
         $_SESSION['alert'] = 'Dane personalne zostały zmienione.';
-        $_SESSION['alert_type'] = 'ok';
+        $_SESSION['alert_type'] = 'success';
     } else {
-        header('Location: ../../panel.php?page=użytkownicy&action=error');
+        header('Location: ../../panel.php');
     }
 }else {
     $_SESSION['alert'] = 'Dane personalne są takie same jak poprzednie.';
-    $_SESSION['alert_type'] = 'warn';
+    $_SESSION['alert_type'] = 'warning';
 }
-header('Location: ../../panel.php?page=użytkownicy&action=edited');
+header('Location: ../../panel.php');
 ?>

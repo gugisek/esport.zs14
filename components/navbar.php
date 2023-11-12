@@ -1,10 +1,11 @@
           <?php
           include "scripts/conn_db.php";
-          $sql = "SELECT value FROM informations WHERE informations.name = 'logo' or informations.name = 'description';";
+          $sql = "SELECT value FROM informations WHERE informations.name = 'logo' or informations.name = 'description' or informations.name = 'discord' or informations.name = 'twitch' or informations.name = 'instagram' or informations.name = 'strona_szkoly';";
           $result = $conn->query($sql);
           while ($row = $result->fetch_assoc()) {
             $info[] = $row['value'];
           }
+          $info[0] = nl2br($info[0]);
           ?>
 <nav data-aos="fade-down" class="flex flex-col md:flex-row justify-between z-10 items-center absolute top-0 left-0 mx-auto right-0 2xl:w-[70vw] w-[80vw] py-4">
     <a href="index.php"><img class="max-w-[250px]" src="public/img/<?=$info[1]?>" alt=""></a>

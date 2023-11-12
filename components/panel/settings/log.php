@@ -31,13 +31,13 @@
 
                     echo "<tr class='hover:bg-[#3d3d3d] transition-all duration-300 border-t-[0.5px] border-b-[0.5px] border-[#3d3d3d]' style='cursor: pointer; cursor: hand;' onclick='forOpenLog(".$row['id'].")'>";
                         echo "<td class='py-3 text-gray-500 text-center text-sm md:table-cell hidden'>".$row['id']."</td>";
-                        echo "<td class='py-3 text-gray-400 text-sm'>".$row['name']." ".$row['sur_name']."</td>";
-                        echo "<td class='text-center capitalize text-sm text-gray-500'>".$row['when']."</td>";
+                        echo "<td class='py-3 text-gray-300 text-sm'>".$row['name']." ".$row['sur_name']."</td>";
+                        echo "<td class='text-center capitalize text-sm text-gray-400'>".$row['when']."</td>";
                         $description = $row['description'];
                         if (strlen($description) > 50) {
                             $description = substr($description, 0, 50)."...";
                         }
-                        echo "<td class='text-sm md:table-cell hidden text-gray-600'>".$description."</td>";
+                        echo "<td class='text-sm md:table-cell hidden text-gray-400'>".$description."</td>";
                         echo "<td class='text-center text-sm text-gray-500'>".$row['object_id']."</td>";
                         echo "<td class='text-center text-sm capitalize ";
                         if ($row['object_type'] == "users") {

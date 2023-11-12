@@ -11,7 +11,7 @@
               <a onclick="forOpenSettings('components/panel/settings/zapisy.php')" id="zapisy" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">Zapisy</a>
             </li>
             <li>
-              <a onclick="forOpenSettings('components/panel/settings/log.php')" id="faq" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">FAQ</a>
+              <a onclick="forOpenSettings('components/panel/settings/faq.php')" id="faq" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">FAQ</a>
             </li>
             <li>
               <a onclick="forOpenSettings('components/panel/settings/log.php')" id="log" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">Historia zmian</a>

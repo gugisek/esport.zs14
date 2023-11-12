@@ -28,15 +28,15 @@ $mysql_version = mysqli_get_server_info($conn);
         <dl class="divide-y divide-white/10">
         <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 py-4 text-white">Nazwa strony</dt>
-            <input name="main_name" required type="text" value="<?=$info[0]?>" class="focus:outline-0 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"></input>
+            <input name="main_name" required type="text" value="<?=$info[0]?>" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"></input>
         </div>
         <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-white py-4">Opis</dt>
-            <textarea name="description" required class="bg-[#0e0e0e] focus:outline-0 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4 bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"><?=$info[1]?></textarea>
+            <textarea name="description" required class="bg-[#0e0e0e] focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4 bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"><?=$info[1]?></textarea>
         </div>
         <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-white py-4">Opis meta</dt>
-            <textarea name="meta_description" required class="bg-[#0e0e0e] focus:outline-0 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"><?=$info[2]?></textarea>
+            <textarea name="meta_description" required class="bg-[#0e0e0e] focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"><?=$info[2]?></textarea>
         </div>
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-white">Logo</dt>
@@ -58,19 +58,19 @@ $mysql_version = mysqli_get_server_info($conn);
         <dl class="divide-y divide-white/10">
         <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-white py-4">Discord</dt>
-            <input required name="discord" value="<?=$info[4]?>" class="focus:outline-0 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"></input>
+            <input required name="discord" type="url" value="<?=$info[4]?>" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"></input>
         </div>
         <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-white py-4">Twitch</dt>
-            <input required name="twitch" value="<?=$info[5]?>" class="focus:outline-0 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"></input>
+            <input required name="twitch" type="url" value="<?=$info[5]?>" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"></input>
         </div>
         <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-white py-4">Instagram</dt>
-            <input required name="instagram" value="<?=$info[6]?>" class="focus:outline-0 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"></input>
+            <input required name="instagram" type="url" value="<?=$info[6]?>" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"></input>
         </div>
         <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-white py-4">Strona szkoły</dt>
-            <input required name="strona_szkoly" value="<?=$info[7]?>" class="focus:outline-0 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"></input>
+            <input required name="strona_szkoly" type="url" value="<?=$info[7]?>" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"></input>
         </div>
         </dl>
     </div>
@@ -84,11 +84,11 @@ $mysql_version = mysqli_get_server_info($conn);
         <dl class="divide-y divide-white/10">
         <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-white py-4">Adres email</dt>
-            <input required name="adres_email" value="<?=$info[8]?>" class="focus:outline-0 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"></input>
+            <input required name="adres_email" type="email" value="<?=$info[8]?>" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"></input>
         </div>
         <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-white py-4">Godność administratora</dt>
-            <input required name="adm_name" value="<?=$info[9]?>" class="focus:outline-0 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"></input>
+            <input required name="adm_name" value="<?=$info[9]?>" class="focus:outline-0 focus:border-b-[1px] invalid:border-red-600 theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0"></input>
         </div>
         </dl>
     </div>
