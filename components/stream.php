@@ -14,8 +14,8 @@
         <h1 class="font-[roboto]">Zobacz czy właśnie teraz trwa turniej.</h1>
         <p class="font-medium text-sm text-gray-500">Jeśli nie, to sprawdź kiedy będzie następny!</p>
         <div class="flex items-start lg:justify-start justify-center py-2">
-            <a href="stream.php" class="theme-border theme-bg-hover theme-shadow-button border-2 mr-3 border-green-500 uppercase rounded-full py-2 px-4 text-gray-800 text-sm hover:text-white transition-all duration-300 font-medium">Stream</a>
-            <a href="eventy.php" class="theme-border theme-shadow-button theme-bg border-2 border-green-500 bg-green-500 rounded-full py-2 px-4 text-white uppercase text-sm font-medium transition-all duration-300">EVENTY</a>
+            <a href="stream.php" class="theme-border theme-bg-hover theme-shadow-button border-2 mr-3 uppercase rounded-full py-2 px-4 text-gray-800 text-sm hover:text-white transition-all duration-300 font-medium">Stream</a>
+            <a href="eventy.php" class="theme-border theme-shadow-button theme-bg border-2 bg-green-500 rounded-full py-2 px-4 text-white uppercase text-sm font-medium transition-all duration-300">EVENTY</a>
         </div>
     </div>
 </section>

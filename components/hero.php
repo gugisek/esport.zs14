@@ -4,8 +4,8 @@
             <h1 class="textoutlined font-bold 2xl:text-6xl text-4xl text-white uppercase md:w-2/3 w-full font-[poppins]">Witamy w strefie eventów<br> w <span class="theme-text transition-all duration-300">zespole szkół nr. 14</span></h1>
             <p class="font-[poppins] md:w-1/2 w-full text-gray-300 text-md 2xl:text-lg font-medium">Znajdziesz tutaj wszytko o nadchodzących wydarzeniach dla naszych uczniów!</p>
             <div class="flex items-start justify-center">
-                <button class="theme-border theme-bg-hover theme-shadow-button border-2 mr-3 border-green-500 uppercase rounded-full py-2 px-4 text-white transition-all duration-300 font-medium">Stream</button>
-                <button class="theme-border theme-shadow-button theme-bg border-2 border-green-500 bg-green-500 rounded-full py-2 px-4 text-white uppercase font-medium hover:shadow-[0px_5px_20px] hover:shadow-green-500 transition-all duration-300">EVENTY</button>
+                <button class="theme-border theme-bg-hover theme-shadow-button border-2 mr-3 uppercase rounded-full py-2 px-4 text-white transition-all duration-300 font-medium">Stream</button>
+                <button class="theme-border theme-shadow-button theme-bg border-2 bg-green-500 rounded-full py-2 px-4 text-white uppercase font-medium hover:shadow-[0px_5px_20px] hover:shadow-green-500 transition-all duration-300">EVENTY</button>
             </div>
         </section>
         <section data-aos="zoom-out-up" data-aos-duration="500" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom" class="absolute 2xl:w-[70vw] md:w-[80vw] w-[90vw] mx-auto bottom-6 left-0 right-0 grid md:grid-cols-4 grid-cols-2 2xl:gap-6 gap-4 pb-8">
@@ -24,94 +24,3 @@
         </section>
     </section>
 </section>
-<script>
-    
-    // function motyw(motyw) {
-    //         var items_text_color = document.querySelectorAll('.text-green-500');
-    //         var items_border_color = document.querySelectorAll('.border-green-500');
-    //         var items_bg_color = document.querySelectorAll('.bg-green-500');
-    //         var items_hover_text_color = document.querySelectorAll('.hover_text_green');
-    //        //var items_hover_text_color = document.querySelectorAll('.hover:text-green-400');
-    //        //var items_hover_border_color = document.querySelectorAll('.hover:border-green-400');
-    //        //var items_hover_bg_color = document.querySelectorAll('.hover:bg-green-400');
-    //         var items_shadow_color = document.querySelectorAll('.shadow-green-500');
-    //        //var items_hover_shadow_color = document.querySelectorAll('.hover:shadow-green-500');
-    //        //var items_text_shadow_color = document.querySelectorAll('.hover:[text-shadow:_2px_5px_20px]');
-    //        //var items_hover_text_shadow_color = document.querySelectorAll('.hover:[text-shadow:_2px_5px_20px]');
-    //     if (motyw == 'pierwszy') {
-    //         document.getElementById('bg').style.backgroundImage = "url('public/img/bg8.jpg')";
-    //         var kolor = "#a600cf";
-            
-    //         var i = 0;
-    //         for (i = 0; i < items_text_color.length; i++) {
-    //             items_text_color[i].style.color = kolor;
-    //         }
-    //         for (i = 0; i < items_border_color.length; i++) {
-    //             items_border_color[i].style.borderColor = kolor;
-    //         }
-    //         for (i = 0; i < items_bg_color.length; i++) {
-    //             items_bg_color[i].style.backgroundColor = kolor;
-    //         }
-    //         for (i = 0; i < items_hover_text_color.length; i++) {
-    //             items_hover_text_color[i].classList.add('hover:text-purple-400');
-    //         }
-            
-
-    //     }
-    //     if (motyw == 'drugi') {
-    //         document.getElementById('bg').style.backgroundImage = "url('public/img/bg3.jpg')";
-    //         var kolor = "#22c55e";
-            
-    //         var i = 0;
-    //         for (i = 0; i < items_text_color.length; i++) {
-    //             items_text_color[i].style.color = kolor;
-    //         }
-    //         for (i = 0; i < items_border_color.length; i++) {
-    //             items_border_color[i].style.borderColor = kolor;
-    //         }
-    //         for (i = 0; i < items_bg_color.length; i++) {
-    //             items_bg_color[i].style.backgroundColor = kolor;
-    //         }
-    //         for (i = 0; i < items_hover_text_color.length; i++) {
-    //             items_hover_text_color[i].classList.add('hover:text-purple-400');
-    //         }
-    //     }
-    //     if (motyw == 'trzeci') {
-    //         document.getElementById('bg').style.backgroundImage = "url('public/img/bg4.jpg')";
-    //         var kolor = "#e1dc18";
-            
-    //         var i = 0;
-    //         for (i = 0; i < items_text_color.length; i++) {
-    //             items_text_color[i].style.color = kolor;
-    //         }
-    //         for (i = 0; i < items_border_color.length; i++) {
-    //             items_border_color[i].style.borderColor = kolor;
-    //         }
-    //         for (i = 0; i < items_bg_color.length; i++) {
-    //             items_bg_color[i].style.backgroundColor = kolor;
-    //         }
-    //         for (i = 0; i < items_hover_text_color.length; i++) {
-    //             items_hover_text_color[i].classList.add('hover:text-purple-400');
-    //         }
-    //     }
-    //     if (motyw == 'czwarty') {
-    //         document.getElementById('bg').style.backgroundImage = "url('public/img/bg6.png')";
-    //         var kolor = "#27cbff";
-            
-    //         var i = 0;
-    //         for (i = 0; i < items_text_color.length; i++) {
-    //             items_text_color[i].style.color = kolor;
-    //         }
-    //         for (i = 0; i < items_border_color.length; i++) {
-    //             items_border_color[i].style.borderColor = kolor;
-    //         }
-    //         for (i = 0; i < items_bg_color.length; i++) {
-    //             items_bg_color[i].style.backgroundColor = kolor;
-    //         }
-    //         for (i = 0; i < items_hover_text_color.length; i++) {
-    //             items_hover_text_color[i].classList.add('hover:text-purple-400');
-    //         }
-    //     }
-        
-    // }
-</script>

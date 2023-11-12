@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <?php include 'components/head.php'; ?>
-<body data-theme="green" style="overflow-x: hidden;">
+<body style="overflow-x: hidden;">
     <section class="flex flex-col items-center justify-start w-screen overflow-x-hidden">
         <?php include 'components/navbar.php'; ?>
         <?php include 'components/hero.php'; ?>
