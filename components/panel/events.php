@@ -12,7 +12,7 @@
                     </nav>
                 </header>
 
-                <div id="events_main" class="divide-y divide-white/5 p-5">
+                <div id="events_main" class="divide-y divide-white/5 p-5 events-setting-panels">
                     <ul class="relative m-0 flex list-none justify-between overflow-hidden p-0 transition-[height] duration-200 ease-in-out events-hero-list">
                     <!--Blank page-->
                         <li data-te-stepper-step-ref data-te-stepper-step-active class="w-[4.5rem] flex-auto">
@@ -48,15 +48,27 @@
     </div>
     <script>
         var navButtons = document.querySelectorAll('.events-nav a');
+        var eventsSettingsDivs = document.querySelectorAll('.events-setting-panels');
+        var body = document.querySelector('body');
 
         navButtons.forEach((butt, index)=>{
             butt.addEventListener("click", ()=>{
                 navButtons.forEach((elem) =>{
                     elem.classList.remove('theme-text');
                 })
+                eventsSettingsDivs.forEach((elem) =>{
+                    elem.classList.add('hidden');
+                    eventsSettingsDivs[index].classList.remove('slide-left-long');
+                    body.classList.remove('overflow-x-hidden');
+                })
                 navButtons[index].classList.add('theme-text');
+                eventsSettingsDivs[index].classList.remove('hidden');
+                body.classList.add('overflow-x-hidden');
+                eventsSettingsDivs[index].classList.add('slide-left-long');
+
             })
         })
+
 
         var heroSwitcherDivs = document.querySelectorAll('.events-hero-list li div');
         var heroSwitcherButtons = document.querySelectorAll('.events-hero-list li div a')
