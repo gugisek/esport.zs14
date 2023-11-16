@@ -9,9 +9,9 @@
       <div class="md:pl-8 flex flex-col">
         <h1 class="font-bold text-lg font-[poppins] py-4 uppercase italic">Informacje</h1>
         <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100" href="regulamin.php" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Regulamin</a>
-        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Polityka prywatności</a>
-        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Pliki do pobrania</a>
-        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="400" href="" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Autorzy</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200" href="polityka_prywatnosci.php" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Polityka prywatności</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300" href="downloads.php" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Pliki do pobrania</a>
+        <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="400" href="autorzy.php" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Autorzy</a>
       </div>
       <div class="md:pl-8 flex flex-col">
         <h1 class="font-bold text-lg font-[poppins] py-4 uppercase italic">Akcje</h1>
@@ -28,7 +28,7 @@
         <a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="400" href="<?=$info[5]?>" target="_blank" class="theme-text-hover duration-300 font-medium text-gray-300 py-1 text-sm">Strona szkoły</a>
       </div>
   </section>
-  <hr class="border-gray-600">
+  <hr class="border-[#3d3d3d]">
   <section class="flex w-full md:flex-row flex-col-reverse justify-between items-center py-12">
     <p class="text-gray-300 text-xs font-[poppins] font-light text-center md:text-left"><a href="panel.php" class="font-[poppins]">ZS14 events 2023</a> - powered by RGBpc.pl designed and created by <a href="https://ui.gugisek.pl" target="_blank" class="font-[poppins] text-gray-100 theme-text-hover duration-300">gugisek</a> and <a href="https://ui.gugisek.pl" target="_blank" class="font-[poppins] text-gray-100 theme-text-hover duration-300">leff</a></p>
      <div class="flex items-center space-x-6 md:order-2 pb-12 md:pb-0">

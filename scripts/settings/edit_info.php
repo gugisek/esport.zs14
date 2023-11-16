@@ -15,6 +15,9 @@
   if (isset($_FILES['fileToUpload']['name'])) {
     $logo = 'active';
   }
+  if (isset($_FILES['fileToUploadfav']['name'])) {
+    $favicon = 'active';
+  }
   $discord = $_POST['discord'];
   $twitch = $_POST['twitch'];
   $instagram = $_POST['instagram'];
@@ -23,7 +26,7 @@
   $adm_name = $_POST['adm_name'];
 
   include "../conn_db.php";
-  if($main_name != '' or $description != '' or $meta_description != '' or $logo != '' or $discord != '' or $twitch != '' or $instagram != '' or $strona_szkoly != '' or $adres_email != '' or $adm_name != ''){
+  if($main_name != '' or $description != '' or $meta_description != '' or $logo != '' or $favicon != '' or $discord != '' or $twitch != '' or $instagram != '' or $strona_szkoly != '' or $adres_email != '' or $adm_name != ''){
    
     //log
     $sql = "select * from informations;";
@@ -84,10 +87,12 @@
         }
 
         // Check if file already exists
-        if (file_exists($target_file)) {
-        echo "Sorry, file already exists.";
-        $uploadOk = 0;
-        }
+        // if (file_exists($target_file)) {
+        // echo "Sorry, file already exists.";
+        // $uploadOk = 0;
+        // $_SESSION['alert'] = 'Przesyłany plik nie może mieć takiej samej nazwy jak docelowy plik';
+        // $_SESSION['alert_type'] = 'error';
+        // }
 
         // Check file size
         if ($_FILES["fileToUpload"]["size"] > 5000000) {
@@ -150,6 +155,97 @@
     $edit_logo = 1;
     }
 
+    if(($_FILES['fileToUploadfav']['name'] != "")){
+
+        $target_dir = "../../public/img/";
+        $target_file = $target_dir . basename($_FILES["fileToUploadfav"]["name"]);
+
+        $img_ext = pathinfo($target_file, PATHINFO_EXTENSION);
+
+        echo $target_file;
+        $uploadOk = 1;
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
+        // Check if image file is a actual image or fake image
+        if(isset($_POST["submit"])) {
+        $checkimg = getimagesize($_FILES["fileToUploadfav"]["tmp_name"]);
+        if($checkimg !== false) {
+            echo "File is an image - " . $check["mime"] . ".";
+            $uploadOk = 1;
+        } else {
+            echo "File is not an image.";
+            $uploadOk = 0;
+        }
+        }
+
+        // Check if file already exists
+        // if (file_exists($target_file)) {
+        // echo "Sorry, file already exists.";
+        // $uploadOk = 0;
+        // $_SESSION['alert'] = 'Przesyłany plik nie może mieć takiej samej nazwy jak docelowy plik';
+        // $_SESSION['alert_type'] = 'error';
+        // }
+
+        // Check file size
+        if ($_FILES["fileToUploadfav"]["size"] > 5000000) {
+        echo "Sorry, your file is too large.";
+        $uploadOk = 0;
+        // echo '<script type="text/javascript">
+        // localStorage.setItem("alert", "error");
+        // localStorage.setItem("alert_message", "Plik jest za duży");
+        // </script>';
+        $_SESSION['alert'] = 'Plik jest za duży';
+        $_SESSION['alert_type'] = 'error';
+        }
+
+        // Allow certain file formats
+        if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+        && $imageFileType != "gif" ) {
+        echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+        $uploadOk = 0;
+        // echo '<script type="text/javascript">
+        // localStorage.setItem("alert", "error");
+        // localStorage.setItem("alert_message", "Nieprawidłowy format pliku");
+        // </script>';
+        $_SESSION['alert'] = 'Nieprawidłowy format pliku';
+        $_SESSION['alert_type'] = 'error';
+
+        }
+
+        // Check if $uploadOk is set to 0 by an error
+        if ($uploadOk == 0) {
+        echo "Sorry, your file was not uploaded.";
+        // if everything is ok, try to upload file
+        } else {
+        if (move_uploaded_file($_FILES["fileToUploadfav"]["tmp_name"], $target_file)) {
+            rename($target_file, $target_dir ."favicon." . $img_ext);
+            include "../conn_db.php";
+            $file_name = "favicon." . $img_ext;
+            $sql = "UPDATE informations SET value = '$file_name' WHERE informations.name = 'favicon';";
+            $conn->query($sql);
+            $conn->close();
+            //log
+            $object_id='0';
+            $object_type="informations";
+            $before=" ";
+            $after="Favicon: $file_name";
+            $action_type="1";
+            $desc="Zmieniono favicon strony";
+            include "../../scripts/log.php";
+            //log
+            echo "The file ". htmlspecialchars( basename( $_FILES["fileToUploadfav"]["name"])). " has been uploaded.";
+            // echo '<script type="text/javascript">
+            // localStorage.setItem("alert", "success");
+            // localStorage.setItem("alert_message", "Pomyślnie zmieniono logo strony");
+            // </script>';
+            $_SESSION['alert'] = 'Pomyślnie zmieniono favicon strony';
+            $_SESSION['alert_type'] = 'success';
+        } else {
+            echo "Sorry, there was an error uploading your file.";
+        }
+    }
+    $edit_logo = 1;
+    }
 
     if($discord != $check[4]){
         $sql = "UPDATE informations SET value = '$discord' WHERE informations.name = 'discord';";

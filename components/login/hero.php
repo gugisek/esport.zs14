@@ -25,7 +25,7 @@
                 <?php
                     if(isset($_SESSION['error']))
                     {
-                        echo '<script> document.getElementById("login").classList.add("animate-pulse", "bg-red-100"); document.getElementById("pswd").classList.add("animate-pulse", "bg-red-100"); </script>';
+                        echo '<script> document.getElementById("login").classList.add("animate-pulse"); document.getElementById("pswd").classList.add("animate-pulse"); </script>';
                         unset($_SESSION['error']);
                     }
                     ?>

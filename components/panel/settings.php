@@ -19,6 +19,9 @@
             <li>
               <a onclick="forOpenSettings('components/panel/settings/about.php')" id="about" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">Podstawowe informacje</a>
             </li>
+            <li>
+              <a onclick="forOpenSettings('components/panel/settings/docs.php')" id="docs" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">Dokumenty</a>
+            </li>
           </ul>
         </nav>
       </header>

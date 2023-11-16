@@ -13,7 +13,7 @@
         <a href="regulamin.php" class="theme-text-hover hover:[text-shadow:_2px_5px_20px] shadow-green-400 transition-all duration-300">Regulamin</a>
         <a href="zapisy.php" class="theme-text-hover hover:[text-shadow:_2px_5px_20px] shadow-green-400 transition-all duration-300">Zapisy</a>
         <a href="stream.php" class="theme-text-hover hover:[text-shadow:_2px_5px_20px] shadow-green-400 transition-all duration-300">Stream</a>
-        <a href="eventy.php" class="theme-text theme-text-hover hover:[text-shadow:_2px_5px_20px] shadow-green-400 transition-all duration-300">Eventy</a>
+        <a href="events.php" class="theme-text theme-text-hover hover:[text-shadow:_2px_5px_20px] shadow-green-400 transition-all duration-300">Eventy</a>
         <a href="kontakt.php" class="theme-text-hover hover:[text-shadow:_2px_5px_20px] shadow-green-400 transition-all duration-300">Kontakt</a>
     </div>
 </nav>

@@ -15,9 +15,7 @@ while ($row = $result->fetch_assoc()) {
   $info[] = $row['value'];
 }
 ?>
-<div class="hidden xl:fixed xl:inset-y-0 xl:z-50 xl:flex xl:w-72 xl:flex-col">
-    <!-- Sidebar component, swap this element with another sidebar if you like -->
-    <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-black/10 px-6 ring-1 ring-white/5">
+<div class="flex grow flex-col gap-y-5 overflow-y-auto md:bg-black/10 bg-[#0e0e0e] px-6 ring-1 ring-white/5">
       <div class="flex h-16 shrink-0 items-center">
         <img class="h-8 w-auto" src="public/img/<?=$info[0]?>" alt="logo">
       </div>
@@ -119,4 +117,3 @@ while ($row = $result->fetch_assoc()) {
         </ul>
       </nav>
     </div>
-  </div>
