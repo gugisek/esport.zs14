@@ -5,10 +5,10 @@
     <section class="w-screen flex flex-col items-center z-20 h-full">
         <?php include 'components/navbar.php'; ?>
         <?php //include 'components/events/blank_hero.php' ?>
-        <?php include 'components/events/clock.php' ?>
+        <?php  include 'components/events/clock.php' ?>
 
         <?php //include 'components/schedule.php'; ?>
-        <?php //include 'components/events/lastest_champions.php' ?>
+        <?php include 'components/events/lastest_champions.php' ?>
 
     </section>
     <section class="w-screen">

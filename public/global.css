@@ -4,6 +4,10 @@
   font-family: poppins, sans-serif;
 }
 
+:root {
+  --scroll: #3d3d3d; /* Kolor początkowy zmiennej */
+}
+
 [data-theme="purple"] {
   --text: #a600cf;
   --shadow: #a78bfa;
@@ -313,4 +317,16 @@
 .slide-left-long {
   -webkit-animation: slide-left 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-left 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.ql-size-huge {
+  font-size: 2.5em;
+}
+
+.ql-size-large {
+  font-size: 1.5em;
+}
+
+.ql-size-small {
+  font-size: 0.75em;
 }

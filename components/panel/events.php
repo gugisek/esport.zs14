@@ -46,14 +46,47 @@
                         <div class="sm:px-6 lg:px-8">
                             <div class="px-4 mb-6 sm:px-0 mt-6 flex flex-row justify-between items-center events-settings">
                                 <div class="flex flex-col w-full">
-                                    <div>
-                                        <h3 class="text-base font-semibold leading-7 text-white">Ustawienia Pustej Strony</h3>
-                                        <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-400">Dodaj lub edytuj zapis na pustym hero podstrony events.</p>
+                                    <div class="flex flex-row justify-between">
+                                        <div>
+                                            <h3 class="text-base font-semibold leading-7 text-white">Ustawienia Pustej Strony</h3>
+                                            <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-400">Dodaj lub edytuj zapis na pustym hero podstrony events.</p>
+                                        </div>
+                                        <div class="py-2">
+                                            <button type="subbmit" class="inline-flex items-center gap-x-2 rounded-md bg-green-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                                    Zapisz
+                                                    <svg class="-mr-0.5 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"></path>
+                                                    </svg>
+                                            </button>
+                                        </div>
                                     </div>
                                     <div class="mt-6 border-t border-b border-white/10">
                                         <dl class="divide-y divide-white/10">
                                             <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                                                <dt class="text-sm font-medium leading-6 py-4 text-white">Teskt nagłówka</dt>
+                                                <div class="flex flew-row space-x-2 items-center">
+                                                    <dt class="text-sm font-medium leading-6 py-4 text-white">Teskt nagłówka</dt>
+                                                    <a  tabindex="0" role="link" aria-label="tooltip 2" class="focus:outline-none focus:ring-gray-300 rounded-full focus:ring-offset-2 focus:ring-2 focus:bg-gray-200 relative my-28 md:my-0 md:mx-64" onmouseover="showTooltip(2)" onfocus="showTooltip(2)" onmouseout="hideTooltip(2)">
+                                                        <div class=" cursor-pointer">
+                                                            <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.529 7.988a2.502 2.502 0 0 1 5 .191A2.441 2.441 0 0 1 10 10.582V12m-.01 3.008H10M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div id="tooltip2" role="tooltip" class="z-20 -mt-20 w-64 absolute transition duration-150 ease-in-out left-0 ml-8 shadow-lg theme-bg p-1 rounded hidden">
+                                                            <svg class="absolute left-0 -ml-2 bottom-0 top-0 h-full" width="9px" height="16px" viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                    <g id="Tooltips-" transform="translate(-874.000000, -1029.000000)" fill="var(--text)">
+                                                                        <g id="Group-3-Copy-16" transform="translate(850.000000, 975.000000)">
+                                                                            <g id="Group-2" transform="translate(24.000000, 0.000000)">
+                                                                                <polygon id="Triangle" transform="translate(4.500000, 62.000000) rotate(-90.000000) translate(-4.500000, -62.000000) " points="4.5 57.5 12.5 66.5 -3.5 66.5"></polygon>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                            <img src="public/img/events_hero_tooltip.png" alt="test" class="w-[34vh]">
+                                                        </div>
+                                                    </a>
+                                                </div>
                                                 <input name="main_name" placeholder="Brak tekstu" type="text" value="" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0">
                                             </div>
                                         </dl>
@@ -134,6 +167,18 @@
             })
         })
 
+        var eventsHeroTooltip2 = document.getElementById("tooltip2");
+
+        function showTooltip(flag) {
+            if(flag == 2){
+                eventsHeroTooltip2.classList.remove("hidden");
+            }
+        }
+        function hideTooltip(flag) {
+            if(flag == 2){
+                eventsHeroTooltip2.classList.add("hidden");
+            }
+        }
 
         // function toTest() {
         //     window.location.href = "http://localhost:3000/test";
