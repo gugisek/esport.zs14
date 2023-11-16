@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventy / E-SPORT'owa ZS14</title>
-    <link rel="stylesheet" href="public/global.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="theme.js"></script>
-</head>
+<?php include 'components/head.php'; ?>
 <body class="flex flex-col items-center justify-start w-screen overflow-x-hidden p-0 m-0">
     <section class="w-screen flex flex-col items-center z-20 h-full">
         <?php include 'components/navbar.php'; ?>
