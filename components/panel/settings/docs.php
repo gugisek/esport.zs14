@@ -11,7 +11,7 @@ include "../../../scripts/security.php";
         </div>
             <?php
             include "../../../scripts/conn_db.php";
-            $sql = "SELECT * FROM informations where id=13 or id=14";
+            $sql = "SELECT * FROM informations where id=13 or id=14 or id=15";
             $result = mysqli_query($conn, $sql);
             while($row = mysqli_fetch_assoc($result)){
                 if(mb_strlen($row['value'], "UTF-8")>200){

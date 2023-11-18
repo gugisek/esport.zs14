@@ -206,9 +206,18 @@ function forOpen(site) {
   if (panelPage == null) {
     forOpen('components/panel/dashboard.php');
   } else {
+    
     forOpen(panelPage);
-    document.getElementById("dashboard").classList.remove("sidenav-button-active");
-    document.getElementById(panelPage.replace("components/panel/", "").replace(".php", "")).classList.add("sidenav-button-active");
+    var removeButtons = document.querySelectorAll("#dashboard");
+    for (var i = 0; i < removeButtons.length; i++) {
+      removeButtons[i].classList.remove("sidenav-button-active");
+    }
+
+    var activeButtons = document.querySelectorAll("#" + panelPage.replace("components/panel/", "").replace(".php", ""));
+    for(var i = 0; i < activeButtons.length; i++) {  
+      activeButtons[i].classList.add("sidenav-button-active");
+    }
+    
   }
 </script>
  <script>

@@ -20,11 +20,11 @@ while ($row = mysqli_fetch_array($result)) {
     <link rel="icon" type="image/x-icon" href="public/img/<?=$main_info[2]?>">
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-      <script>
+      <!-- <script>
     window.addEventListener('scroll', function() {
       const scrollValue = window.scrollY / (document.body.scrollHeight - window.innerHeight);
       const hue = scrollValue * 1080; // Zmieniając scroll, zmienia kolor tęczy (0-360 stopni)
       document.documentElement.style.setProperty('--scroll', `hsl(${hue}, 70%, 50%)`);
     });
-  </script>
+  </script> -->
 </head>

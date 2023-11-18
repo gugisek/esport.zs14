@@ -30,7 +30,7 @@
   </section>
   <hr class="border-[#3d3d3d]">
   <section class="flex w-full md:flex-row flex-col-reverse justify-between items-center py-12">
-    <p class="text-gray-300 text-xs font-[poppins] font-light text-center md:text-left"><a href="panel.php" class="font-[poppins]">ZS14 events 2023</a> - powered by RGBpc.pl designed and created by <a href="https://ui.gugisek.pl" target="_blank" class="font-[poppins] text-gray-100 theme-text-hover duration-300">gugisek</a> and <a href="https://ui.gugisek.pl" target="_blank" class="font-[poppins] text-gray-100 theme-text-hover duration-300">leff</a></p>
+    <p class="text-gray-300 text-xs font-[poppins] font-light text-center md:text-left"><a href="panel.php" class="font-[poppins]">ZS14 events 2023</a> - powered by RGBpc.pl designed and created by <a href="https://ui.gugisek.pl" target="_blank" class="font-[poppins] text-gray-100 theme-text-hover duration-300">gugisek</a> and <a href="https://github.com/lefinek" target="_blank" class="font-[poppins] text-gray-100 theme-text-hover duration-300">leff</a></p>
      <div class="flex items-center space-x-6 md:order-2 pb-12 md:pb-0">
         <a href="<?=$info[4]?>" class="text-[#4e4e4e] duration-300 hover:text-pink-500">
           <span class="sr-only">Instagram</span>
@@ -49,5 +49,5 @@
       </div>
 
   </section>
-
 </section>
+<?php include 'components/cookies.php'; ?>

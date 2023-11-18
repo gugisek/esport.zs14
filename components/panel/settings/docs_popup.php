@@ -6,7 +6,7 @@ $id = $_GET['id'];
     $row = mysqli_fetch_assoc($result);
 ?>
 
-<form action="scripts/settings/edit_docs.php" method="POST" class="text-white flex flex-col h-full gap-4 pt-2 px-24">
+<form action="scripts/settings/edit_docs.php" method="POST" class="text-white flex flex-col h-full gap-4 pt-2 md:px-24 px-2">
     <input type="hidden" name="id" value="<?=$row['id']?>">
     <div class="flex flex-row gap-4 w-full">
         <div class="relative z-0 w-full">

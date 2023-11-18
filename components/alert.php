@@ -14,7 +14,7 @@ if(isset($_SESSION['alert'])){
   echo '
   <div id="alert" aria-live="assertive" class="opacity-1 duration-300 pointer-events-none fixed z-50 inset-0 flex items-end px-4 py-6 sm:items-start sm:p-6">
     <div class="flex w-full flex-col items-center space-y-4 sm:items-end">
-      <div data-aos="fade-down" class="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+      <div data-aos="fade-down" data-aos-anchor-placement="top-bottom" class="pointer-events-auto w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
         <div class="p-4">
           <div class="flex items-center">
             <div class="flex-shrink-0">
