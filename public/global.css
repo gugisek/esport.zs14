@@ -4,10 +4,6 @@
   font-family: poppins, sans-serif;
 }
 /* Przywrócenie domylnego formatowania html elementu ul */
-ul {
-  list-style: disc !important;
-  padding-left: 1.5rem !important;
-}
 
 :root {
   --scroll: #3d3d3d; /* Kolor początkowy zmiennej */
