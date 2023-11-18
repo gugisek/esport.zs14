@@ -14,14 +14,13 @@ include "../../../scripts/security.php";
             $sql = "SELECT * FROM informations where id=13 or id=14 or id=15";
             $result = mysqli_query($conn, $sql);
             while($row = mysqli_fetch_assoc($result)){
-                if(mb_strlen($row['value'], "UTF-8")>200){
-                    $row['value'] = substr($row['value'], 0, 200)."...";
-                }
+                // if(mb_strlen($row['value'], "UTF-8")>200){
+                //     $row['value'] = substr($row['value'], 0, 200)."...";
+                // }
                 echo '<div onclick="openPopupDocs('.$row['id'].')" class=" border-t border-white/10 hover:bg-[#3d3d3d] cursor-pointer duration-150">
                 <dl class="divide-y divide-white/10">
                 <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                     <dt class="text-sm flex items-center font-medium leading-6 py-4 text-white normal-case">'.$row['name'].'</dt>
-                    <dd class="flex items-center mt-2 text-sm text-gray-400 sm:mt-0 sm:col-span-2"><div>'.$row['value'].'</div></dd>
                 </div>
                 </dl>
             </div>';

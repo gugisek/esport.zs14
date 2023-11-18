@@ -2,7 +2,7 @@
 <html lang="pl">
 <?php include 'components/head.php'; ?>
 <body>
-    <?php include 'components/zapisy/hero.php'; ?> 
+    <?php include 'components/contact/hero.php'; ?> 
     <?php include 'components/footer.php'; ?>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

@@ -1,4 +1,4 @@
-<section id="bg" style="background-image: url('public/img/green.jpg');" class="bg-cover bg-fixed">
+<section id="bg" class="bg-cover bg-fixed">
     <section class="py-4 px-[5%] md:px-[10%] bg-[#00000099]">
         <?php include 'components/navbar.php'; ?>
        <section class="md:pt-32 pt-48 md:pb-32 pb-28">
