@@ -231,7 +231,7 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div class="nav_inputs sm:grid col-span-2">
+                                                <div class="nav_inputs sm:grid col-span-2 gap-3">
                                                     <div class="nav_input order-last flex flex-row justify-between">
                                                         <input name="nav_input_0" type="text" value="" oninput="reWriteValue(0)" placeholder="Podaj nazwę elementu nawigacyjnego" class="w-11/12 focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400">
                                                         <div class="w-1/12 flex items-center justify-center">
@@ -248,7 +248,7 @@
                                                 </div>
                                             </div>
                                             <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                                                <div class="row-span-3">
+                                                <div>
                                                     <div class="flex flew-row space-x-2 items-center">
                                                         <dt class="text-sm font-medium leading-6 py-4 text-white">Tytuły panelu zwycięzców</dt>
                                                         <a  tabindex="0" role="link" aria-label="tooltip 2" class="focus:outline-none focus:ring-gray-300 rounded-full focus:ring-offset-2 focus:ring-2 focus:bg-gray-200 relative my-28 md:my-0 md:mx-64">
@@ -274,15 +274,62 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <input name="main_name" type="text" value="Champions of the IT Day 2023" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0">
-                                                <input name="main_name" type="text" value="Champions of the Counter-Strike 2 Tournament 2023" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0">
-                                                <input name="main_name" type="text" value="Champions of the League of Legends Tournament 2023" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0">
+                                                <div class="title_inputs sm:grid col-span-2">
+                                                    <input name="title_input_0" type="text" value="" oninput="reWriteValue(0)" placeholder="Podaj nazwę nagłówka" class="title_input focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0">
+                                                </div>
                                             </div>
                                             <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                                                <div class="flex flew-row space-x-2 items-center">
-                                                    <dt class="text-sm font-medium leading-6 py-4 text-white">Data rozpoczęcia turnieju</dt>
+                                                <div>
+                                                    <div class="flex flew-row space-x-2 items-center">
+                                                        <dt class="text-sm font-medium leading-6 py-4 text-white">Zdjęcia i pseduonimy panelu zwycięzców</dt>
+                                                        <a  tabindex="0" role="link" aria-label="tooltip 2" class="focus:outline-none focus:ring-gray-300 rounded-full focus:ring-offset-2 focus:ring-2 focus:bg-gray-200 relative my-28 md:my-0 md:mx-64">
+                                                            <div class="cursor-pointer tooltiphover">
+                                                                <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.529 7.988a2.502 2.502 0 0 1 5 .191A2.441 2.441 0 0 1 10 10.582V12m-.01 3.008H10M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div id="tooltip2" role="tooltip" class="tooltip z-20 -mt-20 w-64 absolute transition duration-150 ease-in-out left-0 ml-8 shadow-lg theme-bg p-1 rounded hidden">
+                                                                <svg class="absolute left-0 -ml-2 bottom-0 top-0 h-full" width="9px" height="16px" viewBox="0 0 9 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                        <g id="Tooltips-" transform="translate(-874.000000, -1029.000000)" fill="var(--text)">
+                                                                            <g id="Group-3-Copy-16" transform="translate(850.000000, 975.000000)">
+                                                                                <g id="Group-2" transform="translate(24.000000, 0.000000)">
+                                                                                    <polygon id="Triangle" transform="translate(4.500000, 62.000000) rotate(-90.000000) translate(-4.500000, -62.000000) " points="4.5 57.5 12.5 66.5 -3.5 66.5"></polygon>
+                                                                                </g>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </svg>
+                                                                <img src="public/img/events_champions_photo_tooltip.png" alt="test">
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <input name="main_name" type="text" value="9:00 20.02.2024" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0">
+                                                <div class="players_inputs sm:grid col-span-2 gap-8">
+                                                    <div class="player_input order-last flex flex-row justify-between">
+                                                        <div class="w-10/12">
+                                                            <input name="players_input_0" type="text" value="" oninput="reWriteValueChampios(0)" placeholder="Podaj pseudonim zawodnika/podpis zdjęcia" class="w-full focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4 bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400">
+                                                            <dd class="w-full">
+                                                                <div class="relative max-w-[200px] flex align-center justify-center items-center">
+                                                                    <!-- <img id="popup_img_inpt_0" src="" alt="logo" class="w-full pb-4 md:mt-0 mt-4 object-contain">
+                                                                    <p class="absolute bottom-0 py-1 bg-white w-[100%] text-center italic">Korusiwo</p> -->
+                                                                </div>
+                                                                <input type="file" name="fileToUpload_0" onchange="imgPrev('')" id="fileToUpload_0" class="cursor-copy md:min-w-[400px] w-full mt-1 flex justify-center rounded-md border-2 border-dashed theme-border text-gray-300 px-6 pt-5 pb-6">
+                                                                <p class="text-xs text-gray-500 mt-2">Przeciągnij i upuść - PNG, JPG, GIF do 5MB</p>
+                                                            </dd>
+                                                        </div>
+                                                        <div class="w-1/12 flex items-center justify-center">
+                                                            <button type="button" class="add_player_elem md:mt-0 mt-4 bg-transparent inline-flex items-center justify-center rounded-2xl text-white">
+                                                                    <svg class="-mr-0.5 h-5 w-5 rounded-2xl hover:bg-green-400 shadow-xl duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                                                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                                                                    </svg>
+                                                            </button>
+                                                            <div class="w-6 h-6">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </dl>
                                         <div class="sm:px-6 lg:px-8 px-4 text-center">
@@ -367,6 +414,8 @@
         var buttonToRemNavElement = document.querySelectorAll('.rem_nav_elem');
         var navInputsDiv = document.querySelector('.nav_inputs');
         var navInputs = document.querySelectorAll('.nav_input');
+        var titleInputsDiv = document.querySelector('.title_inputs');
+        var titleInputs = document.querySelectorAll('.title_input')
         var navInputsCounter;
         var freeIndexes = [1,2,3];
 
@@ -374,52 +423,18 @@
             // let input = document.createTextNode = '<div id = "n'+xd+'" oninput="reWriteValue('+xd+')" class="nav_input gap-x-2 flex flex-row justify-between"> <input name="nav_input_'+xd+'" type="text" value="" placeholder="Podaj nazwę elementu nawigacyjnego" class="w-11/12 focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400"> <div class="w-1/12 flex items-center justify-center"> <button type="button" onclick="whyyyyRem('+xd+')" id = "b'+xd+'" class="rem_nav_elem md:mt-0 mt-4 bg-transparent inline-flex items-center justify-center rounded-2xl text-white"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="-mr-0.5 h-6 w-6 rounded-2xl hover:stroke-red-400 shadow-xl duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"> <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /> </svg> </button> <div class="w-6 h-6"></div> </div> </div>';
             // return input;
 
-            let e1 = document.createElement('path');
-            e1.setAttribute('stroke-linecap', 'round');
-            e1.setAttribute('stroke-linejoin', 'round');
-            e1.setAttribute('d', 'M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z');
-
-            let e2 = document.createElement('svg');
-            e2.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-            e2.setAttribute('fill', 'currentColor');
-            e2.setAttribute('viewBox', '0 0 24 24');
-            e2.setAttribute('stroke-width', "1.5");
-            e2.setAttribute('stroke', 'black');
-            e2.setAttribute('class', '-mr-0.5 h-6 w-6 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 rounded-2xl hover:stroke-red-400 shadow-xl duration-300 focus-visible:outline focus-visible:outline-2');
-
-            let e3 = document.createElement('button');
-            e3.setAttribute('type', 'button');
-            e3.setAttribute('onclick','whyyyyRem('+xd+')');
-            e3.setAttribute('id','b'+xd+'');
-            e3.setAttribute('class','rem_nav_elem md:mt-0 mt-4 bg-transparent inline-flex items-center justify-center rounded-2xl text-white');
-
-            let e4 = document.createElement('div');
-            e4.setAttribute('class', 'w-6 h-6');
-
-            let e5 = document.createElement('div');
-            e5.setAttribute('class', 'w-1/12 flex items-center justify-center');
-
-            let e6 = document.createElement('input');
-            e6.setAttribute('name','nav_input_'+xd+'');
-            e6.setAttribute('type','text');
-            e6.setAttribute('value','');
-            e6.setAttribute('placeholder','Podaj nazwę elementu nawigacyjnego');
-            e6.setAttribute('class','w-11/12 focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400');
-
             let e7 = document.createElement('div');
             e7.setAttribute('id','n'+xd+'');
             e7.setAttribute('oninput','reWriteValue('+xd+')');
             e7.setAttribute('class','nav_input gap-x-2 flex flex-row justify-between');
-
-            e2.append(e1);
-            e2.append(e1);
-            e3.append(e2);
-            e5.append(e3);
-            e5.append(e4);
-            e7.append(e6);
-            e7.append(e5);
+            e7.innerHTML = '<input name="nav_input_'+xd+'" type="text" value="" placeholder="Podaj nazwę elementu nawigacyjnego" class="w-11/12 focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400"> <div class="w-1/12 flex items-center justify-center"> <button type="button" onclick="whyyyyRem('+xd+')" id = "b'+xd+'" class="rem_nav_elem md:mt-0 mt-4 bg-transparent inline-flex items-center justify-center rounded-2xl text-white"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="-mr-0.5 h-6 w-6 rounded-2xl hover:stroke-red-400 shadow-xl duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"> <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /> </svg> </button> <div class="w-6 h-6"></div> </div>';
 
             return e7;
+        }
+
+        function titleInputAdd(xd){
+            let titleInput = document.createTextNode = '<input name="title_input_'+xd+'" type="text" value="" placeholder="Podaj nazwę nagłówka" oninput="reWriteValue('+xd+')" class="title_input focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0">';
+            return titleInput;
         }
 
         whyyyy();
@@ -427,6 +442,7 @@
         function whyyyy(){
             buttonToAddNavElement = document.querySelectorAll('.add_nav_elem');
             navInputs = document.querySelectorAll('.nav_input');
+            titleInputs = document.querySelectorAll('.title_input')
             buttonToAddNavElement.forEach((elem, index)=>{
                 elem.addEventListener('click', ()=>{
                     navInputsCounter = navInputsDiv.childElementCount;
@@ -435,9 +451,10 @@
                     } else{
                         index = freeIndexes.shift();
                         navInputsDiv.append(navInputAdd(index));
+
                         //navInputsDiv.innerHTML = navInputAdd(index) + navInputsDiv.innerHTML;
+                        titleInputsDiv.innerHTML = titleInputAdd(index) + titleInputsDiv.innerHTML;
                         return freeIndexes;
-                        whyyyy();
                     }
                 })
             })
@@ -445,8 +462,10 @@
 
         function whyyyyRem(u){
             freeIndexes.push(u);
+            n = u;
             u = 'n'+u;
             navInputsDiv.removeChild(document.getElementById(u));
+            titleInputsDiv.removeChild(document.getElementsByName('title_input_'+n)[0]);
             navInputsCounter = navInputsCounter -1;
             
             return navInputsCounter;
@@ -455,8 +474,89 @@
 
         function reWriteValue(zm){
             let inpoot = document.getElementsByName('nav_input_'+zm);
-            xd = inpoot[0].value;
-            inpoot[0].value = xd;
+            inpoot[0].setAttribute('value', inpoot[0].value);
+
+            let titleInpoot = document.getElementsByName('title_input_'+zm);
+            titleInpoot[0].setAttribute('value', titleInpoot[0].value);
+        }
+
+        function reWriteValueChampios(zm){
+            let championNickInpoot = document.getElementsByName('players_input_'+zm);
+            championNickInpoot[0].setAttribute('value', championNickInpoot[0].value);
+        }
+
+        var buttonToAddPlayerElement = document.querySelectorAll('.add_player_elem');
+        var buttonToRemPlayerElement = document.querySelectorAll('.rem_player_elem');
+        var playerInputsDiv = document.querySelector('.players_inputs');
+        var playerInputs = document.querySelectorAll('.player_input');
+        var playerInputsCounter;
+        var freePlayerIndexes = [1,2,3,4];
+
+
+        function championPhotoTextInputAdd(jk){
+            // let photoTextInput = '<div id= "m'+jk+'" class="player_input order-last flex flex-row justify-between"><div class="w-10/12"><input name="players_input_'+jk+'" type="text" value="" oninput="reWriteValueChampios('+jk+')" placeholder="Podaj pseudonim zawodnika/podpis zdjęcia" class="w-full focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400"><dd class="w-full"><div class="relative max-w-[200px] flex align-center justify-center items-center"><!-- <img id="popup_img_inpt_'+jk+'" src="" alt="logo" class="w-full pb-4 md:mt-0 mt-4 object-contain"><p class="absolute bottom-0 py-1 bg-white w-[100%] text-center italic">Korusiwo</p> --></div><input type="file" name="fileToUpload_'+jk+'" onchange="imgPrev('+' '+', '+jk+')" id="fileToUpload_'+jk+'" class="cursor-copy md:min-w-[400px] w-full mt-1 flex justify-center rounded-md border-2 border-dashed theme-border text-gray-300 px-6 pt-5 pb-6"><p class="text-xs text-gray-500 mt-2">Przeciągnij i upuść - PNG, JPG, GIF do 5MB</p></dd></div><div class="w-1/12 flex items-center justify-center"> <button type="button" onclick="championRemElement('+jk+')" id = "k'+jk+'" class="rem_player_elem md:mt-0 mt-4 bg-transparent inline-flex items-center justify-center rounded-2xl text-white"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="-mr-0.5 h-6 w-6 rounded-2xl hover:stroke-red-400 shadow-xl duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"> <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /> </svg> </button> <div class="w-6 h-6"></div> </div></div>';
+            // return photoTextInput;
+
+            let e1 = document.createElement('div');
+            e1.setAttribute('id', 'm'+jk+'');
+            e1.setAttribute('class', 'player_input flex flex-row justify-between');
+            e1.innerHTML = '<div class="w-10/12"><input name="players_input_'+jk+'" type="text" value="" oninput="reWriteValueChampios('+jk+')" placeholder="Podaj pseudonim zawodnika/podpis zdjęcia" class="w-full focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400"><dd class="w-full"><div class="relative max-w-[200px] flex align-center justify-center items-center"><!-- <img id="popup_img_inpt_'+jk+'" src="" alt="logo" class="w-full pb-4 md:mt-0 mt-4 object-contain"><p class="absolute bottom-0 py-1 bg-white w-[100%] text-center italic">Korusiwo</p> --></div><input type="file" name="fileToUpload_'+jk+'" onchange="imgPrev('+' '+', '+jk+')" id="fileToUpload_'+jk+'" class="cursor-copy md:min-w-[400px] w-full mt-1 flex justify-center rounded-md border-2 border-dashed theme-border text-gray-300 px-6 pt-5 pb-6"><p class="text-xs text-gray-500 mt-2">Przeciągnij i upuść - PNG, JPG, GIF do 5MB</p></dd></div><div class="w-1/12 flex items-center justify-center"> <button type="button" onclick="championRemElement('+jk+')" id = "k'+jk+'" class="rem_player_elem md:mt-0 mt-4 bg-transparent inline-flex items-center justify-center rounded-2xl text-white"> <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="-mr-0.5 h-6 w-6 rounded-2xl hover:stroke-red-400 shadow-xl duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"> <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /> </svg> </button> <div class="w-6 h-6"></div> </div>';
+            return e1;
+        }
+
+        championAddElement();
+
+        function championAddElement(){
+            buttonToAddPlayerElement = document.querySelectorAll('.add_player_elem');
+            playerInputs = document.querySelectorAll('.player_input');
+            buttonToAddPlayerElement.forEach((elem, index)=>{
+                elem.addEventListener('click', ()=>{
+                    playerInputsCounter = playerInputsDiv.childElementCount;
+                    if(playerInputsCounter >4){
+                        return freePlayerIndexes;
+                    } else{
+                        index = freePlayerIndexes.shift();
+
+                        playerInputsDiv.append(championPhotoTextInputAdd(index));
+                        return freePlayerIndexes;
+                    }
+                })
+            })
+        }
+
+        function championRemElement(u){
+            freePlayerIndexes.push(u);
+            n = u;
+            u = 'm'+u;
+            playerInputsDiv.removeChild(document.getElementById(u));
+            playerInputsCounter = playerInputsCounter -1;
+            
+            return playerInputsCounter;
+            return freePlayerIndexes;
+        }
+
+        function imgPrev(type, kl) {
+            const file = document.getElementById(`fileToUpload_${kl}${type}`).files[0];
+            const reader = new FileReader();
+            reader.onloadend = function() {
+                //ustawienie dla wszystkich img o id popup_img_inpt src
+                for (let i = 0; i < document.querySelectorAll(`#popup_img_inpt_${kl}${type}`).length; i++) {
+                    document.querySelectorAll(`#popup_img_inpt_${kl}${type}`)[i].src = reader.result;
+                }
+
+
+            }
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                document.getElementById(`popup_img_inpt_${kl}${type}`).src = "";
+            }
+
+            if(document.getElementById(`popup_img_inpt_${kl}${type}`).src == ""){
+                document.getElementById(`popup_img_inpt_${kl}${type}`).classList.add('hidden');
+            } else{
+                document.getElementById(`popup_img_inpt_${kl}${type}`).classList.remove('hidden');
+            }
         }
     </script>
     <!-- <button onclick="toTest()">test</button> -->
