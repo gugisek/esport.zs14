@@ -70,7 +70,7 @@ include "../../../scripts/security.php";
         var popupFaqOutput = document.getElementById("pupupFaqOutput");
         popupFaqOutput.innerHTML =  "<div class='flex justify-center items-center'><div class='flex flex-col justify-center items-center'><div class='animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900'></div><div class='text-white text-xl font-semibold mt-4'>Ładowanie...</div></div>";
         popupFaqOpenClose();
-        const url = "components/panel/settings/faq_popup.php?id=add";
+        const url = "components/panel/settings/faq_popup.php?id=add&type=faq";
         fetch(url)
             .then(response => response.text())
             .then(data => {
@@ -93,7 +93,7 @@ include "../../../scripts/security.php";
         var popupFaqOutput = document.getElementById("pupupFaqOutput");
         popupFaqOutput.innerHTML =  "<div class='flex justify-center items-center'><div class='flex flex-col justify-center items-center'><div class='animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900'></div><div class='text-white text-xl font-semibold mt-4'>Ładowanie...</div></div>";
         popupFaqOpenClose();
-        const url = "components/panel/settings/faq_popup.php?id="+id;
+        const url = "components/panel/settings/faq_popup.php?id="+id+"&type=faq";
         fetch(url)
             .then(response => response.text())
             .then(data => {

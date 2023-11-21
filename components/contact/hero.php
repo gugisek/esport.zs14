@@ -7,7 +7,7 @@
     }
 ?>
 <section id="bg" class="bg-cover bg-fixed">
-    <section class="pt-4 bg-[#00000099]">
+    <section class="pt-4 bg-[#000000c0]">
         <?php include 'components/navbar.php'; ?>
        <section data-aos="fade-up" class="py-32 md:mt-0 mt-14">
             <div class="mx-auto max-w-2xl p-8 text-center">
@@ -15,7 +15,7 @@
                 <p class="mt-2 leading-8 text-gray-300">Masz wątpliwości? Znalazleś błąd? Chcesz pomóc rozwijać projekt?<br/><span class="theme-text">Zobacz szczegóły poniżej.</span></p>
             </div>
        </section>
-       <section data-aos="fade-up" class="bg-[#0e0e0ee0] font-[poppins] text-gray-400 p-8 text-justify">
+       <section data-aos="fade-up" class="bg-black/80 font-[poppins] text-gray-400 p-8 text-justify">
             <div class="mx-auto my-20 max-w-lg space-y-16">
                 <div data-aos="fade-left" data-aos-delay="100" data-aos-anchor-placement="top-bottom" class="flex gap-x-6">
                     <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg theme-bg">

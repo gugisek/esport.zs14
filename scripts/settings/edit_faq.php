@@ -3,17 +3,18 @@ include "../security.php";
 $id = $_POST['id'];
 $question = $_POST['question'];
 $answer = $_POST['answer'];
+$type = $_POST['type'];
 
 include "../conn_db.php";
 if($question != '' && $answer != ''){
     if($id == "add"){
-        $sql = "INSERT INTO faq (question, answer) VALUES ('$question', '$answer')";
+        $sql = "INSERT INTO $type (question, answer) VALUES ('$question', '$answer')";
         if(mysqli_query($conn, $sql)){
             $_SESSION['alert'] = 'Pomyślnie dodano pytanie';
             $_SESSION['alert_type'] = 'success';
             //log
             $object_id=mysqli_insert_id($conn);
-            $object_type="faq";
+            $object_type=$type;
             $before=" ";
             $after="Pytanie: $question,<br/> Odpowiedź: $answer";
             $action_type="2";
@@ -30,17 +31,17 @@ if($question != '' && $answer != ''){
             exit();
         }
     }else{
-        $sql = "select * from faq where id = $id";
+        $sql = "select * from $type where id = $id";
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_assoc($result);
         if($row['question'] != $question || $row['answer'] != $answer){
-            $sql = "UPDATE faq SET question = '$question', answer = '$answer' WHERE id = $id";
+            $sql = "UPDATE $type SET question = '$question', answer = '$answer' WHERE id = $id";
             if(mysqli_query($conn, $sql)){
                 $_SESSION['alert'] = 'Pomyślnie edytowano pytanie';
                 $_SESSION['alert_type'] = 'success';
                 //log
                 $object_id=$id;
-                $object_type="faq";
+                $object_type=$type;
                 $before="Pytanie: ".$row['question'].",<br/> Odpowiedź: ".$row['answer'];
                 $after="Pytanie: $question,<br/> Odpowiedź: $answer";
                 $action_type="1";

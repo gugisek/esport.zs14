@@ -1,9 +1,10 @@
 <?php
   include "../../../scripts/security.php";
   $id = $_GET['id'];
+  $type = $_GET['type'];
 ?>
 
-    <form action="scripts/settings/delete_faq.php?id=<?=$id?>" method="POST" class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6">
+    <form action="scripts/settings/delete_faq.php?id=<?=$id?>&type=<?=$type?>" method="POST" class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6">
       <div>
         <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-red-100">
           <svg
