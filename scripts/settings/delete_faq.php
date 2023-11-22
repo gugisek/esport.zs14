@@ -1,14 +1,15 @@
 <?php
 include "../security.php";
 $id = $_GET['id'];
+$type = $_GET['type'];
 include "../conn_db.php";
-$sql = "DELETE FROM faq WHERE id = $id";
+$sql = "DELETE FROM $type WHERE id = $id";
 if(mysqli_query($conn, $sql)){
     $_SESSION['alert'] = 'Pomyślnie usunięto pytanie o id: '.$id.'';
     $_SESSION['alert_type'] = 'success';
     //log
     $object_id=$id;
-    $object_type="faq";
+    $object_type=$type;
     $before="Pytanie: ".$row['question'].",<br/> Odpowiedź: ".$row['answer'];
     $after=" ";
     $action_type="3";
