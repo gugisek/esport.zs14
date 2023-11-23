@@ -1,9 +1,19 @@
 <section id="bg" style="background-image: url('public/img/green.jpg');" class="bg-cover bg-fixed w-full">
     <section class="bg-[#000000c0] min-h-[100vh] w-full px-[10%] 2xl:px-[15%] pb-12 pt-16 flex grid justify-center items-center align-center">
         <h1 class="text-center text-white text-6xl leading-[1.27]">
-            <p>Zaczynamy za: </p>
+            <?php
+                $sql = "SELECT * FROM events WHERE event_type_id = 2 and input = 'clock_text'";
+                $sql_res = mysqli_fetch_array(mysqli_query($conn, $sql));
+                echo '<p>'.$sql_res[3].'</p>'
+            ?>
             <span id="clock"></span>
         </h1>
+        <?php
+            $clock_time = "SELECT events.value FROM events WHERE event_type_id = 2 and input = 'clock_time'";
+            $result_clock_time = mysqli_fetch_array(mysqli_query($conn,$clock_time));
+                                
+            echo '<input name="clock_start_time" type="hidden" value="'.$result_clock_time[0].'">';
+        ?>
     </section>
 </section>
 
@@ -45,9 +55,35 @@
         }
 
         let clock = document.querySelector('#clock');
-        
+
+        let czas = document.getElementsByName('clock_start_time')[0].getAttribute('value');
+        let godzina; let minuta; let dzien; let miesiac; let rok;
+
+        function start_godzina(){
+            godzina = czas.slice(0, czas.indexOf(':'));
+            return godzina;
+        }
+        function start_minuta(){
+            minuta = czas.slice(czas.indexOf(':')+1, czas.indexOf(' '))
+            minuta == '00' ? minuta =  0 : minuta = minuta;
+            return minuta;
+        }
+        function start_dzien(){
+            dzien = czas.slice(czas.indexOf(' ')+1, czas.indexOf('.'))
+            dzien[0] == 0?dzien = dzien[1]:dzien = dzien;
+            return dzien;
+        }
+        function start_miesiac(){
+            miesiac = czas.slice(czas.indexOf('.')+1, czas.indexOf('.')+3)
+            miesiac[0] == 0?miesiac = miesiac[1]-1:miesiac = miesiac-1;
+            return miesiac;
+        }
+        function start_rok(){
+            rok = czas.slice(czas.indexOf('.')+4, czas.indexOf('.')+8)
+            return rok;
+        }
         function zegar(){
-            clock.innerHTML = dataWydarzenia(2024, 1, 20, 9, 0, 0, 0);
+            clock.innerHTML = dataWydarzenia(start_rok(), start_miesiac(), start_dzien(), start_godzina(), start_minuta(), 0, 0);
         }
         setInterval(zegar, 1000);
 </script>
