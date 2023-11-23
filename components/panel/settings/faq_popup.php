@@ -25,7 +25,7 @@ if($id == "add"){
             <label for="question" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 theme-text-focus peer-focus:dark:text-[--text] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Pytanie</label>
         </div>
     </div>
-        <div class="h-full max-h-[45vh] text-gray-400" id="editor-container"><?=$row['answer']?></div>
+        <div class="h-full max-h-[45vh] text-gray-400" id="editor-container-popup"><?=$row['answer']?></div>
         <input type="hidden" id="editorContent" name="answer" value='<?=$row['answer']?>'>
     <div class="text-center">
             <?php
@@ -55,88 +55,8 @@ if($id == "add"){
     </div>
   </section>
 
-<!-- <script>
-    function applyStyle(style) {
-        const editor = document.getElementById('editor');
-        const selection = window.getSelection();
-        const selectedText = selection.toString();
-        const range = selection.getRangeAt(0);
-
-        switch (style) {
-            case 'bold':
-                document.execCommand('bold', false, null);
-                break;
-            case 'underline':
-                document.execCommand('underline', false, null);
-                break;
-            case 'themeText':
-                const span = document.createElement('span');
-                span.className = 'theme-text';
-                span.textContent = selectedText;
-
-                // Replaces the selected text with the created span
-                range.deleteContents();
-                range.insertNode(span);
-                break;
-        }
-
-        updateToolbar();
-        updateHiddenField();
-    }
-
-    function updateToolbar() {
-        const toolbar = document.getElementById('toolbar');
-
-        const isBold = document.queryCommandState('bold');
-        const isUnderlined = document.queryCommandState('underline');
-
-        // Update button styles based on the current state
-        toolbar.querySelector('button:nth-child(1)').style.fontWeight = isBold ? 'bold' : 'normal';
-        toolbar.querySelector('button:nth-child(2)').style.textDecoration = isUnderlined ? 'underline' : 'none';
-        updateHiddenField();
-    }
-
-    function updateHiddenField() {
-        const editorContent = document.getElementById('editorContent');
-        editorContent.value = document.getElementById('editor').innerHTML;
-    }
-
-    function popupFaqDeleteOpenClose() {
-        var popup = document.getElementById("popupFaqDelete")
-        var popupBg = document.getElementById("popupFaqDeleteBg")
-        popupBg.classList.toggle("opacity-0")
-        popupBg.classList.toggle("h-0")
-        popup.classList.toggle("scale-0")
-        popup.classList.add("duration-200")
-    }
-
-    function openPopupFaqDelete(id) {
-        var popupFaqDeleteOutput = document.getElementById("pupupFaqDeleteOutput");
-        popupFaqDeleteOpenClose();
-        const url = "components/panel/settings/faq_popup_delete.php?id="+id;
-        fetch(url)
-            .then(response => response.text())
-            .then(data => {
-            const parser = new DOMParser();
-            const parsedDocument = parser.parseFromString(data, "text/html");
-
-            // Wstaw zawartość strony (bez skryptów) do "panel_body"
-            popupFaqDeleteOutput.innerHTML = parsedDocument.body.innerHTML;
-
-            // Przechodź przez znalezione skrypty i wykonuj je
-            const scripts = parsedDocument.querySelectorAll("script");
-            scripts.forEach(script => {
-                const scriptElement = document.createElement("script");
-                scriptElement.textContent = script.textContent;
-                document.body.appendChild(scriptElement);
-            });
-            });
-        
-        
-    }
-</script> -->
 <script>
-  var quill = new Quill('#editor-container', {
+  var quill = new Quill('#editor-container-popup', {
     theme: 'snow',
     placeholder: 'Tu wpisz treść...',
     modules: {

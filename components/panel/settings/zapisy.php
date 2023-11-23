@@ -92,6 +92,25 @@ while ($row = $result->fetch_assoc()) {
     </div>
     </form>
 </div>
+ <section id="popupFaqBg" class="fixed z-[50] h-0 opacity-0 top-0 left-0 w-full h-full bg-[#0000009e] transition-opacity duration-300"></section>
+  <section id="popupFaq" onclick="popupFaqOpenClose()" class="z-[60] fixed scale-0 top-0 left-0 w-full h-full">
+    <div class="flex items-center justify-center w-full h-full px-2">
+      <div onclick="event.cancelBubble=true;" class="bg-[#0e0e0e] md:min-w-[800px] md:w-auto w-full max-w-[800px] max-h-[80vh] overflow-y-auto flex md:flex-row flex-col gap-4 rounded-2xl py-6 sm:px-6  -xl">
+        <div id="popupItself" class="flex h-auto w-full justify-between flex-col">
+          <div class="w-full flex justify-between items-center sm:hidden">
+            <span>  </span>
+              <a onclick="popupFaqOpenClose()" class="-mt-2 pb-3 flex items-center space-x-2 text-gray-500 hover:text-red-600 transition-all duration-500">
+                  <p class="uppercase font-medium text-xs">zamknij</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+              </a>
+          </div>                        
+            <div id="pupupFaqOutput"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 <script>
     function popupFaqOpenClose() {
         var popup = document.getElementById("popupFaq")
