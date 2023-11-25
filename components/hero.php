@@ -1,7 +1,7 @@
 <section id="bg" class="duration-300 bg-fixed bg-cover bg-top w-full h-screen">
     <section class="flex py-4 2xl:px-[15%] md:px-[10%] px-[5%] h-screen py-0 2xl:py-32 bg-[#000000c0] flex-col items-cener justify-between">
         <section data-aos="zoom-out-up" data-aos-anchor-placement="top-center" data-aos-easing="linear" class="2xl:py-32 xl:py-32 py-28 font-[lexend] flex flex-col items-start justify-center gap-5">
-            <h1 class="textoutlined font-bold 2xl:text-6xl text-4xl text-white uppercase md:w-2/3 w-full font-[poppins]">Witamy w strefie eventów<br> w <span class="theme-text transition-all duration-300">zespole szkół nr. 14</span></h1>
+            <h1 class="textoutlined font-bold 2xl:text-6xl text-4xl text-white uppercase md:w-2/3 w-full font-[poppins]">Witamy w strefie eventów<br> w <span class="theme-text transition-all duration-300">zespole szkół nr 14</span></h1>
             <p class="font-[poppins] md:w-1/2 w-full text-gray-300 text-md 2xl:text-lg font-medium">Znajdziesz tutaj wszytko o nadchodzących wydarzeniach dla naszych uczniów!</p>
             <div class="flex items-start justify-center">
                 <button class="theme-border theme-bg-hover theme-shadow-button border-2 mr-3 uppercase rounded-full py-2 px-4 text-white transition-all duration-300 font-medium">Stream</button>

@@ -29,7 +29,7 @@
                 while($row = mysqli_fetch_assoc($result))
                 {
 
-                    echo "<tr class='hover:bg-[#3d3d3d] transition-all duration-150 border-t-[0.5px] border-b-[0.5px] border-[#3d3d3d]' style='cursor: pointer; cursor: hand;' onclick='forOpenLog(".$row['id'].")'>";
+                    echo "<tr class='hover:bg-[#3d3d3d] transition-all duration-150 border-t-[0.5px] border-b-[0.5px] border-[#3d3d3d]' style='cursor: pointer; cursor: hand;' onclick='openPopupLog(".$row['id'].")'>";
                         echo "<td class='py-3 text-gray-500 text-center text-sm md:table-cell hidden'>".$row['id']."</td>";
                         echo "<td class='py-3 text-gray-300 text-sm'>".$row['name']." ".$row['sur_name']."</td>";
                         echo "<td class='text-center capitalize text-sm text-gray-400'>".$row['when']."</td>";
@@ -139,8 +139,50 @@
                 </button>
             </form>
         </div>
-        <span class="text-right w-1/3 text-sm text-gray-400">Strona <?=$page_id?> z <?=$total_pages?></span>
-        
-        
+        <span class="text-right w-1/3 text-sm text-gray-400">Strona <?=$page_id?> z <?=$total_pages?></span>   
     </div>
 </section>
+ <section id="popupLogBg" class="fixed z-[50] h-0 opacity-0 top-0 left-0 w-full h-full bg-[#0000009e] transition-opacity duration-300"></section>
+  <section id="popupLog" onclick="popupLogOpenClose()" class="z-[60] fixed scale-0 top-0 left-0 w-full h-full">
+    <div class="flex items-center justify-center w-full h-full px-2">
+      <div onclick="event.cancelBubble=true;" class="bg-[#0e0e0e] md:min-w-[800px] md:w-auto w-full max-w-[800px] max-h-[80vh] overflow-y-auto flex md:flex-row flex-col gap-4 rounded-2xl py-6 sm:px-6  -xl">
+        <div id="popupItself" class="flex h-auto w-full justify-between flex-col">
+                                 
+            <div id="pupupLogOutput"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    function popupLogOpenClose() {
+        var popup = document.getElementById("popupLog")
+        var popupBg = document.getElementById("popupLogBg")
+        popupBg.classList.toggle("opacity-0")
+        popupBg.classList.toggle("h-0")
+        popup.classList.toggle("scale-0")
+        popup.classList.add("duration-200")
+    }
+    function openPopupLog(id){
+        var popupLogOutput = document.getElementById("pupupLogOutput");
+        popupLogOutput.innerHTML =  "<div class='flex justify-center items-center'><div class='flex flex-col justify-center items-center'><div class='animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900'></div><div class='text-white text-xl font-semibold mt-4'>Ładowanie...</div></div>";
+        popupLogOpenClose();
+        const url = "components/panel/settings/log_popup.php?id="+id+"&type=faq";
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+            const parser = new DOMParser();
+            const parsedDocument = parser.parseFromString(data, "text/html");
+
+            // Wstaw zawartość strony (bez skryptów) do "panel_body"
+            popupLogOutput.innerHTML = parsedDocument.body.innerHTML;
+
+            // Przechodź przez znalezione skrypty i wykonuj je
+            const scripts = parsedDocument.querySelectorAll("script");
+            scripts.forEach(script => {
+                const scriptElement = document.createElement("script");
+                scriptElement.textContent = script.textContent;
+                document.body.appendChild(scriptElement);
+            });
+            });
+    }
+</script>

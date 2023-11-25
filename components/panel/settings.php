@@ -14,6 +14,9 @@
               <a onclick="forOpenSettings('components/panel/settings/faq.php')" id="faq" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">FAQ</a>
             </li>
             <li>
+              <a onclick="forOpenSettings('components/panel/settings/sponsors.php')" id="sponsors" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">Sponsorzy</a>
+            </li>
+            <li>
               <a onclick="forOpenSettings('components/panel/settings/log.php')" id="log" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">Historia zmian</a>
             </li>
             <li>
@@ -27,6 +30,7 @@
       </header>
 
       <!-- Settings forms -->
+      <div id="loading"></div>
       <div id="settings_main" class="divide-y divide-white/5">
         
       </div>
@@ -34,6 +38,9 @@
   //skrypt otwiera podstrony panelu
 function forOpenSettings(site) {
   var settings_main = document.getElementById("settings_main");
+  var loading = document.getElementById("loading");
+  loading.innerHTML =  "<div class='w-full flex items-center justify-center mb-[-319px] mt-[200px] z-[999]'><div class='z-[30] bg-black/90 p-4 rounded-xl'><div class='lds-dual-ring'></div></div></div>";
+  
   const url = site;
   fetch(url)
     .then(response => response.text())
@@ -55,6 +62,7 @@ function forOpenSettings(site) {
       // Zapisz URL w localStorage
       localStorage.setItem("settingsPage", site);
     });
+    setTimeout(function(){ loading.innerHTML = ""; }, 50);
 }
 
   var settingsnavButtons = document.querySelectorAll(".settingsnav-buttons");

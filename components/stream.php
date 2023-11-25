@@ -1,8 +1,21 @@
+<?php 
+        include 'scripts/conn_db.php';
+        $sql = "SELECT * FROM `informations` WHERE `id` = 6";
+        $result = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_assoc($result);
+        $link = $row['value'];
+        $after_twitch = strstr($link, 'twitch.tv/');
+        if ($after_twitch !== false) {
+            $profil = substr($after_twitch, strlen('twitch.tv/'));
+        }else {
+            $profil = "izakoo";
+        }
+?>
 <section class="flex lg:flex-row flex-col-reverse  items-center gap-8 justify-between w-full pb-14 2xl:px-[15%] px-[10%]">
-    <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+    <div data-aos="fade-right" data-aos-delay="100">
         <iframe
         class="rounded-xl shadow-2xl"
-        src="https://player.twitch.tv/?channel=eslcs&parent=localhost&muted=true&autoplay=false"
+        src="https://player.twitch.tv/?channel=<?=$profil?>&parent=localhost&muted=true&autoplay=false"
         frameborder="0"
         scrolling="no"
         allowfullscreen="true"
@@ -10,7 +23,7 @@
         width="700">
         </iframe>
     </div>
-    <div class="font-bold text-gray-800 text-xl lg:text-left text-center">
+    <div data-aos="fade-left" data-aos-delay="100" class="font-bold text-gray-800 text-xl lg:text-left text-center">
         <h1 class="font-[roboto]">Zobacz czy właśnie teraz trwa turniej.</h1>
         <p class="font-medium text-sm text-gray-500">Jeśli nie, to sprawdź kiedy będzie następny!</p>
         <div class="flex items-start lg:justify-start justify-center py-2">

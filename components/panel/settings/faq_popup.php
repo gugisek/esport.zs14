@@ -26,7 +26,7 @@ if($id == "add"){
         </div>
     </div>
         <div class="h-full max-h-[45vh] text-gray-400" id="editor-container-popup"><?=$row['answer']?></div>
-        <input type="hidden" id="editorContent" name="answer" value='<?=$row['answer']?>'>
+        <input type="hidden" id="editorContent-faq" name="answer" value='<?=$row['answer']?>'>
     <div class="text-center">
             <?php
             if($id!='add'){
@@ -83,7 +83,7 @@ if($id == "add"){
 
   // Funkcja aktualizująca ukryte pole
   function updateHiddenField() {
-    var editorContent = document.getElementById('editorContent');
+    var editorContent = document.getElementById('editorContent-faq');
     editorContent.value = quill.root.innerHTML;
   }
     function popupFaqDeleteOpenClose() {
