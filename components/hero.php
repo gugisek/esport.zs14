@@ -4,8 +4,8 @@
             <h1 class="textoutlined font-bold 2xl:text-6xl text-4xl text-white uppercase md:w-2/3 w-full font-[poppins]">Witamy w strefie eventów<br> w <span class="theme-text transition-all duration-300">zespole szkół nr 14</span></h1>
             <p class="font-[poppins] md:w-1/2 w-full text-gray-300 text-md 2xl:text-lg font-medium">Znajdziesz tutaj wszytko o nadchodzących wydarzeniach dla naszych uczniów!</p>
             <div class="flex items-start justify-center">
-                <button class="theme-border theme-bg-hover theme-shadow-button border-2 mr-3 uppercase rounded-full py-2 px-4 text-white transition-all duration-300 font-medium">Stream</button>
-                <button class="theme-border theme-shadow-button theme-bg border-2 bg-green-500 rounded-full py-2 px-4 text-white uppercase font-medium hover:shadow-[0px_5px_20px] hover:shadow-green-500 transition-all duration-300">EVENTY</button>
+                <a href="stream.php" class="theme-border theme-bg-hover theme-shadow-button border-2 mr-3 uppercase rounded-full py-2 px-4 text-white transition-all duration-300 font-medium">Stream</a>
+                <a href="events.php" class="theme-border theme-shadow-button theme-bg border-2 bg-green-500 rounded-full py-2 px-4 text-white uppercase font-medium hover:shadow-[0px_5px_20px] hover:shadow-green-500 transition-all duration-300">EVENTY</a>
             </div>
         </section>
         <section data-aos="zoom-out-up" data-aos-duration="500" data-aos-easing="linear" data-aos-anchor-placement="bottom-bottom" class="absolute 2xl:w-[70vw] md:w-[80vw] w-[90vw] mx-auto bottom-6 left-0 right-0 grid md:grid-cols-4 grid-cols-2 2xl:gap-6 gap-4 pb-8">

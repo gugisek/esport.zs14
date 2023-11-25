@@ -1,6 +1,6 @@
 
-<section id="bg" style="background-image: url('public/img/green.jpg');" class="bg-cover bg-fixed">
-    <section class="py-4 px-[10%] bg-[#00000099]">
+<section id="bg" class="bg-cover bg-fixed">
+    <section class="py-4 px-[10%] bg-[#000000c0]">
         <?php include 'components/navbar.php'; ?>
        <section class="py-32">
         <h1 class="text-center font-[poppins] font-bold text-4xl text-white">Regulamin</h1>

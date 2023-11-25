@@ -1,6 +1,6 @@
 
 <section id="bg" style="background-image: url('public/img/green.jpg');" class="bg-cover bg-fixed">
-    <section class="py-4 px-[5%] md:px-[10%] 2xl:px-[15%] bg-[#00000099]">
+    <section class="py-4 px-[5%] md:px-[10%] 2xl:px-[15%]  bg-[#000000c0]">
         <?php include 'components/navbar.php'; ?>
         <?php 
         include 'scripts/conn_db.php';
