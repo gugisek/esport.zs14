@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div>
-  <div class="py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
+  <div class="py-12 2xl:px-[15%] md:px-[10%] px-[5%] sm:py-16 ">
     <div class="mx-auto max-w-3xl divide-y-2 divide-gray-200">
       <h2 class="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Często zadawane pytania</h2>
       <dl class="mt-6 divide-y divide-gray-200">
