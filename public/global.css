@@ -76,7 +76,7 @@
 }
 
 .theme-bg-hover:hover {
-  background-color: var(--text) !important;
+  background-color: var(--shadow) !important;
 }
 
 .theme-border {
@@ -354,4 +354,47 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* Dodatkowe style */
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  min-width: 220px;
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  /* left: 50%; */
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  /* Dodatkowe style */
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+  /* Dodatkowe style */
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  /* Dodatkowe style */
 }

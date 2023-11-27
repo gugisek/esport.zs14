@@ -1,12 +1,12 @@
 <section id="bg" class="bg-cover bg-fixed">
-    <section class="py-4 px-[5%] md:px-[10%] bg-[#000000c0]">
+    <section class="py-4 sm:px-[5%] md:px-[10%] bg-[#000000c0]">
         <?php include 'components/navbar.php'; ?>
-       <section class="md:pt-32 pt-48 md:pb-32 pb-28">
+       <section class="md:pt-32 pt-56 md:pb-32 pb-28">
         <h1 class="text-center font-[poppins] font-bold text-4xl text-white">Zapisy</h1>
        </section>
-       <section data-aos="fade-up" class="bg-[#0e0e0ef0] font-[poppins] text-gray-400 p-8 mb-4 text-justify rounded-xl shadow-xl">
+       <section data-aos="fade-up" class="bg-[#0e0e0ef0] font-[poppins] text-gray-400 p-4 sm:p-8 sm:px-8 px-5 mb-4 sm:text-justify sm:rounded-xl shadow-xl">
         <div class="mx-auto max-w-3xl divide-y-2 divide-gray-200">
-      <dl class="mt-6 divide-y divide-[#1c1c1c]">
+      <dl class="sm:mt-6 divide-y divide-[#1c1c1c]">
         <?php
         $sql = "SELECT * FROM zapisy";
         $result = mysqli_query($conn, $sql);
@@ -24,7 +24,7 @@
               </span>
             </button>
           </dt>
-          <dd style="scale: 0; height: 0;" class="duration-300 mt-2 pr-12" id="faq-'.$i.'">
+          <dd style="scale: 0; height: 0;" class="duration-300 mt-2 " id="faq-'.$i.'">
                   <div class="text-base pb-4">'.$row['answer'].'</div>
           </dd>
         </div>
@@ -43,7 +43,7 @@
         $info_zapisy[] = $row['value'];
     }
     ?>
-        <section data-aos="fade-up" class="bg-[#0e0e0ef0] font-[poppins] text-gray-400 p-8 text-justify rounded-xl shadow-xl">
+        <section data-aos="fade-up" class="bg-[#0e0e0ef0] font-[poppins] text-gray-400 p-8 sm:px-8 px-4 sm:rounded-xl shadow-xl">
             <div class="mx-auto max-w-3xl">
                 <p class="pb-8 font-[poppins] text-gray-200 font-medium">Przykładowe zgłosznie</p>
                 <div class="flex flex-col gap-4">

@@ -9,7 +9,7 @@
 <section id="bg" class="bg-cover bg-fixed">
     <section class="pt-4 bg-[#000000c0]">
         <?php include 'components/navbar.php'; ?>
-       <section data-aos="fade-up" class="py-32 md:mt-0 mt-14">
+       <section class="py-32 md:mt-0 sm:mt-14 mt-28">
             <div class="mx-auto max-w-2xl p-8 text-center">
                 <h2 data-aos="fade-right" data-aos-delay="200" class="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">Autorzy</h2>
                 <p data-aos="fade-right" data-aos-delay="300"  class="mt-2 leading-8 text-gray-300">Jesteśmy pierwotnymi autorami tej witrny oraz pierwszych wydarzeń.</p>
