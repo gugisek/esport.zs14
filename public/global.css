@@ -87,6 +87,10 @@
   border-color: var(--text) !important;
 }
 
+.theme-ring-focus:focus {
+  --tw-ring-color: var(--text);
+}
+
 .box-shadow {
   box-shadow: 13px 14px 60px -13px var(--text);
 }

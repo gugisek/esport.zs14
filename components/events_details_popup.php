@@ -24,10 +24,11 @@
       >
         <div class="flex flex-col-reverse">
           <div class="mt-4">
+            <p data-aos="fade-right" class="theme-text text-xs uppercase">Dla wszystkich</p>
             <h1
               data-aos="fade-right" data-aos-delay="100" class="text-2xl font-bold tracking-tight text-gray-200 sm:text-3xl"
             >
-              Turniej CS:GO Szanajcy 2
+              Wielki Turniej CS:GO Szanajcy
             </h1>
 
             <h2 id="information-heading" class="sr-only">
@@ -90,7 +91,7 @@
           </p>
         </div>
         <!-- nagrody -->
-         <div data-aos="fade-right" data-aos-delay="700" class="mt-10 border-t border-[#3d3d3d] pt-10">
+         <div class="mt-10 border-t border-[#3d3d3d] pt-10">
           <h3 class="text-sm font-medium text-gray-300">Nagrody</h3>
           <p class="mt-4 text-sm text-gray-400">
             co XD
