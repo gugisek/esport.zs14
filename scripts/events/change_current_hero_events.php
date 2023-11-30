@@ -46,6 +46,20 @@
             $_SESSION['alert'] = 'Wystąpił błąd podczas zmiany';
             $_SESSION['alert_type'] = 'error';
         }
+    } else if($selected == '3'){
+        $selected = 'schedule';
+        $sql = 'update events set value = "'.$selected.'" WHERE event_type_id = 4';
+        if(mysqli_query($conn, $sql)){
+            $_SESSION['alert'] = 'Pomyślnie zmieniono hero podstrony events na Tabele';
+            $_SESSION['alert_type'] = 'success';
+
+            //log
+            //DO UZUPEŁNIENIA
+            //logend
+        }else{
+            $_SESSION['alert'] = 'Wystąpił błąd podczas zmiany';
+            $_SESSION['alert_type'] = 'error';
+        }
     } else{
 
     }

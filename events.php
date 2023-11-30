@@ -5,10 +5,6 @@
     <section class="w-screen flex flex-col items-center z-20 h-full">
         <?php include 'scripts/conn_db.php'; ?>
         <?php include 'components/navbar.php'; ?>
-        <?php //include 'components/events/blank_hero.php' ?>
-        <?php  //include 'components/events/clock.php' ?>
-        <?php //include 'components/schedule.php'; ?>
-        <?php //include 'components/events/lastest_champions.php' ?>
 
         <?php 
             $selected_nav = "SELECT value FROM events WHERE event_type_id = 4";
@@ -21,6 +17,8 @@
                 include 'components/events/clock.php';
             } else if($selected[0] == 'last_champions'){
                 include 'components/events/lastest_champions.php';
+            } else if($selected[0] == 'schedule'){
+                include 'components/schedule.php';
             } else{
                 include 'components/events/blank_hero.php';
             }

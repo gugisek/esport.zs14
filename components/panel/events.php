@@ -12,6 +12,8 @@ include "../../scripts/conn_db.php";
                 <?php include 'events/events_navbar.php' ?>
                 <div class="divide-y divide-white/5  flex flex-col">
                     <?php include 'events/hero_panel.php' ?>
+                    <?php include 'events/champions_panel.php' ?>
+                    <?php include 'events/schedule_panel.php' ?>
                 </div>
             </main>
         </section>

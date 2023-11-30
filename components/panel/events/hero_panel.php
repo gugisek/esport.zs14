@@ -1,4 +1,4 @@
-<div id="events_main" class=" events-setting-panels divide-y divide-white/5">
+<div class=" events-setting-panels divide-y divide-white/5">
     <ul class="relative m-0 flex list-none justify-between overflow-hidden p-5 transition-[height] duration-200 ease-in-out events-hero-list">
         <?php 
             $selected_nav = "SELECT value FROM events WHERE event_type_id = 4";
@@ -12,6 +12,8 @@
                 $type = 1;
             } else if($selected[0] == 'last_champions'){
                 $type = 2;
+            } else if($selected[0] == 'schedule'){
+                $type = 3;
             }
 
             echo '<input type="hidden" value="'.$type.'" id="selected_hero_nav">';
@@ -183,13 +185,13 @@
                         </div>
                         <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                             <div class="flex flew-row space-x-2 items-center">
-                                <dt class="text-sm font-medium leading-6 py-4 text-white">Data rozpoczęcia turnieju</dt>
+                                <dt class="text-sm font-medium leading-6 py-4 text-white">Data rozpoczęcia nadchodzącego turnieju</dt>
                             </div>
                             <?php
                                 $clock_time = "SELECT events.value FROM events WHERE event_type_id = 2 and input = 'clock_time'";
                                 $result_clock_time = mysqli_fetch_array(mysqli_query($conn,$clock_time));
                                 
-                                echo '<input name="clock_start_time" type="text" value="'.$result_clock_time[0].'" placeholder="0:00 dd.mm.rrrr" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0">';
+                                echo '<input name="clock_start_time" type="text" value="'.$result_clock_time[0].'" placeholder="00:00 dd.mm.rrrr" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0">';
                             ?>
                         </div>
                     </dl>
@@ -371,9 +373,64 @@
                 </div>
             </div>
         </div>
+        <div class="px-4 mb-2 sm:px-0 mt-6 flex flex-row justify-between items-center events-settings">
+            <div class="flex flex-col w-full">
+                <div class="flex flex-row justify-between">
+                    <div>
+                        <h3 class="text-base font-semibold leading-7 text-white">Ustawienia Tabel</h3>
+                        <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-400">Wybierz panel Tabele, jako hero na podstronie events.</p>
+                    </div>
+                    <div class="py-2 flex gap-x-2">
+                        <?php
+                            if($selected[0] == 'schedule'){
+                                echo "<button disabled class='inline-flex items-center gap-x-2 rounded-md bg-slate-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-500 hover:cursor-not-allowed duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600'>Wybrano </button>";
+                            } else {
+                                $xd = "callPHP('selected=3')";
+                                echo '<button type="button" onclick="'.$xd.'" class="inline-flex items-center gap-x-2 rounded-md bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600">Wybierz<svg class="-mr-0.5 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"></path></svg></button>';
+                            }
+                        ?>
+                    </div>
+                </div>
+                <div class="mt-6 border-t border-white/10">
+                    <dl class="divide-y divide-white/10">
+                        <div class="py-2">
+                            <div class="flex flew-row space-x-2 items-center">
+                                <dt class="mt-1 max-w-2xl text-sm leading-6 text-gray-400 py-4 flex flex-row gap-x-1">
+                                    <div>Jeśli chcesz dokonać edycji podpanelu Tabele kliknij</div>
+                                    <a class="font-semibold leading-6 text-white cursor-pointer theme-text-hover duration-150 teleport flex content-center items-center gap-x-1">tutaj<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                                    </svg></a>
+                                </dt>
+                            </div>
+                        </div>
+                    </dl>
+                    <div class="sm:px-6 lg:px-8 px-4 text-center">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
  </div>
  <script>
+    var teleport = document.querySelector('.teleport');
+    var navButtons = document.querySelectorAll('.events-nav a');
+    var eventsSettingsDivs = document.querySelectorAll('.events-setting-panels');
+    teleport.addEventListener("click", ()=>{
+                navButtons.forEach((elem) =>{
+                    elem.classList.remove('theme-text');
+                })
+                eventsSettingsDivs.forEach((elem) =>{
+                    elem.classList.add('hidden');
+                    // eventsSettingsDivs[index].classList.remove('slide-left-long');
+                    // body.classList.remove('overflow-x-hidden');
+                })
+                navButtons[2].classList.add('theme-text');
+                eventsSettingsDivs[2].classList.remove('hidden');
+                // body.classList.add('overflow-x-hidden');
+                // eventsSettingsDivs[index].classList.add('slide-left-long');
+
+    })
+
     var heroSwitcherDivs = document.querySelectorAll('.events-hero-list li div');
         var heroSwitcherButtons = document.querySelectorAll('.events-hero-list li div a')
         var eventsSettingsArticle = document.querySelectorAll('.events-settings');
