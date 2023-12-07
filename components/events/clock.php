@@ -2,14 +2,14 @@
     <section class="bg-[#000000c0] min-h-[100vh] w-full px-[10%] 2xl:px-[15%] pb-12 pt-16 flex grid justify-center items-center align-center">
         <h1 class="text-center text-white text-6xl leading-[1.27]">
             <?php
-                $sql = "SELECT * FROM events WHERE event_type_id = 2 and input = 'clock_text'";
+                $sql = "SELECT value FROM informations WHERE name = 'events_clock_text'";
                 $sql_res = mysqli_fetch_array(mysqli_query($conn, $sql));
-                echo '<p>'.$sql_res[3].'</p>'
+                echo '<p>'.$sql_res[0].'</p>'
             ?>
             <span id="clock"></span>
         </h1>
         <?php
-            $clock_time = "SELECT events.value FROM events WHERE event_type_id = 2 and input = 'clock_time'";
+            $clock_time = "SELECT value FROM informations WHERE name = 'events_clock_start_time'";
             $result_clock_time = mysqli_fetch_array(mysqli_query($conn,$clock_time));
                                 
             echo '<input name="clock_start_time" type="hidden" value="'.$result_clock_time[0].'">';
@@ -47,8 +47,6 @@
                 } else{
                     return hLeft + '<span class="theme-text">h</span> ' + minLeft + '<span class="theme-text">min</span> ' + sLeft + '<span class="theme-text">s</span>';
                 }
-            
-                
             } else{
                 return '<span class="theme-text">Mamy to!</span> ';
             }

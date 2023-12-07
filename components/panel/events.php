@@ -10,10 +10,9 @@ include "../../scripts/conn_db.php";
         <section data-aos="fade-right" data-aos-delay="100" class="aos-init aos-animate h-full">
             <main>
                 <?php include 'events/events_navbar.php' ?>
-                <div class="divide-y divide-white/5  flex flex-col">
-                    <?php include 'events/hero_panel.php' ?>
-                    <?php include 'events/champions_panel.php' ?>
-                    <?php include 'events/schedule_panel.php' ?>
+                <div class="flex flex-col">
+                    <?php include 'events/actual_events.php' ?>
+                    <?php include 'events/archived_events.php' ?>
                 </div>
             </main>
         </section>

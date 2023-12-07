@@ -16,6 +16,9 @@
             <li class="active:scale-95 duration-150">
               <a onclick="forOpenSettings('components/panel/settings/sponsors.php')" id="sponsors" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">Sponsorzy</a>
             </li>
+            <li>
+                <a onclick="forOpenSettings('components/panel/settings/subpage_events_hero.php')" id="subpage_events_hero" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">Podstrona Eventy</a>
+            </li>
             <li class="active:scale-95 duration-150">
               <a onclick="forOpenSettings('components/panel/settings/log.php')" id="log" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">Historia zmian</a>
             </li>

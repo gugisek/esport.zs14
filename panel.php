@@ -162,14 +162,13 @@
 </div>
 
 <script>
+  var EventTempSettings = {};
   //skrypt otwiera podstrony panelu
 function forOpen(site) {
   var panel_body = document.getElementById("panel_body");
   panel_body.innerHTML =  "<div data-aos='zoom-in' data-aos-delay='100' class='flex justify-center items-center h-[80vh]'><div class='flex flex-col justify-center items-center'><div class='animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900'></div><div class='text-white text-xl font-semibold mt-4'>Ładowanie...</div></div>";
   const url = site;
-  fetch(url, {
-    cache: "no-cache"
-   })
+  fetch(url)
     .then(response => response.text())
     .then(data => {
       const parser = new DOMParser();
@@ -253,6 +252,5 @@ function forOpen(site) {
       motyw(theme);
     }
   </script>
-
 </body>
 </html>

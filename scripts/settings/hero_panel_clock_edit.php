@@ -2,8 +2,8 @@
     include "../security.php";
     include "../conn_db.php";
 
-    $sql = "SELECT * FROM events WHERE event_type_id = 2 and input = 'clock_time'";
-    $sql2 = "SELECT * FROM events WHERE event_type_id = 2 and input = 'clock_text'";
+    $sql = "SELECT * FROM informations WHERE name = 'events_clock_start_time'";
+    $sql2 = "SELECT * FROM informations WHERE name = 'events_clock_text'";
     $result = mysqli_fetch_array(mysqli_query($conn, $sql));
     $result2 = mysqli_fetch_array(mysqli_query($conn, $sql2));
 
@@ -11,13 +11,13 @@
     $time = $_POST['clock_start_time'];
 
 
-    if(((!empty($text) && $text == $result2[3]) && (!empty($time) && $time==$result[3])) || (($text == '' && $result2[3] == '')&&($time == '' && $result[3] == ''))){
+    if(((!empty($text) && $text == $result2[2]) && (!empty($time) && $time==$result[2])) || (($text == '' && $result2[2] == '')&&($time == '' && $result[2] == ''))){
         $_SESSION['alert'] = 'Nie wprowadzono żadnych zmian';
         $_SESSION['alert_type'] = 'warning';
         header('Location: ../../panel.php');
         exit();
-    } else if((!empty($text) && $result2[3] != $text)&&(!empty($time) && $time==$result[3])){
-        $sql = "UPDATE events set events.value = '".$text."' WHERE event_type_id = '2' and input = 'clock_text'";
+    } else if((!empty($text) && $result2[2] != $text)&&(!empty($time) && $time==$result[2])){
+        $sql = "UPDATE informations set value = '".$text."' WHERE name = 'events_clock_text'";
         if(mysqli_query($conn, $sql)){
             $_SESSION['alert'] = 'Pomyślnie edytowano nagłówek';
             $_SESSION['alert_type'] = 'success';
@@ -33,8 +33,8 @@
             header('Location: ../../panel.php');
             exit();
         }
-    } else if((!empty($time) && $result[3] != $time)&&(!empty($text) && $text==$result2[3])){
-        $sql = "UPDATE events set events.value = '".$time."' WHERE event_type_id = '2' and input = 'clock_time'";
+    } else if((!empty($time) && $result[2] != $time)&&(!empty($text) && $text==$result2[2])){
+        $sql = "UPDATE informations set value = '".$time."' WHERE name = 'events_clock_start_time'";
         if(mysqli_query($conn, $sql)){
             $_SESSION['alert'] = 'Pomyślnie edytowano czas rozpoczęcia turnieju';
             $_SESSION['alert_type'] = 'success';
@@ -50,10 +50,10 @@
             header('Location: ../../panel.php');
             exit();
         }
-    }else if((!empty($time) && $result[3] != $time)&&(!empty($text) && $text!=$result2[3])){
-        $sql1 = "UPDATE events set events.value = '".$time."' WHERE event_type_id = '2' and input = 'clock_time'";
-        $sql2 = "UPDATE events set events.value = '".$text."' WHERE event_type_id = '2' and input = 'clock_text'";
-        if(mysqli_query($conn, $sql1) && mysqli_query($conn,$sql2)){
+    }else if((!empty($time) && $result[2] != $time)&&(!empty($text) && $text!=$result2[2])){
+        $sql1 = "UPDATE informations set value = '".$time."' WHERE name = 'events_clock_start_time'";
+        $sql2 = "UPDATE informations set value = '".$text."' WHERE name = 'events_clock_text'";
+        if(mysqli_query($conn, $sql2) && mysqli_query($conn,$sql1)){
             $_SESSION['alert'] = 'Pomyślnie edytowano nagłówek i czas startu';
             $_SESSION['alert_type'] = 'success';
 
