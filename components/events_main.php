@@ -10,7 +10,7 @@
     <section class="2xl:w-[70vw] md:w-[80vw] w-[90vw] text-white lg:grid-cols-4 grid-cols-2 grid gap-4">
         <div onclick="openPopupEvents(1)" data-aos="fade-up"
      data-aos-anchor-placement="center-bottom" data-aos-delay="100">
-            <div style="background-image: url('public/img/event1.jpg');" class="bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
+            <div style="background-image: url('public/img/event1.jpg');" class="active:scale-95 bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
                 <div class="2xl:pb-6 pb-4 pt-32 px-4 rounded-xl bg-gradient-to-t from-black">
                     <p class="font-[poppins] theme-text 2xl:text-sm text-xs uppercase">Dla wszystkich</p>
                     <h1 class="font-[poppins] 2xl:text-2xl md:text-xl text-lg font-medium">Wielki Turniej CS:GO Szanajcy</h1>
@@ -20,7 +20,7 @@
         </div>
         <div onclick="openPopupEvents(1)" data-aos="fade-up"
      data-aos-anchor-placement="center-bottom" data-aos-delay="200">
-            <div style="background-image: url('public/img/hero2.jpg');" class="bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
+            <div style="background-image: url('public/img/hero2.jpg');" class="active:scale-95 bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
                 <div class="2xl:pb-6 pb-4 pt-32 px-4 rounded-xl bg-gradient-to-t from-black">
                     <p class="font-[poppins] theme-text 2xl:text-sm text-xs uppercase">Dla wszystkich</p>
                     <h1 class="font-[poppins] 2xl:text-2xl md:text-xl text-lg font-medium">Wielki Turniej CS:GO Szanajcy</h1>
@@ -30,7 +30,7 @@
         </div>
         <div onclick="openPopupEvents(1)" data-aos="fade-up"
      data-aos-anchor-placement="center-bottom" data-aos-delay="300">
-            <div style="background-image: url('public/img/bg7.jpg');" class="bg-zoom transition-all cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
+            <div style="background-image: url('public/img/bg7.jpg');" class="active:scale-95 bg-zoom transition-all cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
                 <div class="2xl:pb-6 pb-4 pt-32 px-4 rounded-xl bg-gradient-to-t from-black">
                     <p class="font-[poppins] theme-text 2xl:text-sm text-xs uppercase">Dla wszystkich</p>
                     <h1 class="font-[poppins] 2xl:text-2xl md:text-xl text-lg font-medium">Wielki Turniej CS:GO Szanajcy</h1>
@@ -40,7 +40,7 @@
         </div>
         <div onclick="openPopupEvents(1)" data-aos="fade-up"
      data-aos-anchor-placement="center-bottom" data-aos-delay="400">
-            <div style="background-image: url('public/img/green.jpg');" class="bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
+            <div style="background-image: url('public/img/green.jpg');" class="active:scale-95 bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
                 <div class="2xl:pb-6 pb-4 pt-32 px-4 rounded-xl bg-gradient-to-t from-black">
                     <p class="font-[poppins] theme-text 2xl:text-sm text-xs uppercase">Dla wszystkich</p>
                     <h1 class="font-[poppins] 2xl:text-2xl md:text-xl text-lg font-medium">Wielki Turniej CS:GO Szanajcy</h1>

@@ -4,25 +4,25 @@
         <!-- Secondary navigation -->
         <nav class="flex overflow-x-auto py-4">
           <ul role="list" class="flex min-w-full flex-none gap-x-6 px-4 text-sm font-semibold leading-6 text-gray-400 sm:px-6 lg:px-8">
-            <li>
+            <li class="active:scale-95 duration-150">
               <a onclick="forOpenSettings('components/panel/settings/accounts.php')" id="accounts" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">Konta i uprawnienia</a>
             </li>
-            <li>
+            <li class="active:scale-95 duration-150">
               <a onclick="forOpenSettings('components/panel/settings/zapisy.php')" id="zapisy" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">Zapisy</a>
             </li>
-            <li>
+            <li class="active:scale-95 duration-150">
               <a onclick="forOpenSettings('components/panel/settings/faq.php')" id="faq" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">FAQ</a>
             </li>
-            <li>
+            <li class="active:scale-95 duration-150">
               <a onclick="forOpenSettings('components/panel/settings/sponsors.php')" id="sponsors" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">Sponsorzy</a>
             </li>
-            <li>
+            <li class="active:scale-95 duration-150">
               <a onclick="forOpenSettings('components/panel/settings/log.php')" id="log" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">Historia zmian</a>
             </li>
-            <li>
+            <li class="active:scale-95 duration-150">
               <a onclick="forOpenSettings('components/panel/settings/about.php')" id="about" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">Podstawowe informacje</a>
             </li>
-            <li>
+            <li class="active:scale-95 duration-150">
               <a onclick="forOpenSettings('components/panel/settings/docs.php')" id="docs" class="cursor-pointer settingsnav-buttons theme-text-hover duration-150">Dokumenty</a>
             </li>
           </ul>

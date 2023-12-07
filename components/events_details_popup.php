@@ -740,6 +740,9 @@
                     <td class="py-3">
                       <h3 class="text-sm text-gray-400">Boty z 5pi <span class="text-xs text-gray-600">5pi</span> </h3>
                     </td>
+                    <td class="py-3 h-full flex items-center justify-center gap-2 text-gray-600">
+                      <p class="text-sm">Zakwalifikowani</p>
+                    </td>
                     <td>
                       <div class="tooltip text-gray-600 theme-text-hover">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" class="icon w-5 h-5">
@@ -760,6 +763,9 @@
                     <td class="py-3">
                       <h3 class="text-sm text-gray-400">Killerek za 5 robi <span class="text-xs text-gray-600">5pi</span> </h3>
                     </td>
+                    <td class="py-3 h-full flex items-center justify-center gap-2 text-gray-600">
+                      <p class="text-sm">Zakwalifikowani</p>
+                    </td>
                     <td>
                       <div class="tooltip text-gray-600 theme-text-hover">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" class="icon w-5 h-5">
@@ -779,6 +785,9 @@
                   <tr class="border-t border-[#1c1c1c]">
                     <td class="py-3">
                       <h3 class="text-sm text-gray-400">Essy <span class="text-xs text-gray-600">5pi</span> </h3>
+                    </td>
+                    <td class="py-3 h-full flex items-center justify-center gap-2 text-gray-600">
+                      <p class="text-sm">Zakwalifikowani</p>
                     </td>
                     <td>
                       <div class="tooltip text-gray-600 theme-text-hover">

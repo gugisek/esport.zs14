@@ -182,7 +182,7 @@
  * ---------------------------------------------- */
 
 .sidenav-button-active {
-  background-color: #1c1c1c !important;
+  background-color: #1c1c1c97 !important;
   color: var(--text) !important;
 }
 @-webkit-keyframes scale-up-hor-left {
@@ -401,4 +401,200 @@
   visibility: visible;
   opacity: 1;
   /* Dodatkowe style */
+}
+
+/* Kalendarz */
+.fc-dayGrid-view {
+  font-size: 14px;
+  color: #333; /* Kolor tekstu dni */
+}
+
+/* Przyciski poprzedniego i następnego miesiąca */
+.fc-prev-button,
+.fc-next-button {
+  background-color: #eee; /* Kolor tła przycisków */
+  color: #333; /* Kolor ikony */
+  border: none;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+/* Dni w tygodniu (poniedziałek, wtorek, ...) */
+.fc-day-header {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #666; /* Kolor tekstu dni tygodnia */
+}
+
+/* Dni w kalendarzu */
+.fc-day {
+  border: 1px solid #3d3d3d !important; /* Grubość i kolor obramowania komórek */
+  background-color: #0e0e0e; /* Kolor tła komórek */
+  color: #8d8d8d;
+  text-align: center !important;
+}
+
+.fc-day a {
+  text-align: center !important;
+}
+
+/* Komórka z wybranym dniem */
+.fc-day.fc-day-selected {
+  background-color: #ccc; /* Kolor tła wybranego dnia */
+}
+
+/* Tekst w komórce z wybranym dniem */
+.fc-day.fc-day-selected a {
+  color: #fff; /* Kolor tekstu wybranego dnia */
+}
+
+/* Komórka z dzisiejszym dniem */
+.fc-day.fc-today {
+  background-color: #0e0e0e; /* Kolor tła dzisiejszego dnia */
+}
+
+/* Tekst w komórce z dzisiejszym dniem */
+.fc-day.fc-today a {
+  color: #f00; /* Kolor tekstu dzisiejszego dnia */
+}
+
+/* Przycisk dodawania wydarzenia */
+.fc-addEvent-button {
+  background-color: #4caf50; /* Kolor tła przycisku dodawania wydarzenia */
+  color: #fff; /* Kolor tekstu przycisku */
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Styl dla wydarzeń w kalendarzu */
+.fc-event {
+  background-color: #2196f3; /* Kolor tła wydarzenia */
+  color: #fff; /* Kolor tekstu wewnątrz wydarzenia */
+  border: none;
+  /* padding: 5px 10px; */
+  font-size: 0px;
+  cursor: pointer;
+  border-radius: 3px;
+  height: 1px;
+}
+.fc-col-header-cell-cushion {
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+.fc-daygrid-day-top {
+  align-items: center;
+  justify-content: center;
+}
+
+.fc-theme-standard td {
+  border: solid 1px #3d3d3d !important;
+  border-radius: 10px !important;
+}
+
+.fc-theme-standard th {
+  border: none !important;
+}
+
+/* Styl dla howerowania nad wydarzeniem */
+.fc-event:hover {
+  opacity: 0.8; /* Zmniejszenie przeźroczystości przy najechaniu na wydarzenie */
+}
+
+.fc-view-harness,
+.fc-col-header,
+.fc-daygrid-body,
+.fc-scrollgrid-sync-table {
+  /* height: 100px; */
+  width: 100% !important;
+  max-height: 400px !important;
+}
+
+.fc-toolbar-title {
+  font-size: 1rem !important;
+  color: #fff;
+}
+
+.fc-today-button,
+.fc-prev-button,
+.fc-next-button {
+  font-size: 0.7rem !important;
+  background-color: #1c1c1c !important;
+  border-color: #3d3d3d !important;
+  border-radius: 10px !important;
+}
+
+.fc-today-button:hover,
+.fc-prev-button:hover,
+.fc-next-button:hover {
+  background-color: #3d3d3d !important;
+  border-color: #3d3d3d !important;
+}
+
+.fc-scrollgrid {
+  border: none !important;
+}
+
+option:checked {
+  background-color: #3d3d3d !important;
+}
+
+option {
+  background-color: #1c1c1c !important;
+  padding: 0.5rem !important;
+}
+
+option:checked::after {
+  color: #3d3d3d !important;
+}
+
+/* Style dla pola wyboru (checkbox) */
+input[type="checkbox"] {
+  /* Ukryj domyślny wygląd pola wyboru */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* Ustaw niestandardowy rozmiar pola wyboru */
+  width: 20px;
+  height: 20px;
+  /* Dodaj niestandardowy wygląd */
+  border: 1px solid #3d3d3d; /* Kolor obramowania */
+  border-radius: 4px; /* Zakrąglenie */
+  position: relative;
+  background-color: #1c1c1c; /* Kolor tła */
+}
+
+input[type="checkbox"]:focus {
+  /* Zaznaczenie koloru obramowania po zaznaczeniu */
+  border-color: var(--text);
+  outline: none;
+  --tw-ring-inset: inset;
+  --tw-ring-offset-width: 0px;
+}
+
+/* Styl dla tła pola wyboru (checkbox) po zaznaczeniu */
+input[type="checkbox"]:checked::before {
+  content: "";
+  display: block;
+  position: absolute;
+  /* Zaznaczenie koloru tła po zaznaczeniu */
+  background-color: var(--text);
+  /* Ustawienie rozmiaru tła */
+  width: 14px;
+  height: 14px;
+  /* Pozycjonowanie tła */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px; /* Zakrąglenie tła */
+}
+
+input[type="checkbox"]::before:focus {
+  /* Zaznaczenie koloru obramowania po zaznaczeniu */
+  border-color: var(--text);
+  outline: none;
+  --tw-ring-inset: inset;
 }

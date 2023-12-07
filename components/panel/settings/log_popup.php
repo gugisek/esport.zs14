@@ -86,8 +86,11 @@ else {
                         $result = mysqli_query($conn, $sql);
                         $row = mysqli_fetch_assoc($result);
                         echo $row['question'];
+                    } elseif ($objectType == "teams" and $objectId != 0 and $type != 'delete') {$sql = "SELECT name FROM `teams` where team_id='$objectId';"; 
+                        $result = mysqli_query($conn, $sql);
+                        $row = mysqli_fetch_assoc($result);
+                        echo $row['name'];
                     }
-
 
                     ?>" class="border border-[#3d3d3d] bg-[#0e0e0e] rounded-xl text-gray-300 px-4 py-2 focus:outline-none focus:border-indigo-500 transition-all duration-500 text-sm" disabled>
                 </div>

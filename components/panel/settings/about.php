@@ -158,8 +158,6 @@ $mysql_version = mysqli_get_server_info($conn);
             for (let i = 0; i < document.querySelectorAll(`#popup_img_inpt${type}`).length; i++) {
                 document.querySelectorAll(`#popup_img_inpt${type}`)[i].src = reader.result;
             }
-
-
         }
         if (file) {
             reader.readAsDataURL(file);
