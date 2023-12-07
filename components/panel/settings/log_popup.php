@@ -61,7 +61,7 @@ else {
                 </div>
                 <div class="flex flex-col h-full">
                     <label for="before" class="pb-2 pt-2 font-medium text-xs text-[#5d5d5d] font-[Lexend]">Przed</label>
-                    <div name="before" id="before" cols="30" rows="5" class="h-full text-sm border border-[#3d3d3d] bg-[#0e0e0e] text-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:border-indigo-500 transition-all duration-500" disabled><?php echo $before; ?></div>
+                    <div name="before" id="before" cols="30" rows="5" class="break-words h-full text-sm border border-[#3d3d3d] bg-[#0e0e0e] text-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:border-indigo-500 transition-all duration-500" disabled><?php echo $before; ?></div>
                 </div>
             </div>
             <div class="flex flex-col w-full md:w-1/2">
@@ -106,7 +106,7 @@ else {
                 </div>
                 <div class="flex flex-col h-full">
                     <label for="after" class="pb-2 pt-2 font-medium text-xs text-[#5d5d5d] font-[Lexend]">Po</label>
-                    <div name="after" id="after" cols="30" rows="5" class="h-full text-sm border border-[#3d3d3d] bg-[#0e0e0e] text-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:border-indigo-500 transition-all duration-500" disabled><?php echo $after; ?></div>
+                    <div name="after" id="after" cols="30" rows="5" class="break-words h-full text-sm border border-[#3d3d3d] bg-[#0e0e0e] text-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:border-indigo-500 transition-all duration-500" disabled><?php echo $after; ?></div>
                 </div>
             </div>
         </div>

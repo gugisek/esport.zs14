@@ -198,7 +198,7 @@ include "../../scripts/security.php";
       </li> -->
       <?php
       include "../../scripts/conn_db.php";
-      $sql = "SELECT event_id, name, status_id, max_players_in_team, max_rezerwowy_players_in_team, edition FROM EVENTS where status_id=1 or status_id=2 order by event_id desc";
+      $sql = "SELECT events.event_id, events.name, events.status_id, max_players_in_team, max_rezerwowy_players_in_team, edition, count(team_id) as 'teams_num' FROM EVENTS right join teams on teams.event_id=events.event_id where events.status_id=1 or events.status_id=2 group by events.event_id order by events.event_id desc;";
       $result = mysqli_query($conn, $sql);
       while($row = mysqli_fetch_assoc($result)) {
         echo '<li class="w-full">
@@ -208,6 +208,12 @@ include "../../scripts/security.php";
             echo 'szkic';
           }
           echo ' </span> <span class="text-xs text-gray-500 capitalize">'.$row['edition'].'</span></p>
+          <p class="flex items-center justify-center gap-2">
+            '.$row['teams_num'].'
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+              <path d="M10 9a3 3 0 100-6 3 3 0 000 6zM6 8a2 2 0 11-4 0 2 2 0 014 0zM1.49 15.326a.78.78 0 01-.358-.442 3 3 0 014.308-3.516 6.484 6.484 0 00-1.905 3.959c-.023.222-.014.442.025.654a4.97 4.97 0 01-2.07-.655zM16.44 15.98a4.97 4.97 0 002.07-.654.78.78 0 00.357-.442 3 3 0 00-4.308-3.517 6.484 6.484 0 011.907 3.96 2.32 2.32 0 01-.026.654zM18 8a2 2 0 11-4 0 2 2 0 014 0zM5.304 16.19a.844.844 0 01-.277-.71 5 5 0 019.947 0 .843.843 0 01-.277.71A6.975 6.975 0 0110 18a6.974 6.974 0 01-4.696-1.81z" />
+            </svg>
+          </p>
           <p class="flex-none sm:ml-6">
             <svg id="svg_event_'.$row['event_id'].'" class="rotate-0 duration-300 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -237,7 +243,7 @@ include "../../scripts/security.php";
                   <!-- <span class="text-xs mr-2">Zaznaczone</span> --!>
                   <div class="flex flex-row flex-now items-center justify-end pr-2">
                     <div class="flex items-center">
-                      <select onchange="openSecFilterOpen(`'.$row['event_id'].'`)" id="multiple_filter_'.$row['event_id'].'" name="action" class="outline-none duration-150 capitalize relative cursor-default rounded-md bg-black/10 focus:text-white py-1.5 pl-3 pr-10 text-left text-gray-400 text-xs shadow-sm ring-1 ring-inset ring-[#3d3d3d] focus:outline-none focus:ring-2 theme-ring-focus sm:leading-6" required>
+                      <select onchange="openSecFilterOpen(`'.$row['event_id'].'`)" id="multiple_filter_'.$row['event_id'].'" name="action" class="outline-none duration-150 capitalize relative cursor-default rounded-md bg-[#0e0e0e] focus:text-white py-1.5 pl-3 pr-10 text-left text-gray-400 text-xs shadow-sm ring-1 ring-inset ring-[#3d3d3d] focus:outline-none focus:ring-2 theme-ring-focus sm:leading-6" required>
                         <option value="" class="hidden" disabled selected>Zaznaczone</option>
                         <option value="status">Zmień status</option>
                         <option value="groups">Zmień grupę</option>

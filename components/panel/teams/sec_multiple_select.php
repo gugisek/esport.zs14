@@ -4,7 +4,7 @@ $variant = $_GET['variant'];
 $event_id = $_GET['event_id'];
 
 if($variant!='delete') {
-    echo '<select name="sec_'.$variant.'" class="ml-2 outline-none duration-150 capitalize relative cursor-default rounded-md bg-black/10 focus:text-white py-1.5 pl-3 pr-10 text-left text-gray-400 text-xs shadow-sm ring-1 ring-inset ring-[#3d3d3d] focus:outline-none focus:ring-2 theme-ring-focus sm:leading-6" required>
+    echo '<select name="sec_'.$variant.'" class="ml-2 outline-none duration-150 capitalize relative cursor-default rounded-md bg-[#0e0e0e] focus:text-white py-1.5 pl-3 pr-10 text-left text-gray-400 text-xs shadow-sm ring-1 ring-inset ring-[#3d3d3d] focus:outline-none focus:ring-2 theme-ring-focus sm:leading-6" required>
         <option value="" class="hidden" disabled selected>Wybierz</option>';
     include "../../../scripts/conn_db.php";
     if($variant == "status"){
@@ -19,5 +19,18 @@ if($variant!='delete') {
         ';
     }
     echo '</select>';
+}else {
+    echo '
+    <div class="text-center px-4">
+          <h3 class="text-sm font-semibold leading-6 text-gray-300" id="modal-title">
+            Czy na pewno chcesz usunąć?
+          </h3>
+          <div class="mt-1>
+            <p class="text-xs text-gray-500">
+              Usunięcie drużn jest nieodwracalne. 
+            </p>
+          </div>
+        </div>
+    ';
 }
 ?>
