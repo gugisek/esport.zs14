@@ -7,7 +7,7 @@
         <?php include 'components/navbar.php'; ?>
 
         <?php 
-            $selected_nav = "SELECT value FROM events WHERE event_type_id = 4";
+            $selected_nav = "SELECT value FROM informations WHERE name = 'events_selected_hero'";
             $selected_nav_result = mysqli_query($conn, $selected_nav);
             $selected = mysqli_fetch_array($selected_nav_result);
 

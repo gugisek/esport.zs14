@@ -1,7 +1,9 @@
 <div class=" events-setting-panels divide-y divide-white/5">
     <ul class="relative m-0 flex list-none justify-between overflow-hidden p-5 transition-[height] duration-200 ease-in-out events-hero-list">
-        <?php 
-            $selected_nav = "SELECT value FROM events WHERE event_type_id = 4";
+        <?php
+            include "../../../scripts/security.php";
+            include "../../../scripts/conn_db.php";
+            $selected_nav = "SELECT value FROM informations WHERE name = 'events_selected_hero'";
             $selected_nav_result = mysqli_query($conn, $selected_nav);
             $selected = mysqli_fetch_array($selected_nav_result);
             $type;
@@ -53,7 +55,7 @@
     </ul>
 
     <div class="sm:px-6 lg:px-8">
-        <form method="post" enctype="multipart/form-data" action="scripts/events/hero_panel_blank_edit.php" class="px-4 mb-6 sm:px-0 mt-6 flex flex-row justify-between items-center events-settings">
+        <form method="post" enctype="multipart/form-data" action="scripts/settings/hero_panel_blank_edit.php" class="px-4 mb-6 sm:px-0 mt-6 flex flex-row justify-between items-center events-settings">
             <div class="flex flex-col w-full">
                 <div class="flex flex-row justify-between">
                     <div>
@@ -105,7 +107,7 @@
                                 </a>
                             </div>
                             <?php
-                                $blank_page_text = "SELECT events.value FROM events WHERE event_type_id = 1 and input = 'header'";
+                                $blank_page_text = "SELECT value FROM informations WHERE name = 'events_blank_page_text'";
                                 $result_blank_page_text = mysqli_fetch_array(mysqli_query($conn,$blank_page_text));
                                 
                                 echo ' <input name="blank_page_text" placeholder="Brak tekstu" type="text" value="'.$result_blank_page_text[0].'" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0">';
@@ -125,7 +127,7 @@
                 </div>
             </div>
         </form>
-        <form method="post" enctype="multipart/form-data" action="scripts/events/hero_panel_clock_edit.php" class="px-4 mb-6 sm:px-0 mt-6 flex flex-row justify-between items-center hidden events-settings">
+        <form method="post" enctype="multipart/form-data" action="scripts/settings/hero_panel_clock_edit.php" class="px-4 mb-6 sm:px-0 mt-6 flex flex-row justify-between items-center hidden events-settings">
             <div class="flex flex-col w-full">
                 <div class="flex flex-row justify-between">
                     <div>
@@ -177,7 +179,7 @@
                                 </a>
                             </div>
                             <?php
-                                $clock_text = "SELECT events.value FROM events WHERE event_type_id = 2 and input = 'clock_text'";
+                                $clock_text = "SELECT value FROM informations WHERE name = 'events_clock_text'";
                                 $result_clock_text = mysqli_fetch_array(mysqli_query($conn,$clock_text));
                                 
                                 echo '<input name="clock_text" type="text" value="'.$result_clock_text[0].'" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0">';
@@ -188,7 +190,7 @@
                                 <dt class="text-sm font-medium leading-6 py-4 text-white">Data rozpoczęcia nadchodzącego turnieju</dt>
                             </div>
                             <?php
-                                $clock_time = "SELECT events.value FROM events WHERE event_type_id = 2 and input = 'clock_time'";
+                                $clock_time = "SELECT value FROM informations WHERE name = 'events_clock_start_time'";
                                 $result_clock_time = mysqli_fetch_array(mysqli_query($conn,$clock_time));
                                 
                                 echo '<input name="clock_start_time" type="text" value="'.$result_clock_time[0].'" placeholder="00:00 dd.mm.rrrr" class="focus:outline-0 invalid:border-red-600 focus:border-b-[1px] theme-border mb-[1px] focus:mb-0 focus:text-white py-4  bg-[#0e0e0e]/0 mt-1 text-sm leading-6 text-gray-400 sm:col-span-2 sm:mt-0">';
@@ -467,7 +469,7 @@
 
         function callPHP(params) {
             var httpc = new XMLHttpRequest();
-            var url = "scripts/events/change_current_hero_events.php";
+            var url = "scripts/settings/change_current_hero_events.php";
 
             httpc.onreadystatechange = function() { //Call a function when the state changes.
                 if(httpc.readyState == 4 && httpc.status == 200) { // complete and no errors
