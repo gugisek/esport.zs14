@@ -52,85 +52,21 @@ include "../../scripts/security.php";
         </div>
         <div>
           <label id="listbox-label" class="block text-sm font-medium leading-6 text-gray-300">Czas</label>
-          <div class="relative mt-2">
-            <button onclick="openFilter('filtr1')" class="relative w-full cursor-default rounded-md bg-black/10 focus:text-white py-1.5 pl-3 pr-10 text-left text-gray-400 shadow-sm ring-1 ring-inset ring-[#3d3d3d] focus:outline-none focus:ring-2 theme-ring-focus sm:text-sm sm:leading-6">
-              <span id="selectedfiltr1" class="block truncate capitalize">wszystkie</span>
-              <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z" clip-rule="evenodd" />
-                </svg>
-              </span>
-            </button>
-
-            <ul id="filtr1" class="hidden absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-[#1c1c1c] py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm" tabindex="-1" role="listbox" aria-labelledby="listbox-label" aria-activedescendant="listbox-option-3">
-              <li class="text-gray-300 hover:bg-black/30 relative cursor-default select-none py-2 pl-3 pr-9" role="option">
-                <span class="font-normal block truncate capitalize">nadchodzące</span>
-                <span class="theme-text absolute inset-y-0 right-0 flex items-center pr-4">
-                  <svg class="hidden h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                  </svg>
-                </span>
-              </li>
-              <li class="text-gray-300 hover:bg-black/30 relative cursor-default select-none py-2 pl-3 pr-9" role="option">
-                <span class="font-normal block truncate capitalize">trwające</span>
-                <span class="theme-text absolute inset-y-0 right-0 flex items-center pr-4">
-                  <svg class="hidden h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                  </svg>
-                </span>
-              </li>
-              <li class="text-gray-300 hover:bg-black/30 bg-black/20 relative cursor-default select-none py-2 pl-3 pr-9" role="option">
-                <span class="font-normal block truncate capitalize">wszystkie</span>
-                <span class="theme-text absolute inset-y-0 right-0 flex items-center pr-4">
-                  <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                  </svg>
-                </span>
-              </li>
-              <!-- More items... -->
-            </ul>
-          </div>
+          <select onchange="" id="" name="" class="outline-none duration-150 capitalize relative cursor-default rounded-md bg-[#0e0e0e] focus:text-white py-1.5 pl-3 pr-10 text-left text-gray-400 text-sm w-full mt-2 shadow-sm ring-1 ring-inset ring-[#3d3d3d] focus:outline-none focus:ring-2 theme-ring-focus sm:leading-6">
+              <option value="" class="hidden" disabled selected>Zaznaczone</option>
+              <option value="status">Zmień status</option>
+              <option value="groups">Zmień grupę</option>
+              <option value="delete" class="text-red-400">Usuń</option>
+          </select>
         </div>
         <div>
           <label id="listbox-label" class="block text-sm font-medium leading-6 text-gray-300">Przeznaczenie</label>
-          <div class="relative mt-2">
-            <button onclick="openFilter('filtr2')" class="relative w-full cursor-default rounded-md bg-black/10 focus:text-white py-1.5 pl-3 pr-10 text-left text-gray-400 shadow-sm ring-1 ring-inset ring-[#3d3d3d] focus:outline-none focus:ring-2 theme-ring-focus sm:text-sm sm:leading-6">
-              <span id="selectedfiltr2" class="block truncate capitalize">wszyscy</span>
-              <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z" clip-rule="evenodd" />
-                </svg>
-              </span>
-            </button>
-
-            <ul id="filtr2" class="hidden absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-[#1c1c1c] py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm" tabindex="-1" role="listbox" aria-labelledby="listbox-label" aria-activedescendant="listbox-option-3">
-              <li class="text-gray-300 hover:bg-black/30 relative cursor-default select-none py-2 pl-3 pr-9" role="option">
-                <span class="font-normal block truncate capitalize">Informatycy</span>
-                <span class="theme-text absolute inset-y-0 right-0 flex items-center pr-4">
-                  <svg class="hidden h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                  </svg>
-                </span>
-              </li>
-              <li class="text-gray-300 hover:bg-black/30 relative cursor-default select-none py-2 pl-3 pr-9" role="option">
-                <span class="font-normal block truncate capitalize">programiści</span>
-                <span class="theme-text absolute inset-y-0 right-0 flex items-center pr-4">
-                  <svg class="hidden h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                  </svg>
-                </span>
-              </li>
-              <li class="text-gray-300 hover:bg-black/30 bg-black/20 relative cursor-default select-none py-2 pl-3 pr-9" role="option">
-                <span class="font-normal block truncate capitalize">wszyscy</span>
-                <span class="theme-text absolute inset-y-0 right-0 flex items-center pr-4">
-                  <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                  </svg>
-                </span>
-              </li>
-              <!-- More items... -->
-            </ul>
-          </div>
+          <select onchange="" id="" name="" class="outline-none duration-150 capitalize relative cursor-default rounded-md bg-[#0e0e0e] focus:text-white py-1.5 pl-3 pr-10 text-left text-gray-400 text-sm w-full mt-2 shadow-sm ring-1 ring-inset ring-[#3d3d3d] focus:outline-none focus:ring-2 theme-ring-focus sm:leading-6">
+              <option value="" class="hidden" disabled selected>Zaznaczone</option>
+              <option value="status">Zmień status</option>
+              <option value="groups">Zmień grupę</option>
+              <option value="delete" class="text-red-400">Usuń</option>
+          </select>
         </div>
         <div>
           <label id="listbox-label" class="block text-sm font-medium leading-6 text-gray-300">Typ</label>
