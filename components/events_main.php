@@ -8,7 +8,53 @@
         </div>
     </div>
     <section class="2xl:w-[70vw] md:w-[80vw] w-[90vw] text-white lg:grid-cols-4 grid-cols-2 grid gap-4">
-        <div onclick="openPopupEvents(1)" data-aos="fade-up"
+        <?php
+            $sql1 = "SELECT * FROM events WHERE status_id = 1 order by event_id desc";
+            $result1 = mysqli_query($conn, $sql1);
+                while($row = mysqli_fetch_array($result1)) {
+                    if($row['img']=='' || $row['img']=='NULL'){
+                        $row['img'] = "'public/img/events/event1.jpg'";
+                    } else{
+                        $row['img'] = "'public/img/events/".$row['img']."'";
+                }
+                if($row['destiny']=='all'){
+                    $row['destiny'] = 'Dla wszystkich';
+                } else if($row['destiny']=='prg'){
+                    $row['destiny'] = 'Dla programistów';
+                } else if($row['destiny']=='inf'){
+                    $row['destiny'] = 'Dla infromatyków';
+                } else{
+                    $row['destiny'] = '';
+                }
+                if($row['name']=='' || $row['name']=='NULL'){
+                    $row['name'] = 'Bez tytułu';
+                } else{
+                    $htmls = array("<p>", "<h1>", "</p>", "</h1>");
+                    $row['name'] = str_replace($htmls, "", $row['name']);
+                }
+                if($row['data']=='' || $row['name']=='NULL'){
+                    $row['data'] = 'Bez daty';
+                } else{
+                    $month = array('stycznia', 'luetgo', 'marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia');
+                    $today = $row['data'];
+                    $today = explode('-', $today);
+                    $today = ''.$today[2].' '.$month[$today[1]-1].' '.$today[0].'';
+                    $row['data'] = $today;
+                }
+                echo '
+                    <div onclick="openPopupEvents('.$row['event_id'].')" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100">
+                        <div style="background-image: url('.$row['img'].');" class="active:scale-95 bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
+                            <div class="2xl:pb-6 pb-4 pt-32 px-4 rounded-xl bg-gradient-to-t from-black">
+                                <p class="font-[poppins] theme-text 2xl:text-sm text-xs uppercase">'.$row["destiny"].'</p>
+                                <h1 class="font-[poppins] 2xl:text-2xl md:text-xl text-lg font-medium">'.$row["name"].'</h1>
+                                <p class="font-[poppins] text-gray-400 2xl:text-lg md:text-sm text-xs pt-2 uppercase">'.$row['data'].'</p>
+                            </div>
+                        </div>
+                    </div>
+                    ';
+                }
+        ?>
+        <!-- <div onclick="openPopupEvents(1)" data-aos="fade-up"
      data-aos-anchor-placement="center-bottom" data-aos-delay="100">
             <div style="background-image: url('public/img/event1.jpg');" class="active:scale-95 bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
                 <div class="2xl:pb-6 pb-4 pt-32 px-4 rounded-xl bg-gradient-to-t from-black">
@@ -47,7 +93,7 @@
                     <p class="font-[poppins] text-gray-400 2xl:text-lg md:text-sm text-xs pt-2 uppercase">10 września 2023</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
     <div class="flex flex-row justify-between items-center">
         <p class=""></p>
@@ -99,12 +145,36 @@
             document.body.style.overflowY = "hidden";
         }
     }
+    // function openPopupEvents(id){
+    //     var popupOutput = document.getElementById("pupupEventsOutput");
+    //     //popupOutput.innerHTML =  "<div class='flex justify-center items-center'><div class='flex flex-col justify-center items-center'><div class='animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900'></div><div class='text-white text-xl font-semibold mt-4'>Ładowanie...</div></div>";
+    //     popupOutput.innerHTML =  "<div class='w-full flex items-center justify-center z-[999]'><div class='z-[30] bg-black/90 p-4 rounded-xl'><div class='lds-dual-ring'></div></div></div>";
+    //     popupEventsOpenClose();
+    //     const url = "components/events_details_popup.php?id="+id;
+    //     fetch(url)
+    //         .then(response => response.text())
+    //         .then(data => {
+    //         const parser = new DOMParser();
+    //         const parsedDocument = parser.parseFromString(data, "text/html");
+
+    //         // Wstaw zawartość strony (bez skryptów) do "panel_body"
+    //         popupOutput.innerHTML = parsedDocument.body.innerHTML;
+
+    //         // Przechodź przez znalezione skrypty i wykonuj je
+    //         const scripts = parsedDocument.querySelectorAll("script");
+    //         scripts.forEach(script => {
+    //             const scriptElement = document.createElement("script");
+    //             scriptElement.textContent = script.textContent;
+    //             document.body.appendChild(scriptElement);
+    //         });
+    //         });
+    // }
     function openPopupEvents(id){
         var popupOutput = document.getElementById("pupupEventsOutput");
         //popupOutput.innerHTML =  "<div class='flex justify-center items-center'><div class='flex flex-col justify-center items-center'><div class='animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900'></div><div class='text-white text-xl font-semibold mt-4'>Ładowanie...</div></div>";
         popupOutput.innerHTML =  "<div class='w-full flex items-center justify-center z-[999]'><div class='z-[30] bg-black/90 p-4 rounded-xl'><div class='lds-dual-ring'></div></div></div>";
         popupEventsOpenClose();
-        const url = "components/events_details_popup.php?id="+id;
+        const url = "components/panel/events/events_preview.php?id="+id;
         fetch(url)
             .then(response => response.text())
             .then(data => {
