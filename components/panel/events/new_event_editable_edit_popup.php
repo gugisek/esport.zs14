@@ -21,7 +21,7 @@ $for = $_GET['for'];
                 Zapisz
             </button>
         </div>
-</div>
+</input>
 
  <section id="popupEventEditDeleteBg" class="fixed z-[50] h-0 opacity-0 top-0 left-0 w-full h-full bg-[#0000009e] transition-opacity duration-300"></section>
   <section id="popupEventEditDelete" onclick="popupEventDeleteOpenClose()" class="z-[70] fixed scale-0 top-0 left-0 w-full h-full">
@@ -30,7 +30,6 @@ $for = $_GET['for'];
       </div>
     </div>
   </section>
-
 <script>
   var quill = new Quill('#editor-container-popup', {
     theme: 'snow',
@@ -80,6 +79,7 @@ $for = $_GET['for'];
         // resultOfStorage = localStorage.getItem('EventTempSettings')
         // console.log('EventTempSettings: ', JSON.parse(resultOfStorage));
         popupEventOpenClose()
+        fromLocalStorageToDraft()
     }
     // function fillInput(){
     //     forWhat = document.getElementById('forIn').value;
