@@ -512,7 +512,7 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">Rozpoczęcie zapisów do <span class="theme-text">turnieju</span></p>
+                          <p class="text-sm text-gray-500">Rozpoczęcie zapisów do <span class="theme-text">Turnieju</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-20">12 lutego</time>
@@ -557,7 +557,7 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">Zakończenie zapisów do <span class="theme-text">turnieju</span></p>
+                          <p class="text-sm text-gray-500">Zakończenie zapisów do <span class="theme-text">Turnieju</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-22">19 lutego</time>
