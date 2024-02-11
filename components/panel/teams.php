@@ -161,7 +161,7 @@ include "../../scripts/security.php";
             <form method="POST" action="scripts/teams/multiple_action.php">
             <table class="pt-2 w-full text-sm leading-6 text-gray-500">
           ';
-          $sql2 = "SELECT teams.team_id, teams.name, groups.name as group_name, teams.class, teams.players, teams.profile_img, team_status.name as status_name FROM TEAMS join team_status on team_status.status_id=teams.status_id left join team_groups on team_groups.group_id=teams.group_id WHERE teams.event_id = ".$row['event_id']." order by team_id desc";
+          $sql2 = "SELECT teams.team_id, teams.name, groups.name as group_name, teams.class, teams.players, teams.profile_img, team_status.name as status_name FROM teams join team_status on team_status.status_id=teams.status_id left join team_groups on team_groups.group_id=teams.group_id WHERE teams.event_id = ".$row['event_id']." order by team_id desc";
           $result2 = mysqli_query($conn, $sql2);
           if(mysqli_num_rows($result2) > 0) {
              echo '
