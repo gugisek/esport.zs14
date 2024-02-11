@@ -76,7 +76,7 @@
 
         <div data-aos="fade-right" data-aos-delay="400" class="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
           <a
-            onclick="location.replace('eventy.zs14.rgbpc.pl/zapisy.php')"
+            onclick="location.replace('zapisy.php')"
             type="button"
             class="cursor-pointer flex w-full items-center justify-center rounded-md theme-bg theme-bg-hover px-8 py-3 text-base duration-150 font-medium text-white"
           >
