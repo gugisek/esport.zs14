@@ -35,7 +35,7 @@
                 if($row['data']=='' || $row['name']=='NULL'){
                     $row['data'] = 'Bez daty';
                 } else{
-                    $month = array('stycznia', 'luetgo', 'marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia');
+                    $month = array('stycznia', 'lutego', 'marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia');
                     $today = $row['data'];
                     $today = explode('-', $today);
                     $today = ''.$today[2].' '.$month[$today[1]-1].' '.$today[0].'';

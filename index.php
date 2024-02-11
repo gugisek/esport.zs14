@@ -6,8 +6,8 @@
         <?php include 'components/navbar.php'; ?>
         <?php include 'components/hero.php'; ?>
         <?php include 'components/events_main.php';// ?>
-        <?php include 'components/schedule.php';// ?>
-        <?php include 'components/winners.php'; ?>
+        <?php //include 'components/schedule.php';// ?>
+        <?php //include 'components/winners.php'; ?>
         <?php include 'components/sponsors.php'; ?>
         <section style="background-image: url('public/img/cs_grafik.webp');" class="bg-cover bg-fixed bg-center bg-no-repeat bg-top bg-gray-50 w-full">
           <section class="bg-[#fffffff4]">

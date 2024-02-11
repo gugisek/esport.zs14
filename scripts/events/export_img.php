@@ -7,7 +7,7 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 
 $img_ext = pathinfo($target_file, PATHINFO_EXTENSION);
 
-echo $img_ext;
+//
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
@@ -26,7 +26,9 @@ if(isset($_POST["submit"])) {
 // Check if file already exists
 if (file_exists($target_file)) {
   echo "Sorry, file already exists.";
-  $uploadOk = 0;
+  unlink($target_file);
+
+  // $uploadOk = 0;
 }
 
 // Check file size

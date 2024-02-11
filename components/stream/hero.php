@@ -29,7 +29,7 @@
                 <a href="" class="md:text-xs text-base font-[poppins] text-gray-600 theme-text-hover duration-300 py-0 pt-2">Twitch.tv/<?=$profil?></a>
             </div>
             <div class="xl:px-0 px-8">
-                <h1 class="font-[poppins] font-bold italic mb-2 text-gray-200">Harmonogram transmisji</h1>
+                <!-- <h1 class="font-[poppins] font-bold italic mb-2 text-gray-200">Harmonogram transmisji</h1>
                 <div class="flex flex-col py-2"> 
                     <p class="text-xs theme-text">28.10.2023 14:40</p>
                     <p class="text-sm">CS2: Półfinał Maćki z 5pi vs własny cień</p>
@@ -44,7 +44,7 @@
                     <p class="text-xs theme-text">28.10.2023 14:40</p>
                     <p class="text-sm">CS2: Półfinał Maćki z 5pi vs własny cień</p>
                     <hr class="border-[#1c1c1c] mt-2">
-                </div>
+                </div> -->
             </div>   
         </section>
         
