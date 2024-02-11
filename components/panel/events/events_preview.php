@@ -76,19 +76,20 @@
 
         <div data-aos="fade-right" data-aos-delay="400" class="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
           <a
+            onclick="window.location.href = window.location.hostname+'/zapisy.php'"
             type="button"
             class="cursor-pointer flex w-full items-center justify-center rounded-md theme-bg theme-bg-hover px-8 py-3 text-base duration-150 font-medium text-white"
           >
             Zapisz się
           </a>
-          <a
+          <!-- <a
             id="shareButton"
             onclick="copyButton('localhost/turniej.php?id=1')"
             type="button"
             class="cursor-pointer flex w-full items-center justify-center rounded-md border border-transparent theme-bg-hover theme-text duration-150 hover:!text-white bg-indigo-50 px-8 py-3 text-base font-medium"
           >
             Udostępnij
-          </a>
+          </a> -->
         </div>
         <!-- model rozgrywek -->
         <?php 
@@ -306,11 +307,10 @@
           </div>
 
           <!-- 'Customer Reviews' panel, show/hide based on tab state -->
-          <div
-            id="wyniki"
-            class="-mb-10 tab"
-          >
-            <h3 class="sr-only">Aktualne wyniki</h3>
+          <div id="wyniki" class="-mb-10 tab">
+            <h1 class="text-center text-gray-300 p-10">Nie rozegrano żadnych meczów</h1>
+
+            <!-- <h3 class="sr-only">Aktualne wyniki</h3>
 
             <div class="flex space-x-4 text-sm text-gray-500">
               <div class="flex-none py-10">
@@ -325,7 +325,7 @@
                 <p><time datetime="2021-07-16">July 16, 2021</time></p>
 
                 <div class="mt-4 flex items-center">
-                  <!-- Active: "text-yellow-400", Default: "text-gray-300" -->
+                  Active: "text-yellow-400", Default: "text-gray-300"
                   <svg
                     class="text-yellow-400 h-5 w-5 flex-shrink-0"
                     viewBox="0 0 20 20"
@@ -411,7 +411,7 @@
                 <p><time datetime="2021-07-12">July 12, 2021</time></p>
 
                 <div class="mt-4 flex items-center">
-                  <!-- Active: "text-yellow-400", Default: "text-gray-300" -->
+                  Active: "text-yellow-400", Default: "text-gray-300"
                   <svg
                     class="text-yellow-400 h-5 w-5 flex-shrink-0"
                     viewBox="0 0 20 20"
@@ -485,16 +485,13 @@
                   </p>
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <!-- More reviews... -->
           </div>
 
           <!-- 'FAQ' panel, show/hide based on tab state -->
-          <div
-            id="harmonogram"
-            class="text-sm text-gray-500 tab hidden"
-          >
+          <div id="harmonogram" class="text-sm text-gray-500 tab hidden">
            <div class="flow-root py-10">
               <ul role="list" class="-mb-8">
                 <li>
@@ -515,10 +512,26 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">Rozpoczęcie zapisów do <span class="theme-text">fazy grupowej</span></p>
+                          <p class="text-sm text-gray-500">Rozpoczęcie zapisów do <span class="theme-text">turnieju</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-20">1 grudzień</time>
+                          <time datetime="2020-09-20">12 lutego</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="relative pb-20">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3 border-b theme-border ml-4">
+                      <div>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4">
+                        <div></div>
+                        <div class="whitespace-nowrap text-right text-xs font-medium theme-text italic uppercase">
+                          <time datetime="2020-09-30">Aktualnie</time>
                         </div>
                       </div>
                     </div>
@@ -527,7 +540,7 @@
 
                 <li>
                   <div class="relative pb-8">
-                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <!-- <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span> -->
                     <div class="relative flex space-x-3">
                       <div>
                         <span class="h-8 w-8 rounded-full bg-red-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
@@ -544,17 +557,17 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">Zakończenie zapisów do <span class="theme-text">fazy grupowej</span></p>
+                          <p class="text-sm text-gray-500">Zakończenie zapisów do <span class="theme-text">turnieju</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-22">31 grudzień</time>
+                          <time datetime="2020-09-22">19 lutego</time>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
 
-                <li>
+                <!-- <li>
                   <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
@@ -575,9 +588,9 @@
                       </div>
                     </div>
                   </div>
-                </li>
+                </li> -->
                   <!-- aktulanie -->
-                <li>
+                <!-- <li>
                   <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3 border-b theme-border ml-4">
@@ -783,17 +796,14 @@
                   </div>
                 </li>
               </ul>
-            </div>
+            </div> -->
 
+            </div>
           </div>
 
           <!-- 'License' panel, show/hide based on tab state -->
-          <div
-            id="druzyny"
-            class="pt-10 tab hidden"
-          >
+          <div id="druzyny" class="pt-10 tab hidden">
             <h3 class="sr-only">License</h3>
-
             <div class="prose prose-sm max-w-none text-gray-500">
               <h3 class="font-medium text-gray-300">
                 Zakwalifikowane drużyny
@@ -803,7 +813,7 @@
               </p>
               <div class="px-2 my-4 w-full">
                 <table class="w-full">
-                  <tr class="border-t border-[#1c1c1c]">
+                  <!-- <tr class="border-t border-[#1c1c1c]">
                     <td class="py-3">
                       <h3 class="text-sm text-gray-400">Boty z 5pi <span class="text-xs text-gray-600">5pi</span> </h3>
                     </td>
@@ -870,7 +880,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                       </svg>
                     </td>
-                  </tr>
+                  </tr> -->
                 </table>
               </div>
             </div>
@@ -878,7 +888,7 @@
 
           <div
             id="info"
-            class="text-sm text-gray-500 tab hidden"
+            class="text-sm text-gray-500 pt-10 tab hidden"
           >
             <h3 class="sr-only">Frequently Asked Questions</h3>
 
