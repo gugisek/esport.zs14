@@ -26,7 +26,7 @@
                 height="395"
                 width="700">
                 </iframe>
-                <a href="" class="md:text-xs text-base font-[poppins] text-gray-600 theme-text-hover duration-300 py-0 pt-2">Twitch.tv/<?=$profil?></a>
+                <a href="<?=$link?>" class="md:text-xs text-base font-[poppins] text-gray-600 theme-text-hover duration-300 py-0 pt-2">Twitch.tv/<?=$profil?></a>
             </div>
             <!-- <div class="xl:px-0 px-8">
                 <h1 class="font-[poppins] font-bold italic mb-2 text-gray-200">Harmonogram transmisji</h1>
