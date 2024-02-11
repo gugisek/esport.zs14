@@ -134,7 +134,7 @@ include "../../scripts/security.php";
       </li> -->
       <?php
       include "../../scripts/conn_db.php";
-      $sql = "SELECT events.event_id, events.name, events.status_id, max_players_in_team, max_rezerwowy_players_in_team, edition, count(team_id) as 'teams_num' FROM EVENTS right join teams on teams.event_id=events.event_id where events.status_id=1 or events.status_id=2 group by events.event_id order by events.event_id desc;";
+      $sql = "SELECT events.event_id, events.name, events.status_id, max_players_in_team, max_rezerwowy_players_in_team, edition, count(team_id) as 'teams_num' FROM events right join teams on teams.event_id=events.event_id where events.status_id=1 or events.status_id=2 group by events.event_id order by events.event_id desc;";
       $result = mysqli_query($conn, $sql);
       while($row = mysqli_fetch_assoc($result)) {
         echo '<li class="w-full">
