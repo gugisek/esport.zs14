@@ -69,7 +69,7 @@
                     </div>
                     <div class="relative rounded-md border theme-border shadow-sm transition-all duration-300">
                         <p class="absolute bg-[#0e0e0e] -top-2 left-2 -mt-px inline-block px-1 text-xs font-medium font-[poppins] theme-text italic uppercase">Treść</p>
-                        <div class="bg-[#0e0e0e] px-3 py-2 rounded-md block w-full border-0 p-0 text-gray-400 font-[poppins] focus:ring-0 focus:outline-0 sm:text-sm transition-all duration-300">
+                        <div class="bg-[#0e0e0e] px-3 py-2 rounded-md break-all block w-full border-0 p-0 text-gray-400 font-[poppins] focus:ring-0 focus:outline-0 sm:text-sm transition-all duration-300">
                             <!-- Zgłaszam moją drużynę *nazwa drużny* na turniej *nazwa turnieju* jako jej lider.
                             <br/><br/>
                             Zawodnik 1 - lider (ja):<br><br>
