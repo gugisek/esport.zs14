@@ -35,6 +35,10 @@
         <!-- More questions... -->
       </dl>
     </div>
+    <a href="mailto:administracja.eventy@chmura.zs14.edu.pl" class=" mx-auto max-w-3xl cursor-pointer flex w-full items-center mt-2 justify-center rounded-md theme-bg theme-bg-hover px-8 py-3 text-base duration-150 font-medium text-white">
+      Zapisz się*
+    </a>
+    <p class="text-center mx-auto max-w-3xl mt-2 text-xs">* wyślij email do: administracja.eventy@chmura.zs14.edu.pl</p>
     </section>
     <?php
     $sql = "SELECT * FROM informations WHERE id=16 or id=17 or id=18 or id=19;";
