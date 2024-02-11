@@ -12,10 +12,10 @@
         }
 ?>
 <section class="flex lg:flex-row flex-col-reverse  items-center gap-8 justify-between w-full pb-14 2xl:px-[15%] px-[10%]">
-    <div data-aos="fade-right" data-aos-delay="100">
+    <div data-aos="fade-right" data-aos-delay="100" class="">
         <iframe
-        class="rounded-xl shadow-2xl"
-        src="https://player.twitch.tv/?channel=<?=$profil?>&parent=localhost&muted=true&autoplay=false"
+        class="rounded-xl shadow-2xl xl:scale-100 lg:scale-90 md:scale-75 sm:scale-[0.6] scale-[0.5] flex flex-col items-center justify-start"
+        src="https://player.twitch.tv/?channel=<?=$profil?>&parent=eventy.zs14.rgbpc.pl&muted=true&autoplay=false"
         frameborder="0"
         scrolling="no"
         allowfullscreen="true"
