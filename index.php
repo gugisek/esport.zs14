@@ -15,6 +15,7 @@
             <?php include 'components/stream.php'; ?>
           </section>
         </section>
+        <?php include 'components/share.php'; ?>
         <?php include 'components/footer.php'; ?>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

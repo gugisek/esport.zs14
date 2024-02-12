@@ -1,5 +1,6 @@
 <?php
   $id = $_GET['id'];
+  $id_szyfr = base64_encode($id);
   include "../../../scripts/conn_db.php";
   $sql1 = "SELECT * FROM events WHERE event_id = '".$id."'";
   $result1 = mysqli_query($conn, $sql1);
@@ -82,14 +83,14 @@
           >
             Zapisz się
           </a>
-          <!-- <a
+          <a
             id="shareButton"
-            onclick="copyButton('localhost/turniej.php?id=1')"
+            onclick="copyButton('https://eventy.zs14.rgbpc.pl/?share=<?=$id_szyfr?>')"
             type="button"
             class="cursor-pointer flex w-full items-center justify-center rounded-md border border-transparent theme-bg-hover theme-text duration-150 hover:!text-white bg-indigo-50 px-8 py-3 text-base font-medium"
           >
             Udostępnij
-          </a> -->
+          </a>
         </div>
         <!-- model rozgrywek -->
         <?php 
