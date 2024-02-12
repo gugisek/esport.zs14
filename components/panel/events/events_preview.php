@@ -75,7 +75,24 @@
             ?>
         </p>
 
-        <div data-aos="fade-right" data-aos-delay="400" data-aos-anachor-placement="top-bottom" class="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
+        <div data-aos="fade-right" data-aos-delay="400" data-aos-anachor-placement="top-bottom" class="mt-10 md:grid hidden grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
+          <a
+            onclick="location.replace('zapisy.php')"
+            type="button"
+            class="cursor-pointer flex w-full items-center justify-center rounded-md theme-bg theme-bg-hover px-8 py-3 text-base duration-150 font-medium text-white"
+          >
+            Zapisz się
+          </a>
+          <a
+            id="shareButton"
+            onclick="copyButton('https://eventy.zs14.rgbpc.pl/?share=<?=$id_szyfr?>')"
+            type="button"
+            class="cursor-pointer flex w-full items-center justify-center rounded-md border border-transparent theme-bg-hover theme-text duration-150 hover:!text-white bg-indigo-50 px-8 py-3 text-base font-medium"
+          >
+            Udostępnij
+          </a>
+        </div>
+        <div class="md:hidden mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
           <a
             onclick="location.replace('zapisy.php')"
             type="button"
