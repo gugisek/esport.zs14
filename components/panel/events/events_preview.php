@@ -59,7 +59,7 @@
             <h2 id="information-heading" class="sr-only">
               Product information
             </h2>
-            <p data-aos="fade-right" data-aos-delay="200" class="mt-2 text-sm text-gray-500">
+            <p data-aos="fade-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom" class="mt-2 text-sm text-gray-500">
                 <?php
                     $row['edition'] = str_replace($htmls, "", $row['edition']);
                     echo $row['edition'];
@@ -68,14 +68,14 @@
           </div>
         </div>
 
-        <p data-aos="fade-right" data-aos-delay="300" data-aos-anchor-placement="none" class="mt-6 text-gray-400">
+        <p data-aos="fade-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="mt-6 text-gray-400">
             <?php
                 $row['description'] = str_replace($htmls, "", $row['description']);
                 echo $row['description'];
             ?>
         </p>
 
-        <div data-aos="fade-right" data-aos-delay="400" class="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
+        <div data-aos="fade-right" data-aos-delay="400" data-aos-anachor-placement="top-bottom" class="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
           <a
             onclick="location.replace('zapisy.php')"
             type="button"
