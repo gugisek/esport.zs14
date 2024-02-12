@@ -20,7 +20,7 @@
                 <dl class="divide-y divide-white/10">
                 <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                     <dt class="text-sm flex items-center font-medium leading-6 py-4 text-white normal-case">Zgoda na przetwarzanie wizerunku</dt>
-                    <dd class="flex items-center mt-2 text-sm text-gray-400 sm:mt-0 sm:col-span-2 gap-4 justify-between"><div>OŚWIADCZENIE_v2.docx</div><div>Edytowano: 17:08 12.02.2023</div><div class="theme-text">Pobierz</div></dd>
+                    <dd class="flex items-center mt-2 text-sm text-gray-400 sm:mt-0 sm:col-span-2 gap-4 justify-between"><div>OŚWIADCZENIE_v2.docx</div><div>Edytowano: 17:08 12.02.2024</div><div class="theme-text">Pobierz</div></dd>
                 </div>
                 </dl>
             </a>

@@ -835,16 +835,19 @@
                   $sql = "SELECT teams.team_id, teams.name, team_groups.name as group_name, teams.class, teams.players, teams.profile_img, team_status.name as status_name FROM teams join team_status on team_status.status_id=teams.status_id left join team_groups on team_groups.group_id=teams.group_id WHERE teams.event_id = ".$id." order by team_id desc";
                   $result2 = mysqli_query($conn, $sql);
           if(mysqli_num_rows($result2) > 0) {
+
              echo '
 
               </table>
               <table class="pt-2 w-full text-sm leading-6 text-gray-500">
           ';
             while($row2 = mysqli_fetch_assoc($result2)){
+              $team_id = $row2['team_id'];
               if($row2['profile_img'] == "") {
                 $row2['profile_img'] = "team_default.png";
               }
               $team_players = $row2['players'];
+              $team_players_names = $row2['players']; 
               $team_players = explode(';', $team_players);
               $team_players_slots_count = count($team_players)-1;
               $acsual_team_players_count = 0;
@@ -862,7 +865,7 @@
                 $color = "text-gray-600";
               }
             echo '
-              <tr class="border-[#1c1c1c] last:border-[0px] border-b sm:mt-0 text-gray-500">
+              <tr onclick="expandTeamsToggle(`'.$row2['team_id'].'`)" class="hover:bg-[#3d3d3d] duration-150 cursor-pointer border-[#1c1c1c] last:border-[0px] border-b sm:mt-0 text-gray-500">
                 <td class="py-2 flex items-center gap-2">
                   <img src="public/img/teams/'.$row2['profile_img'].'" alt="team_profile" class="aspect-square object-cover max-w-[40px] rounded-full">
                   <p class="capitalize">
@@ -885,6 +888,74 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" class="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                 </svg>
+                </td>
+              </tr>
+              <tr style="scale: 0; height: 0;" id="event_'.$row2['team_id'].'" class="transition-all duration-150 px-2 border-[#1c1c1c] hidden border-b sm:mt-0 text-gray-500">
+                <td colspan="6" class="py-2 gap-2 w-full hover:bg-black/5">
+                  <p class="text-xs capitalized">';
+                  // Rozbijamy string na części na podstawie średników
+                    $string = $team_players_names;
+// Rozbijamy string na części na podstawie średników
+$parts = explode(';', $string);
+
+// Inicjalizujemy zmienne na dane
+$kapitan = "";
+$rezerwowy = "";
+$players = [];
+
+foreach ($parts as $part) {
+    // Rozbijamy każdą część na klucz i wartość na podstawie dwukropka
+    $subparts = explode(':', $part);
+    if(count($subparts) === 2){
+        $key = $subparts[0];
+        $value = $subparts[1];
+        // W zależności od klucza przetwarzamy dane
+        switch ($key) {
+            case 'cap':
+                $kapitan_parts = explode('&', $value);
+                $kapitan_name_parts = explode(' ', $kapitan_parts[0]);
+                $kapitan = $kapitan_name_parts[0]; // Pierwszy element po & to imię kapitana
+                $kapitan_pseudonym = $kapitan_parts[1]; // Drugi element po & to pseudonim kapitana
+                break;
+            case 'rez':
+                $rezerwowy_parts = explode('&', $value);
+                $rezerwowy_name_parts = explode(' ', $rezerwowy_parts[0]);
+                $rezerwowy = $rezerwowy_name_parts[0]; // Pierwszy element po & to imię rezerwowego
+                $rezerwowy_pseudonym = $rezerwowy_parts[1]; // Drugi element po & to pseudonim rezerwowego
+                break;
+            default:
+                // Przetwarzamy dane graczy
+                $player_parts = explode('&', $value);
+                $player_name_parts = explode(' ', $player_parts[0]);
+                $player_name = $player_name_parts[0]; // Imię
+                $player_pseudonym = $player_parts[1]; // Pseudonim
+                if ($player_name !== "") {
+                    $players[] = "$player_name $player_pseudonym";
+                }
+                break;
+        }
+    }
+}
+
+// Formatujemy dane w pożądany sposób
+$result = "";
+if ($kapitan !== "") {
+    $result .= "Kapitan: $kapitan $kapitan_pseudonym";
+}
+if (!empty($players)) {
+    $result .= ", " . implode(", ", $players);
+}
+if ($rezerwowy !== "") {
+    $result .= ", Rezerwowy: $rezerwowy $rezerwowy_pseudonym";
+}
+if ($kapitan === "" && empty($players) && $rezerwowy === "") {
+    $result = "Brak zawodników w drużynie.";
+}
+
+echo $result;
+
+                  
+                  echo '</p>
                 </td>
               </tr>
             ';
@@ -961,6 +1032,34 @@
 </script>
 
 <script>  
+function expandTeamsToggle(event_id) {
+    var target = document.getElementById("event_"+event_id);
+    if (target) {
+      const expanded = target.getAttribute('aria-expanded') === 'true';
+
+      // Zmień stan aria-expanded na przeciwny (true na false, false na true)
+      target.setAttribute('aria-expanded', !expanded);
+
+      // Zmień ikonę rozwijania/zwijania
+      const icon = document.getElementById("svg_event_"+event_id);
+      if (icon) {
+        icon.classList.toggle('rotate-0', expanded);
+        icon.classList.toggle('-rotate-180', !expanded);
+      }
+
+      // Pokaż lub ukryj odpowiedź na pytanie
+      if (expanded) {
+        target.style.scale = '0';
+        target.style.height = '0';
+        target.style.display = 'none';
+      } else {
+        target.style.scale = '1';
+        target.style.display = 'table-row';
+          target.style.height = 'auto';
+      }
+    }
+  }
+
   function copyButton(link) {
     const shareButton = document.getElementById('shareButton');
     const linkToCopy = link;

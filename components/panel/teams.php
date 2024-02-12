@@ -266,7 +266,7 @@ include "../../scripts/security.php";
         
         <dl class="mt-6 divide-y divide-gray-200">
         <div data-aos="fade-up" data-aos-delay="'100" data-aos-anchor-placement="top-bottom" class="">
-          <dt class="text-lg">
+          <dt class="text-lg hover:bg-[#3d3d3d] duration-150 cursor-pointer">
             <!-- Expand/collapse question button -->
             <button onclick="expandTeamsToggle(`txt1`)" type="button" class="pt-5 pb-3 flex w-full items-start justify-between text-left text-gray-400" aria-controls="event_txt1" aria-expanded="false">
               <span class="font-medium text-sm text-gray-300">Odpowiedź na zgłoszenie</span>
