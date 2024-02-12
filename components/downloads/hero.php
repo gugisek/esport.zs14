@@ -16,7 +16,7 @@
             </div>
        </section>
        <section data-aos="fade-up" class="bg-black/80 font-[poppins] py-8 text-gray-400 text-justify">
-            <a href="public/downloads/zgoda_na_przetwarzanie_wizerunku.pdf" target="_blank" class="2xl:mx-[15%] md:mx-[10%] mx-[5%] border-t block border-white/10 hover:bg-[#3d3d3d] cursor-pointer duration-150">
+            <a href="public/downloads/OŚWIADCZENIE.docx" target="_blank" class="2xl:mx-[15%] md:mx-[10%] mx-[5%] border-t block border-white/10 hover:bg-[#3d3d3d] cursor-pointer duration-150">
                 <dl class="divide-y divide-white/10">
                 <div class="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                     <dt class="text-sm flex items-center font-medium leading-6 py-4 text-white normal-case">Zgoda na przetwarzanie wizerunku</dt>
