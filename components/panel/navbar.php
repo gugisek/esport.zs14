@@ -27,7 +27,7 @@ while ($row = $result->fetch_assoc()) {
 ?>
 <div class="flex grow flex-col gap-y-5 overflow-y-auto lg:bg-black/10 bg-[#0e0e0e] px-6 ring-1 ring-white/5">
       <div class="flex h-16 shrink-0 items-center">
-        <img class="h-8 w-auto" src="public/img/<?=$info[0]?>" alt="logo">
+        <a href="https://eventy.zs14.rgbpc.pl/"><img class="h-8 w-auto" src="public/img/<?=$info[0]?>" alt="logo"></a>
       </div>
       <nav class="flex flex-1 flex-col">
         <ul role="list" class="flex flex-1 flex-col gap-y-7">
