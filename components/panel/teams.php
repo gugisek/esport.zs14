@@ -283,22 +283,20 @@ include "../../scripts/security.php";
                   <br/><br/>
               Szanowni uczestnicy,
                   <br/>
-              Dziękujemy za zgłoszenie drużyny G4rnuchy na nadchodzący turniej "Turniej o Mistrzostwo Szanujący CS:2 2024". Cieszymy się, że dołączyliście do naszej imprezy i mamy nadzieję, że będzie to dla Was ekscytujące doświadczenie!
+              Dziękujemy za zgłoszenie drużyny na nadchodzący turniej "Turniej o Mistrzostwo Szanujący CS:2 2024". Cieszymy się, że dołączyliście do naszej imprezy i mamy nadzieję, że będzie to dla Was ekscytujące doświadczenie!
                   <br/><br/>
               Jest nam miło poinformować, że zgłoszenie drużyny zostało przyjęte. Poniżej znajdują się informacje dotyczące dalszych kroków oraz kilka ważnych rzeczy, na które chcielibyśmy zwrócić Waszą uwagę:
                   <br/><br/>
-              Dołącz do serwera Discord: Zachęcamy wszystkich uczestników do dołączenia do naszego serwera Discord, gdzie będziemy udostępniać najnowsze informacje dotyczące Turnieju, ogłaszać harmonogramy i umożliwiać komunikację między uczestnikami oraz organizatorami. Link do serwera Discord.
+              <b>Dołącz do serwera Discord:</b> Zachęcamy wszystkich uczestników do dołączenia do naszego serwera Discord, gdzie będziemy udostępniać najnowsze informacje dotyczące Turnieju, ogłaszać harmonogramy i umożliwiać komunikację między uczestnikami oraz organizatorami. Link do serwera Discord: https://discord.gg/Q855DA5fDP.
                   <br/><br/>
-              Zapoznanie się z regulaminem: Przeczytajcie uważnie regulamin Turnieju, abyście byli dobrze przygotowani na wydarzenie. Regulamin można znaleźć na naszej stronie internetowej pod adresem [link_do_regulaminu].
-                  <br/><br/>
-              Prosimy o potwierdzenie otrzymania tej wiadomości oraz zapewnienie, że każdy z uczestników zapoznał się z nią oraz z regulaminem Turnieju.
+              <b>Zapoznanie się z regulaminem:</b> Przeczytajcie uważnie regulamin Turnieju, abyście byli dobrze przygotowani na wydarzenie. Regulamin można znaleźć na naszej stronie internetowej pod adresem https://eventy.zs14.rgbpc.pl/regulamin.
                   <br/><br/>
               Jeśli macie jakiekolwiek pytania lub wątpliwości, nie wahajcie się skontaktować z nami poprzez serwer Discord lub odpowiedzcie na tę wiadomość.
                   <br/><br/>
               Życzymy powodzenia i niech najlepszy zespół zwycięży!
                   <br/><br/>
               Z poważaniem,<br/>
-              Zespół Organizacyjny "Turniej o Mistrzostwo Szanujący CS:2 2024"
+              Zespół Organizacyjny Turnieju o Mistrzostwo Szanujący CS:2 2024
             </div>
           </dd>
         </div>
