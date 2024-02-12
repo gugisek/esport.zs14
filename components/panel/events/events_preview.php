@@ -813,74 +813,71 @@
               </p>
               <div class="px-2 my-4 w-full">
                 <table class="w-full">
-                  <!-- <tr class="border-t border-[#1c1c1c]">
-                    <td class="py-3">
-                      <h3 class="text-sm text-gray-400">Boty z 5pi <span class="text-xs text-gray-600">5pi</span> </h3>
-                    </td>
-                    <td class="py-3 h-full flex items-center justify-center gap-2 text-gray-600">
-                      <p class="text-sm">Zakwalifikowani</p>
-                    </td>
-                    <td>
+                  <?php
+                  $sql = "SELECT teams.team_id, teams.name, team_groups.name as group_name, teams.class, teams.players, teams.profile_img, team_status.name as status_name FROM teams join team_status on team_status.status_id=teams.status_id left join team_groups on team_groups.group_id=teams.group_id WHERE teams.event_id = ".$id." order by team_id desc";
+                  $result2 = mysqli_query($conn, $sql);
+          if(mysqli_num_rows($result2) > 0) {
+             echo '
+
+              </table>
+              <table class="pt-2 w-full text-sm leading-6 text-gray-500">
+          ';
+            while($row2 = mysqli_fetch_assoc($result2)){
+              if($row2['profile_img'] == "") {
+                $row2['profile_img'] = "team_default.png";
+              }
+              $team_players = $row2['players'];
+              $team_players = explode(';', $team_players);
+              $team_players_slots_count = count($team_players)-1;
+              $acsual_team_players_count = 0;
+              for($i=0; $i<$team_players_slots_count; $i++){
+                if(strstr($team_players[$i], ':&&') == false) {
+                  $acsual_team_players_count++;
+                }
+              }
+              
+              if($row2['status_name'] == "zdyskwalifikowana") {
+                $color = "text-red-600";
+              }elseif($row2['status_name'] == "zakwalifikowana") {
+                $color = "theme-text";
+              }else {
+                $color = "text-gray-600";
+              }
+            echo '
+              <tr class="border-[#1c1c1c] last:border-[0px] border-b sm:mt-0 text-gray-500">
+                <td class="py-2 flex items-center gap-2">
+                  <img src="public/img/teams/'.$row2['profile_img'].'" alt="team_profile" class="aspect-square object-cover max-w-[40px] rounded-full">
+                  <p class="capitalize">
+                  '.$row2['name'].' 
+                  <span class="text-xs text-gray-600">'.$row2['class'].'</span>
+                  </p>
+                </td>
+                <td class="uppercase text-xs">'.$row2['group_name'].'</td>
+                <!-- <td>
                       <div class="tooltip text-gray-600 theme-text-hover">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" class="icon w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
                           </svg>
                           <span class="tooltip-text">Kapitan: discorduser#2137</span>
                       </div>
-                    </td>
-                    <td class="py-3 h-full flex items-center justify-center gap-2 text-gray-600">
-                      <p class="text-sm">6/6</p>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" class="w-5 h-5">
+                </td> --!>
+                <td class="'.$color.'">'.$row2['status_name'].'</td>
+                <td class="text-right">'.$acsual_team_players_count.'/'.$row['max_players_in_team'].'</td>
+                <td class="ml-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" class="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-                      </svg>
-                    </td>
-                  </tr>
-
-                  <tr class="border-t border-[#1c1c1c]">
-                    <td class="py-3">
-                      <h3 class="text-sm text-gray-400">Killerek za 5 robi <span class="text-xs text-gray-600">5pi</span> </h3>
-                    </td>
-                    <td class="py-3 h-full flex items-center justify-center gap-2 text-gray-600">
-                      <p class="text-sm">Zakwalifikowani</p>
-                    </td>
-                    <td>
-                      <div class="tooltip text-gray-600 theme-text-hover">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" class="icon w-5 h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
-                          </svg>
-                          <span class="tooltip-text">Kapitan: killerek#420</span>
-                      </div>
-                    </td>
-                    <td class="py-3 h-full flex items-center justify-center gap-2 text-gray-600">
-                      <p class="text-sm">6/6</p>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-                      </svg>
-                    </td>
-                  </tr>
-
-                  <tr class="border-t border-[#1c1c1c]">
-                    <td class="py-3">
-                      <h3 class="text-sm text-gray-400">Essy <span class="text-xs text-gray-600">5pi</span> </h3>
-                    </td>
-                    <td class="py-3 h-full flex items-center justify-center gap-2 text-gray-600">
-                      <p class="text-sm">Zakwalifikowani</p>
-                    </td>
-                    <td>
-                      <div class="tooltip text-gray-600 theme-text-hover">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" class="icon w-5 h-5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
-                          </svg>
-                          <span class="tooltip-text">Kapitan: dkillerekToBotMordoTakJużJest#123456789</span>
-                      </div>
-                    </td>
-                    <td class="py-3 h-full flex items-center justify-center gap-2 text-gray-600">
-                      <p class="text-sm">6/6</p>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-                      </svg>
-                    </td>
-                  </tr> -->
+                </svg>
+                </td>
+              </tr>
+            ';
+          }
+         
+          } else {
+            echo '<tr class="">
+            <td class="py-2 w-full text-xs">Nie dodano jeszcze żadnej drużyny.</td>
+          </tr>';
+          }
+                  ?>
                 </table>
               </div>
             </div>

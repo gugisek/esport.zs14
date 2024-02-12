@@ -139,11 +139,11 @@ include "../../scripts/security.php";
       while($row = mysqli_fetch_assoc($result)) {
         echo '<li class="w-full">
         <div onclick="expandTeamsToggle(`'.$row['event_id'].'`)" aria-controls="event_'.$row['event_id'].'"  class="hover:bg-[#3d3d3d] duration-150 cursor-pointer py-4 w-full flex items-center justify-between">
-          <p class="flex-auto text-gray-300 capitalize">'.$row['name'].'<span class="text-xs theme-text capitalize"> ';
+          '.$row['name'].'<span class="text-xs theme-text capitalize"> ';
           if ($row['status_id'] == 2){
             echo 'szkic';
           }
-          echo ' </span> <span class="text-xs text-gray-500 capitalize">'.$row['edition'].'</span></p>
+          echo ' </span> <span class="text-xs text-gray-500 capitalize">'.$row['edition'].'</span>
           <p class="flex items-center justify-center gap-2">
             '.$row['teams_num'].'
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
