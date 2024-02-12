@@ -99,7 +99,7 @@
             } else{
                 echo '
                     <article class="mt-4 text-sm text-gray-400">
-                        <div data-aos="fade-right" data-aos-delay="500" class="mt-10 border-t border-[#3d3d3d] pt-10">
+                        <div class="mt-10 border-t border-[#3d3d3d] pt-10">
                             <h3 class="text-sm font-medium text-gray-300">Model rozgrywek</h3>
                 ';
                 echo $row['model'];
@@ -116,7 +116,7 @@
             } else{
                 echo '
                     <article class="mt-4 text-sm text-gray-400">
-                        <div data-aos="fade-right" data-aos-delay="600" class="mt-10 border-t border-[#3d3d3d] pt-10">
+                        <div class="mt-10 border-t border-[#3d3d3d] pt-10">
                             <h3 class="text-sm font-medium text-gray-300">Terminy</h3>
                 ';
                 echo $row['terms'];
