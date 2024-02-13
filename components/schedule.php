@@ -16,7 +16,7 @@
                     <a id="schedule_nav_cs" onclick="openScheduleCs('2')" class="cursor-pointer text-gray-500 theme-text-hover duration-300 font-[poppins] font-medium">System szwajcarski</a>
                     <a id="schedule_nav_cs" onclick="openScheduleCs('3')" class="cursor-pointer text-gray-500 theme-text-hover duration-300 font-[poppins] font-medium">Finały</a>
                 </div>
-                <section id="schedule_cs_1" class="schedule_cs grid grid-cols-4 gap-2">
+                <section id="schedule_cs_1" class="schedule_cs grid 2xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-2">
                     <div data-aos="fade-left" class="border-black flex flex-col rounded-xl shadow-xl">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA ŚMIERCI</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
@@ -44,7 +44,7 @@
                             </table>
                         </div>  
                     </div>
-                    <div class="w-full bg-[#0e0e0e] col-span-4 rounded-xl hidden">
+                    <div class="w-full bg-[#0e0e0e] 2xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-1 rounded-xl hidden">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA ŚMIERCI</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
                             <table class="w-full">
@@ -133,7 +133,7 @@
                             </table>
                         </div>  
                     </div>
-                    <div class="w-full bg-[#0e0e0e] col-span-4 rounded-xl hidden">
+                    <div class="w-full bg-[#0e0e0e] 2xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-1 rounded-xl hidden">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA A</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
                             <table class="w-full">
@@ -222,7 +222,7 @@
                             </table>
                         </div>  
                     </div>
-                    <div class="w-full bg-[#0e0e0e] col-span-4 rounded-xl hidden">
+                    <div class="w-full bg-[#0e0e0e] 2xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-1 rounded-xl hidden">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA B</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
                             <table class="w-full">
@@ -311,7 +311,7 @@
                             </table>
                         </div>  
                     </div>
-                    <div class="w-full bg-[#0e0e0e] col-span-4 rounded-xl hidden">
+                    <div class="w-full bg-[#0e0e0e] 2xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-1 rounded-xl hidden">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA C</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
                             <table class="w-full">
@@ -400,7 +400,7 @@
                             </table>
                         </div>  
                     </div>
-                    <div class="w-full bg-[#0e0e0e] col-span-4 rounded-xl hidden">
+                    <div class="w-full bg-[#0e0e0e] 2xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-1 rounded-xl hidden">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA D</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
                             <table class="w-full">
@@ -463,7 +463,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="schedule_cs_2" class="schedule_cs duration-300 h-0 w-0 opacity-0 grid grid-cols-4 gap-2">
+                <section id="schedule_cs_2" class="schedule_cs duration-300 h-0 w-0 opacity-0 grid 2xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 gap-2">
                     <div  class="border-black flex flex-col rounded-xl shadow-xl pb-4">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#1c1c1c] rounded-t-xl">GRUPA ŚMIERCI</h1>
                         <div class="px-4 pt-3 w-full">
@@ -557,7 +557,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="schedule_cs_3" class="schedule_cs duration-300 h-0 w-0 opacity-0 grid grid-cols-4 gap-2">
+                <section id="schedule_cs_3" class="schedule_cs duration-300 h-0 w-0 opacity-0 grid 2xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 gap-2">
                     <div class="grid grid-rows-4 gap-2">
                         <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between">
                             <div class="px-4 bg-green-100 flex flex-row items-center justify-between w-full">
@@ -819,6 +819,8 @@
             childsCsSection[j].classList.add('hidden');
             childsCsSection[j+1].classList.remove('hidden');
             childsCsSection[j+1].classList.add('order-first');
+            childsCsSection[j+1].classList.add('col-span-2');
+            document.querySelector('#schedule_cs_1').classList.add('row-auto')
             childsCsSection[j+1].classList.add('scale-up-hor-left');
         })
     }
