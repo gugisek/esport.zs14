@@ -1,7 +1,7 @@
 <section id="bg" style="background-image: url('public/img/green.jpg');" class="bg-cover bg-fixed w-full">
     <section class="bg-[#000000c0] min-h-screen w-full px-[10%] 2xl:px-[15%] flex grid justify-center align-center">
         <section class="h-[80px]"></section>
-        <h1 class="text-center text-white 2xl:text-6xl xl:text-5xl md:text-5xl sm:text-3xl leading-[1.27] pt-[-80px]">
+        <h1 class="text-center text-white 2xl:text-6xl xl:text-5xl md:text-5xl sm:text-3xl min-[320px]:text-2xl leading-[1.27] pt-[-80px]">
             <?php
                 $sql = "SELECT value FROM informations WHERE name = 'events_clock_text'";
                 $sql_res = mysqli_fetch_array(mysqli_query($conn, $sql));
