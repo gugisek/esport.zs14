@@ -1,3 +1,3 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "events_zs14");
+$conn = mysqli_connect("localhost", "eventy", "password", "events_zs14");
 ?>
