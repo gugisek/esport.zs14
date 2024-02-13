@@ -915,20 +915,20 @@ foreach ($parts as $part) {
                 $kapitan_parts = explode('&', $value);
                 $kapitan_name_parts = explode(' ', $kapitan_parts[0]);
                 $kapitan = $kapitan_name_parts[0]; // Pierwszy element po & to imię kapitana
-                $kapitan_pseudonym = $kapitan_parts[1]; // Drugi element po & to pseudonim kapitana
+                $kapitan_pseudonym = '"'.$kapitan_parts[1].'"'; // Drugi element po & to pseudonim kapitana
                 break;
             case 'rez':
                 $rezerwowy_parts = explode('&', $value);
                 $rezerwowy_name_parts = explode(' ', $rezerwowy_parts[0]);
                 $rezerwowy = $rezerwowy_name_parts[0]; // Pierwszy element po & to imię rezerwowego
-                $rezerwowy_pseudonym = $rezerwowy_parts[1]; // Drugi element po & to pseudonim rezerwowego
+                $rezerwowy_pseudonym = '"'. $rezerwowy_parts[1] .'"'; // Drugi element po & to pseudonim rezerwowego
                 break;
             default:
                 // Przetwarzamy dane graczy
                 $player_parts = explode('&', $value);
                 $player_name_parts = explode(' ', $player_parts[0]);
                 $player_name = $player_name_parts[0]; // Imię
-                $player_pseudonym = $player_parts[1]; // Pseudonim
+                $player_pseudonym = '"'.$player_parts[1].'"'; // Pseudonim
                 if ($player_name !== "") {
                     $players[] = "$player_name $player_pseudonym";
                 }
