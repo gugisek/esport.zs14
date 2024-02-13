@@ -1,5 +1,6 @@
 <section id="bg" style="background-image: url('public/img/green.jpg');" class="bg-cover bg-fixed w-full">
     <section class="bg-[#000000c0] min-h-[95vh] w-full px-[10%] 2xl:px-[15%] pb-12 pt-16">
+        <section class="h-[80px]"></section>
         <div class="flex items-center justify-between">
             <h1 id="schedule_title" class="font-[poppins] 2xl:text-3xl text-2xl font-bold text-gray-100">Aktualne Turnieje w ZS14</h1>
             <div class="uppercase text-sm flex flex-row gap-4 2xl:text-lg text-gray-600">
@@ -9,15 +10,15 @@
             </div>
         </div>
         <hr class="my-4 border-gray-500">
-        <section id="schedule_cs" class="duration-300 schedule grid grid-cols-3 gap-4">
+        <section id="schedule_cs" class="duration-300 schedule grid 2xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-4">
             <div class="col-span-2">
                 <div class="bg-[#0e0e0ec0] rounded-xl uppercase text-xs flex flex-row items-center justify-center w-full gap-4 2xl:text-lg text-gray-600 py-2 mb-2">
                     <a id="schedule_nav_cs" onclick="openScheduleCs('1')" class="cursor-pointer text-gray-400 theme-text-hover duration-300 font-[poppins] theme-text font-medium">Faza grupowa</a>
                     <a id="schedule_nav_cs" onclick="openScheduleCs('2')" class="cursor-pointer text-gray-500 theme-text-hover duration-300 font-[poppins] font-medium">System szwajcarski</a>
                     <a id="schedule_nav_cs" onclick="openScheduleCs('3')" class="cursor-pointer text-gray-500 theme-text-hover duration-300 font-[poppins] font-medium">Finały</a>
                 </div>
-                <section id="schedule_cs_1" class="schedule_cs grid 2xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-2">
-                    <div data-aos="fade-left" class="border-black flex flex-col rounded-xl shadow-xl">
+                <section id="schedule_cs_1" class="schedule_cs grid grid-cols-2 2xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-2">
+                    <div class="border-black flex flex-col rounded-xl shadow-xl">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA ŚMIERCI</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
                             <table class="w-full">
@@ -44,7 +45,7 @@
                             </table>
                         </div>  
                     </div>
-                    <div class="w-full bg-[#0e0e0e] 2xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-1 rounded-xl hidden">
+                    <div class="w-full bg-[#0e0e0e] 2xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-2 rounded-xl hidden">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA ŚMIERCI</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
                             <table class="w-full">
@@ -106,7 +107,7 @@
                             </table>
                         </div>
                     </div>
-                    <div data-aos="fade-left" class="border-black flex flex-col rounded-xl shadow-xl">
+                    <div class="border-black flex flex-col rounded-xl shadow-xl">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA A</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
                             <table class="w-full">
@@ -133,7 +134,7 @@
                             </table>
                         </div>  
                     </div>
-                    <div class="w-full bg-[#0e0e0e] 2xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-1 rounded-xl hidden">
+                    <div class="w-full bg-[#0e0e0e] 2xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-2 rounded-xl hidden">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA A</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
                             <table class="w-full">
@@ -195,7 +196,7 @@
                             </table>
                         </div>
                     </div>
-                    <div data-aos="fade-left" class="border-black flex flex-col rounded-xl shadow-xl">
+                    <div class="border-black flex flex-col rounded-xl shadow-xl">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA B</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
                             <table class="w-full">
@@ -222,7 +223,7 @@
                             </table>
                         </div>  
                     </div>
-                    <div class="w-full bg-[#0e0e0e] 2xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-1 rounded-xl hidden">
+                    <div class="w-full bg-[#0e0e0e] 2xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-2 rounded-xl hidden">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA B</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
                             <table class="w-full">
@@ -284,7 +285,7 @@
                             </table>
                         </div>
                     </div>
-                    <div data-aos="fade-left" class="border-black flex flex-col rounded-xl shadow-xl">
+                    <div class="border-black flex flex-col rounded-xl shadow-xl">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA C</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
                             <table class="w-full">
@@ -311,7 +312,7 @@
                             </table>
                         </div>  
                     </div>
-                    <div class="w-full bg-[#0e0e0e] 2xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-1 rounded-xl hidden">
+                    <div class="w-full bg-[#0e0e0e] 2xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-2 rounded-xl hidden">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA C</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
                             <table class="w-full">
@@ -373,7 +374,7 @@
                             </table>
                         </div>
                     </div>
-                    <div data-aos="fade-left" class="border-black flex flex-col rounded-xl shadow-xl">
+                    <div class="border-black flex flex-col rounded-xl shadow-xl">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA D</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
                             <table class="w-full">
@@ -400,7 +401,7 @@
                             </table>
                         </div>  
                     </div>
-                    <div class="w-full bg-[#0e0e0e] 2xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-1 rounded-xl hidden">
+                    <div class="w-full bg-[#0e0e0e] 2xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-2 rounded-xl hidden">
                         <h1 class="py-3 font-bold text-center font-[poppins] italic text-white bg-[#0e0e0e] rounded-t-xl">GRUPA D</h1>
                         <div class="bg-[#0e0e0e] px-4 pb-4 rounded-b-xl w-full">
                             <table class="w-full">
@@ -599,7 +600,7 @@
                 </section>
                 
             </div>
-            <div class="rounded-2xl text-white bg-top bg-cover bg-fixed shadow-xl">
+            <div class="rounded-2xl text-white bg-top bg-cover bg-fixed shadow-xl col-span-2 sm:col-span-2 md:col-span-2 lg:col-span-1 2xl:col-span-1">
                 <div class="bg-[#0e0e0ec0] py-4 px-4 h-full w-full rounded-2xl flex flex-col justify-between">
                     <div>
                         <p class="font-[poppins] text-xs text-gray-100 text-gray-300 pb-4 uppercase  text-center border-b-[1px] border-[#3d3d3d]">Następne mecze</p>              
@@ -820,7 +821,6 @@
             childsCsSection[j+1].classList.remove('hidden');
             childsCsSection[j+1].classList.add('order-first');
             childsCsSection[j+1].classList.add('col-span-2');
-            document.querySelector('#schedule_cs_1').classList.add('row-auto')
             childsCsSection[j+1].classList.add('scale-up-hor-left');
         })
     }
@@ -834,6 +834,7 @@
             },220);
             childsCsSection[j-1].classList.add('scale-up-hor-left');
             childsCsSection[j-1].classList.remove('order-first');
+            childsCsSection[j-1].classList.remove('col-span-2');
         })
     }
 </script>
