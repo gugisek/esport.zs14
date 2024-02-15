@@ -2,20 +2,20 @@
     <div class="w-full py-8 flex md:flex-row flex-col justify-between items-center">
         <h1 class="font-[poppins] 2xl:text-3xl text-2xl font-bold text-gray-800">Nadchodzące wydarzenia</h1>
         <div class="uppercase text-sm flex flex-row gap-4 2xl:text-base text-gray-600">
-            <a href="" class="font-[poppins] theme-text font-medium">Wszystkie</a>
-            <a href="" class="font-[poppins] font-medium">Informatycy</a>
-            <a href="" class="font-[poppins] font-medium">Programiści</a>
+            <a onclick="callPHP('all')" class="font-[poppins] select_type theme-text-hover theme-text hover:cursor-pointer font-medium">Wszystkie</a>
+            <a onclick="callPHP('inf')" class="font-[poppins] select_type theme-text-hover hover:cursor-pointer font-medium">Informatycy</a>
+            <a onclick="callPHP('prg')" class="font-[poppins] select_type theme-text-hover hover:cursor-pointer font-medium">Programiści</a>
         </div>
     </div>
-    <section class="2xl:w-[70vw] md:w-[80vw] w-[90vw] text-white lg:grid-cols-4 grid-cols-2 grid gap-4">
+    <section id="order_query_result" class="2xl:w-[70vw] md:w-[80vw] w-[90vw] text-white lg:grid-cols-4 grid-cols-2 grid gap-4">
         <?php
-            $sql1 = "SELECT * FROM events WHERE status_id = 1 order by event_id desc";
+            $sql1 = "SELECT * FROM events WHERE status_id = 1 order by event_id DESC";
             $result1 = mysqli_query($conn, $sql1);
-                while($row = mysqli_fetch_array($result1)) {
-                    if($row['img']=='' || $row['img']=='NULL'){
-                        $row['img'] = "'public/img/events/event1.jpg'";
-                    } else{
-                        $row['img'] = "'public/img/events/".$row['img']."'";
+            while($row = mysqli_fetch_array($result1)) {
+                if($row['img']=='' || $row['img']=='NULL'){
+                    $row['img'] = "'public/img/events/event1.jpg'";
+                } else{
+                    $row['img'] = "'public/img/events/".$row['img']."'";
                 }
                 if($row['destiny']=='all'){
                     $row['destiny'] = 'Dla wszystkich';
@@ -54,46 +54,6 @@
                     ';
                 }
         ?>
-        <!-- <div onclick="openPopupEvents(1)" data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom" data-aos-delay="100">
-            <div style="background-image: url('public/img/event1.jpg');" class="active:scale-95 bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
-                <div class="2xl:pb-6 pb-4 pt-32 px-4 rounded-xl bg-gradient-to-t from-black">
-                    <p class="font-[poppins] theme-text 2xl:text-sm text-xs uppercase">Dla wszystkich</p>
-                    <h1 class="font-[poppins] 2xl:text-2xl md:text-xl text-lg font-medium">Wielki Turniej CS:GO Szanajcy</h1>
-                    <p class="font-[poppins] text-gray-400 2xl:text-lg md:text-sm text-xs pt-2 uppercase">10 września 2023</p>
-                </div>
-            </div>
-        </div>
-        <div onclick="openPopupEvents(1)" data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom" data-aos-delay="200">
-            <div style="background-image: url('public/img/hero2.jpg');" class="active:scale-95 bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
-                <div class="2xl:pb-6 pb-4 pt-32 px-4 rounded-xl bg-gradient-to-t from-black">
-                    <p class="font-[poppins] theme-text 2xl:text-sm text-xs uppercase">Dla wszystkich</p>
-                    <h1 class="font-[poppins] 2xl:text-2xl md:text-xl text-lg font-medium">Wielki Turniej CS:GO Szanajcy</h1>
-                    <p class="font-[poppins] text-gray-400 2xl:text-lg md:text-sm text-xs pt-2 uppercase">10 września 2023</p>
-                </div>
-            </div>
-        </div>
-        <div onclick="openPopupEvents(1)" data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom" data-aos-delay="300">
-            <div style="background-image: url('public/img/bg7.jpg');" class="active:scale-95 bg-zoom transition-all cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
-                <div class="2xl:pb-6 pb-4 pt-32 px-4 rounded-xl bg-gradient-to-t from-black">
-                    <p class="font-[poppins] theme-text 2xl:text-sm text-xs uppercase">Dla wszystkich</p>
-                    <h1 class="font-[poppins] 2xl:text-2xl md:text-xl text-lg font-medium">Wielki Turniej CS:GO Szanajcy</h1>
-                    <p class="font-[poppins] text-gray-400 2xl:text-lg md:text-sm text-xs pt-2 uppercase">10 września 2023</p>
-                </div>
-            </div>
-        </div>
-        <div onclick="openPopupEvents(1)" data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom" data-aos-delay="400">
-            <div style="background-image: url('public/img/green.jpg');" class="active:scale-95 bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
-                <div class="2xl:pb-6 pb-4 pt-32 px-4 rounded-xl bg-gradient-to-t from-black">
-                    <p class="font-[poppins] theme-text 2xl:text-sm text-xs uppercase">Dla wszystkich</p>
-                    <h1 class="font-[poppins] 2xl:text-2xl md:text-xl text-lg font-medium">Wielki Turniej CS:GO Szanajcy</h1>
-                    <p class="font-[poppins] text-gray-400 2xl:text-lg md:text-sm text-xs pt-2 uppercase">10 września 2023</p>
-                </div>
-            </div>
-        </div> -->
     </section>
     <div class="flex flex-row justify-between items-center">
         <p class=""></p>
@@ -129,6 +89,31 @@
   </section>
 
 <script>
+    var selectors = document.querySelectorAll('.select_type');
+    selectors.forEach((elem,index)=>{
+        elem.addEventListener('click', ()=>{
+            selectors.forEach((e)=>{
+                e.classList.remove('theme-text');
+            })
+        selectors[index].classList.add('theme-text');
+        })
+    })
+
+    function callPHP(v){
+        var httpc = new XMLHttpRequest();
+        var url = "scripts/events/select_events_main.php";
+        httpc.onreadystatechange = function() { //Call a function when the state changes.
+            if(httpc.readyState == 4 && httpc.status == 200) { // complete and no errors
+                document.querySelector('#order_query_result').innerHTML = httpc.responseText;
+                // alert(httpc.responseText);
+                // location.reload();
+            }
+        };
+        httpc.open("POST", url, true); // sending as POST
+        httpc.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        httpc.send('order='+v);
+    }
+
     function popupEventsOpenClose() {
         var popup = document.getElementById("popupEvents")
         var popupBg = document.getElementById("popupEventsBg")
@@ -145,30 +130,6 @@
             document.body.style.overflowY = "hidden";
         }
     }
-    // function openPopupEvents(id){
-    //     var popupOutput = document.getElementById("pupupEventsOutput");
-    //     //popupOutput.innerHTML =  "<div class='flex justify-center items-center'><div class='flex flex-col justify-center items-center'><div class='animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900'></div><div class='text-white text-xl font-semibold mt-4'>Ładowanie...</div></div>";
-    //     popupOutput.innerHTML =  "<div class='w-full flex items-center justify-center z-[999]'><div class='z-[30] bg-black/90 p-4 rounded-xl'><div class='lds-dual-ring'></div></div></div>";
-    //     popupEventsOpenClose();
-    //     const url = "components/events_details_popup.php?id="+id;
-    //     fetch(url)
-    //         .then(response => response.text())
-    //         .then(data => {
-    //         const parser = new DOMParser();
-    //         const parsedDocument = parser.parseFromString(data, "text/html");
-
-    //         // Wstaw zawartość strony (bez skryptów) do "panel_body"
-    //         popupOutput.innerHTML = parsedDocument.body.innerHTML;
-
-    //         // Przechodź przez znalezione skrypty i wykonuj je
-    //         const scripts = parsedDocument.querySelectorAll("script");
-    //         scripts.forEach(script => {
-    //             const scriptElement = document.createElement("script");
-    //             scriptElement.textContent = script.textContent;
-    //             document.body.appendChild(scriptElement);
-    //         });
-    //         });
-    // }
     function openPopupEvents(id){
         var popupOutput = document.getElementById("pupupEventsOutput");
         //popupOutput.innerHTML =  "<div class='flex justify-center items-center'><div class='flex flex-col justify-center items-center'><div class='animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900'></div><div class='text-white text-xl font-semibold mt-4'>Ładowanie...</div></div>";
