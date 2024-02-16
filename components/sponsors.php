@@ -25,17 +25,17 @@
                     </a>
                 </span>
                 <span data-aos="fade-left" data-aos-delay="200">
-                    <a href="https://www.twitch.tv/events_szanajcy" class="hover:shadow-xl aspect-[8/3] hover:scale-105 max-h-16 duration-300 bg-[#9147ff] py-4 px-2 rounded-xl flex items-center justify-center">
+                    <a target="_blank" href="https://www.twitch.tv/events_szanajcy" class="hover:shadow-xl aspect-[8/3] hover:scale-105 max-h-16 duration-300 bg-[#9147ff] py-4 px-2 rounded-xl flex items-center justify-center">
                         <img src="public/img/sponsors/twitch.jpg" alt="" class="aspect-[8/3] object-contain">
                     </a>
                 </span>
                 <span data-aos="fade-left" data-aos-delay="300">
-                    <a href="https://www.zs14.pl" class="hover:shadow-xl aspect-[8/3] max-h-16 hover:scale-105 duration-300 bg-green-100 py-4 px-2 rounded-xl flex items-center justify-center">
+                    <a target="_blank" href="https://www.zs14.pl" class="hover:shadow-xl aspect-[8/3] max-h-16 hover:scale-105 duration-300 bg-green-100 py-4 px-2 rounded-xl flex items-center justify-center">
                         <img src="public/img/sponsors/logo.webp" alt="" class="aspect-[8/3] object-contain">
                     </a>
                 </span>
                 <span data-aos="fade-left" data-aos-delay="400">
-                    <a href="https://praktyczny-informatyk.pl" class="hover:shadow-xl aspect-[8/3] max-h-16 hover:scale-105 duration-300 bg-[#303030] py-4 px-2 rounded-xl flex items-center justify-center">
+                    <a target="_blank" href="https://praktyczny-informatyk.pl" class="hover:shadow-xl aspect-[8/3] max-h-16 hover:scale-105 duration-300 bg-[#303030] py-4 px-2 rounded-xl flex items-center justify-center">
                         <img src="public/img/sponsors/praktyczny.png" alt="" class="aspect-[8/3] object-contain">
                     </a>
                 </span>
