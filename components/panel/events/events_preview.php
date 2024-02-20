@@ -603,7 +603,7 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">Losowanie grup<span class="theme-text">Turnieju</span></p>
+                          <p class="text-sm text-gray-500">Losowanie grup <span class="theme-text">Turnieju</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-20">23 lutego</time>
