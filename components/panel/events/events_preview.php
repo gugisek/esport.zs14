@@ -541,22 +541,6 @@
                 </li>
 
                 <li>
-                  <div class="relative pb-20">
-                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
-                    <div class="relative flex space-x-3 border-b theme-border ml-4">
-                      <div>
-                      </div>
-                      <div class="flex min-w-0 flex-1 justify-between space-x-4">
-                        <div></div>
-                        <div class="whitespace-nowrap text-right text-xs font-medium theme-text italic uppercase">
-                          <time datetime="2020-09-30">Aktualnie</time>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
                   <div class="relative pb-8">
                     <!-- <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span> -->
                     <div class="relative flex space-x-3">
@@ -579,6 +563,50 @@
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-22">19 lutego</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="relative pb-20">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3 border-b theme-border ml-4">
+                      <div>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4">
+                        <div></div>
+                        <div class="whitespace-nowrap text-right text-xs font-medium theme-text italic uppercase">
+                          <time datetime="2020-09-30">Aktualnie</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="relative pb-8">
+                    <!-- <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span> -->
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-green-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+                          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M3 2.25a.75.75 0 01.75.75v.54l1.838-.46a9.75 9.75 0 016.725.738l.108.054a8.25 8.25 0 005.58.652l3.109-.732a.75.75 0 01.917.81 47.784 47.784 0 00.005 10.337.75.75 0 01-.574.812l-3.114.733a9.75 9.75 0 01-6.594-.77l-.108-.054a8.25 8.25 0 00-5.69-.625l-2.202.55V21a.75.75 0 01-1.5 0V3A.75.75 0 013 2.25z" clip-rule="evenodd" />
+                          </svg> -->
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M17.663 3.118c.225.015.45.032.673.05C19.876 3.298 21 4.604 21 6.109v9.642a3 3 0 01-3 3V16.5c0-5.922-4.576-10.775-10.384-11.217.324-1.132 1.3-2.01 2.548-2.114.224-.019.448-.036.673-.051A3 3 0 0113.5 1.5H15a3 3 0 012.663 1.618zM12 4.5A1.5 1.5 0 0113.5 3H15a1.5 1.5 0 011.5 1.5H12z" clip-rule="evenodd" />
+                            <path d="M3 8.625c0-1.036.84-1.875 1.875-1.875h.375A3.75 3.75 0 019 10.5v1.875c0 1.036.84 1.875 1.875 1.875h1.875A3.75 3.75 0 0116.5 18v2.625c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 013 20.625v-12z" />
+                            <path d="M10.5 10.5a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963 5.23 5.23 0 00-3.434-1.279h-1.875a.375.375 0 01-.375-.375V10.5z" />
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Losowanie grup<span class="theme-text">Turnieju</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-20">23 lutego</time>
                         </div>
                       </div>
                     </div>
