@@ -2,7 +2,7 @@
 include "../../scripts/security.php";
 ?>
 <!-- drafty/ published czy coś i preview to łtwe będzie bo wystarczy dać publicyty_type i w publikach tylko publiki wyświetlać -->
-<section data-aos="fade-right" data-aos-delay="100" class="sm:px-6 lg:px-8 px-4 mt-12">
+<section data-aos="fade-right" data-aos-delay="100" class="sm:px-6 lg:px-8 px-4 mt-6">
     <div class="px-4 mb-6 sm:px-0 mt-6 flex md:flex-row flex-col justify-between items-center">
         <div>
             <h3 class="text-base font-semibold leading-7 text-white">Drużny</h3>
@@ -15,7 +15,8 @@ include "../../scripts/security.php";
             </svg>
         </button>
     </div>
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <hr class="border-white/5">
+    <!-- <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       <div>
         <label id="listbox-label" class="block text-sm font-medium leading-6 text-gray-300">Sortowanie</label>
         <div class="relative mt-2">
@@ -46,7 +47,7 @@ include "../../scripts/security.php";
                   </svg>
                 </span>
               </li>
-              <!-- More items... -->
+              
             </ul>
         </div>
         </div>
@@ -121,11 +122,11 @@ include "../../scripts/security.php";
                   </svg>
                 </span>
               </li>
-              <!-- More items... -->
+              
             </ul>
           </div>
         </div>
-    </div>
+    </div> -->
 
     <ol class="mt-2 divide-y divide-[#3d3d3d] text-sm leading-6 text-gray-500">
       <!-- <li class="py-4 sm:flex hover:bg-[#3d3d3d] duration-150 cursor-pointer">
@@ -134,7 +135,7 @@ include "../../scripts/security.php";
       </li> -->
       <?php
       include "../../scripts/conn_db.php";
-      $sql = "SELECT events.event_id, events.name, events.status_id, max_players_in_team, max_rezerwowy_players_in_team, edition, count(team_id) as 'teams_num' FROM events right join teams on teams.event_id=events.event_id where events.status_id=1 or events.status_id=2 group by events.event_id order by events.event_id desc;";
+      $sql = "SELECT events.event_id, events.name, events.status_id, max_players_in_team, max_rezerwowy_players_in_team, edition, count(team_id) as 'teams_num' FROM events left join teams on teams.event_id=events.event_id where events.status_id=1 or events.status_id=2 group by events.event_id order by events.event_id desc;";
       $result = mysqli_query($conn, $sql);
       while($row = mysqli_fetch_assoc($result)) {
         echo '<li class="w-full">
@@ -144,13 +145,13 @@ include "../../scripts/security.php";
             echo 'szkic';
           }
           echo ' </span> <span class="text-xs text-gray-500 capitalize">'.$row['edition'].'</span>
-          <p class="flex items-center justify-center gap-2">
+          <p class="flex flex-row gap-4 sm:ml-6">
+          <span class="flex items-center justify-center gap-2">
             '.$row['teams_num'].'
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
               <path d="M10 9a3 3 0 100-6 3 3 0 000 6zM6 8a2 2 0 11-4 0 2 2 0 014 0zM1.49 15.326a.78.78 0 01-.358-.442 3 3 0 014.308-3.516 6.484 6.484 0 00-1.905 3.959c-.023.222-.014.442.025.654a4.97 4.97 0 01-2.07-.655zM16.44 15.98a4.97 4.97 0 002.07-.654.78.78 0 00.357-.442 3 3 0 00-4.308-3.517 6.484 6.484 0 011.907 3.96 2.32 2.32 0 01-.026.654zM18 8a2 2 0 11-4 0 2 2 0 014 0zM5.304 16.19a.844.844 0 01-.277-.71 5 5 0 019.947 0 .843.843 0 01-.277.71A6.975 6.975 0 0110 18a6.974 6.974 0 01-4.696-1.81z" />
             </svg>
-          </p>
-          <p class="flex-none sm:ml-6">
+          </span>
             <svg id="svg_event_'.$row['event_id'].'" class="rotate-0 duration-300 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
             </svg>

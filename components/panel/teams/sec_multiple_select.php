@@ -10,7 +10,7 @@ if($variant!='delete') {
     if($variant == "status"){
         $sql = "SELECT status_id as id, name FROM team_status";
     }else if($variant == "groups"){
-        $sql = "SELECT group_id as id, name FROM groups where event_id=$event_id";
+        $sql = "SELECT group_id as id, name FROM team_groups where event_id=$event_id";
     }
     $result = mysqli_query($conn, $sql);
     while($row = mysqli_fetch_assoc($result)) {

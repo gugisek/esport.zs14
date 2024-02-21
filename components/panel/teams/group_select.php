@@ -7,7 +7,7 @@
     <option value="0">Brak</option>
     <?php
         include "../../../scripts/conn_db.php";
-        $sql = "SELECT name, group_id FROM groups where event_id=$team_event";
+        $sql = "SELECT name, group_id FROM team_groups where event_id=$team_event";
         $result = mysqli_query($conn, $sql);
         while($row = mysqli_fetch_assoc($result)) {
             echo '
