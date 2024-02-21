@@ -337,7 +337,7 @@
             <br/>
             <p class="text-xs theme-text text-gray-300 font-semibold py-2 uppercase">Faza pucharowa</p>
             <hr class="border-white/10">
-            <p class="text-xs text-gray-500 py-4">Aktualnie brak wyników w tej fazie.</p>
+            <p class="text-xs text-gray-500 py-4 px-2">Aktualnie brak wyników w tej fazie.</p>
             <br/>
             <p class="text-xs theme-text text-gray-300 font-semibold py-2 uppercase">Faza grupowa</p>
             <hr class="border-white/10 pb-4">
@@ -385,7 +385,7 @@
                       echo '</table>';
                     }
                   } else {
-                    echo '<spanfix class="text-xs text-gray-500 ">Aktualnie brak wyników w tej fazie.</spanfix>';
+                    echo '<span class="text-xs text-gray-500 ">Aktualnie brak wyników w tej fazie.</span>';
                   }
                 ?>
               </div>
