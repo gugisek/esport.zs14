@@ -98,7 +98,7 @@ include "../../scripts/security.php";
          
           } else {
             echo '<tr class="">
-            <td class="py-2 w-full">Nie dodano jeszcze żadnej grupy, <a onclick="openPopupTeamsAdd(`'.$row['event_id'].'`)" class="theme-text theme-text-hover duration-150 cursor-pointer">dodaj tutaj.</a></td>
+            <td class="py-2 w-full">Nie dodano jeszcze żadnej grupy, <a onclick="openPopupGroupsAdd(`'.$row['event_id'].'`)" class="theme-text theme-text-hover duration-150 cursor-pointer">dodaj tutaj.</a></td>
           </tr>';
           }
         echo '
