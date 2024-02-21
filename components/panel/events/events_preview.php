@@ -385,7 +385,7 @@
                       echo '</table>';
                     }
                   } else {
-                    echo 'Aktualnie brak wyników w tej fazie.';
+                    echo '<spanfix class="text-xs text-gray-500 ">Aktualnie brak wyników w tej fazie.</spanfix>';
                   }
                 ?>
               </div>
