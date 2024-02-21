@@ -346,11 +346,11 @@
                   $sql = "select name, group_id from team_groups where event_id = '".$id."' order by name asc";
                   $result = mysqli_query($conn, $sql);
                   if (mysqli_num_rows($result) > 0) {
-                    while($row = mysqli_fetch_assoc($result)) {
-                      echo '<p class="text-xs text-gray-400 py-2 uppercase">'.$row['name'].'</p>';
+                    while($row3 = mysqli_fetch_assoc($result)) {
+                      echo '<p class="text-xs text-gray-400 py-2 uppercase">'.$row3['name'].'</p>';
                       echo '<hr class="border-white/10">';
                       echo '<table class="w-full text-xs text-gray-500 my-4">';
-                      $sql2 = "select teams.name, teams.class, teams.profile_img, team_status.name as status from teams join team_status on team_status.status_id=teams.status_id where group_id = '".$row['group_id']."' and event_id = '".$id."' order by teams.name asc";
+                      $sql2 = "select teams.name, teams.class, teams.profile_img, team_status.name as status from teams join team_status on team_status.status_id=teams.status_id where group_id = '".$row3['group_id']."' and event_id = '".$id."' order by teams.name asc";
                       $result2 = mysqli_query($conn, $sql2);
                       if (mysqli_num_rows($result2) > 0) {
                         while($row2 = mysqli_fetch_assoc($result2)) {
