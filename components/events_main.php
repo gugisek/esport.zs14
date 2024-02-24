@@ -83,26 +83,6 @@
                 
                 }
         ?>
-                    <div onclick="openPopupEvents()" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100">
-                        <div style="background-image: url('');" class="relative active:scale-95 bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
-                            <div class="absolute -top-1 z-100 rounded-t-lg w-full bg-black/40 flex flex-row items-center justify-end align-right">
-                                <h1 class="theme-text">AKTUALNIE TRWA</h1>
-                                <svg class="h-[24px] w-[24px]">
-                                    <circle class = "innerCircle" cx = "50%" cy = "50%" r = "30%" fill = "none" stroke = "#FF0000" stroke-width = "10%">
-                                    <animate attributeType="SVG" attributeName="r" begin="0s" dur="1.5s" repeatCount="indefinite" from="1%" to="30%"/>
-                                    <animate attributeType="CSS" attributeName="stroke-width" begin="0s"  dur="1.5s" repeatCount="indefinite" from="10%" to="0%" />
-                                    <animate attributeType="CSS" attributeName="opacity" begin="0s"  dur="1.5s" repeatCount="indefinite" from="1" to="0"/>
-                                    </circle>
-                                </svg>
-                            </div>
-                            <div class="2xl:pb-6 pb-4 pt-32 px-4 rounded-xl bg-gradient-to-t from-black z-200">
-                                <p class="font-[poppins] theme-text 2xl:text-sm text-xs uppercase"></p>
-                                <h1 class="font-[poppins] 2xl:text-2xl md:text-xl text-lg font-medium"></h1>
-                                <p class="font-[poppins] text-gray-400 2xl:text-lg md:text-sm text-xs pt-2 uppercase"></p>
-                            </div>
-                            
-                        </div>
-                    </div>
     </section>
     <div class="flex flex-row justify-between items-center">
         <p class=""></p>
