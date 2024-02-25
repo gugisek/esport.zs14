@@ -439,7 +439,7 @@
 
                 <li>
                   <div class="relative pb-8">
-                    <!-- <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span> -->
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
                       <div>
                         <span class="h-8 w-8 rounded-full bg-red-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
@@ -467,24 +467,8 @@
                 </li>
 
                 <li>
-                  <div class="relative pb-20">
-                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
-                    <div class="relative flex space-x-3 border-b theme-border ml-4">
-                      <div>
-                      </div>
-                      <div class="flex min-w-0 flex-1 justify-between space-x-4">
-                        <div></div>
-                        <div class="whitespace-nowrap text-right text-xs font-medium theme-text italic uppercase">
-                          <time datetime="2020-09-30">Aktualnie</time>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
                   <div class="relative pb-8">
-                    <!-- <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span> -->
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
                       <div>
                         <span class="h-8 w-8 rounded-full bg-green-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
@@ -510,7 +494,7 @@
                   </div>
                 </li>
 
-                <!-- <li>
+                <li>
                   <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
@@ -526,15 +510,41 @@
                           <p class="text-sm text-gray-500">Start <span class="theme-text">fazy grupowej</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-28">1 styczeń</time>
+                          <time datetime="2020-09-28">24 lutego</time>
                         </div>
                       </div>
                     </div>
                   </div>
-                </li> -->
-                  <!-- aktulanie -->
-                <!-- <li>
-                  <div class="relative pb-8">
+                </li>
+
+                <li class="first_round_control hover:bg-slate-500/25 hover:cursor-pointer">
+                  <div class="relative pb-4">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full theme-bg flex items-center justify-center ring-8 ring-[#0e0e0e]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div class="flex flex-row items-center justify-center">
+                          <p class="text-sm text-gray-500"><span class="theme-text">Pierwsza</span> runda w grupach</p>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 ">
+                            <path class="arrow" fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-28">24-28 lutego</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="relative pb-4">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3 border-b theme-border ml-4">
                       <div>
@@ -548,8 +558,258 @@
                     </div>
                   </div>
                 </li>
+
+                <li class="first_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">ELTK <span class="text-gray-600 text-xs">2p</span> vs KLAN AZAZELA <span class="text-gray-600 text-xs">4i</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa A</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="first_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Miernotki <span class="text-gray-600 text-xs">2i</span> vs Zabrakło Cala <span class="text-gray-600 text-xs">4i</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">19:00 26.02.2024 | Grupa A</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="first_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">chude byki <span class="text-gray-600 text-xs">3a</span> vs SZPFZP <span class="text-gray-600 text-xs">5pi</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa B</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="first_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span> vs UHO BOYS <span class="text-gray-600 text-xs">3gt</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">2:0 | Grupa B</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="first_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Gods of 5PD <span class="text-gray-600 text-xs">5pd</span> vs JUK ESPORT <span class="text-gray-600 text-xs">2e</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">2:0 | Grupa C</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="first_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Szach Mat <span class="text-gray-600 text-xs">3d</span> vs Virtus Noobs <span class="text-gray-600 text-xs">1i</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">0:2 | Grupa C</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="first_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">G4rnuchy <span class="text-gray-600 text-xs">4k</span> vs Informatycy z przypadku <span class="text-gray-600 text-xs">3i</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">2:0 | Grupa D</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="first_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Papiery rumiankowe Velvet <span class="text-gray-600 text-xs">1b</span> vs Upos Banditos <span class="text-gray-600 text-xs">2bt</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa D</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- <li>
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-red-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500"><span class="theme-text">Koniec</span> pierwszej rundy</p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-28">28 lutego</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
                 
-                <li>
+                
+                <li class="second_round_control hover:bg-slate-500/25 hover:cursor-pointer">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full theme-bg flex items-center justify-center ring-8 ring-[#0e0e0e]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div class="flex flex-row items-center justify-center roll_out">
+                          <p class="text-sm text-gray-500"><span class="theme-text">Druga</span> runda w grupach</p>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 ">
+                            <path class="arrow" fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-28">28 lutego - 5 marca</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="second_round">
                   <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
@@ -564,16 +824,17 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">Maciek <span class="text-gray-600 text-xs">5pi</span> vs Własny Cień <span class="text-gray-600 text-xs">5pi</span></p>
+                          <p class="text-sm text-gray-500">ELTK <span class="text-gray-600 text-xs">2p</span> vs Miernotki <span class="text-gray-600 text-xs">2i</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">10:30  1 sierpień</time>
+                          <time datetime="2020-09-30">Grupa A</time>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li>
+
+                <li class="second_round">
                   <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
@@ -588,16 +849,17 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">Maciek <span class="text-gray-600 text-xs">5pi</span> vs Własny Cień <span class="text-gray-600 text-xs">5pi</span></p>
+                          <p class="text-sm text-gray-500">KLAN AZAZELA <span class="text-gray-600 text-xs">4i</span> vs Zabrakło Cala <span class="text-gray-600 text-xs">4i</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">10:30  1 sierpień</time>
+                          <time datetime="2020-09-30">Grupa A</time>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li>
+
+                <li class="second_round">
                   <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
@@ -612,16 +874,17 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">Maciek <span class="text-gray-600 text-xs">5pi</span> vs Własny Cień <span class="text-gray-600 text-xs">5pi</span></p>
+                          <p class="text-sm text-gray-500">chude byki <span class="text-gray-600 text-xs">3a</span> vs TurlajBeczke <span class="text-gray-600 text-xs">5pi</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">10:30  1 sierpień</time>
+                          <time datetime="2020-09-30">Grupa B</time>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li>
+
+                <li class="second_round">
                   <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
@@ -636,15 +899,586 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">Maciek <span class="text-gray-600 text-xs">5pi</span> vs Własny Cień <span class="text-gray-600 text-xs">5pi</span></p>
+                          <p class="text-sm text-gray-500">SZPFZP <span class="text-gray-600 text-xs">5pi</span> vs UHO BOYS <span class="text-gray-600 text-xs">3gt</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">10:30  1 sierpień</time>
+                          <time datetime="2020-09-30">Grupa B</time>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
+
+                <li class="second_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Gods of 5PD <span class="text-gray-600 text-xs">5pd</span> vs Szach Mat <span class="text-gray-600 text-xs">3d</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa C</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="second_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">JUK ESPORT <span class="text-gray-600 text-xs">2e</span> vs Virtus Noobs <span class="text-gray-600 text-xs">1i</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa C</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="second_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">G4rnuchy <span class="text-gray-600 text-xs">4k</span> vs Papiery rumiankowe Velvet <span class="text-gray-600 text-xs">1b</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa D</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="second_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">VIKINGS 1G <span class="text-gray-600 text-xs">1g</span> vs Upos Banditos <span class="text-gray-600 text-xs">2bt</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa D</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- <li>
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-red-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500"><span class="theme-text">Koniec</span> drugiej rundy</p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-28">5 marca</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
+
+                <li class="third_round_control hover:bg-slate-500/25 hover:cursor-pointer">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full theme-bg flex items-center justify-center ring-8 ring-[#0e0e0e]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div class="flex flex-row items-center justify-center roll_out">
+                          <p class="text-sm text-gray-500"><span class="theme-text">Trzecia</span> runda w grupach</p>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 ">
+                            <path class="arrow" fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-28">5 - 10 marca</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="third_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">ELTK <span class="text-gray-600 text-xs">2p</span> vs Zabrakło Cala <span class="text-gray-600 text-xs">4i</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa A</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="third_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Miernotki <span class="text-gray-600 text-xs">2i</span> vs KLAN AZAZELA <span class="text-gray-600 text-xs">4i</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa A</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="third_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">chude byki <span class="text-gray-600 text-xs">3a</span> vs UHO BOYS <span class="text-gray-600 text-xs">3gt</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa B</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="third_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span> vs SZPFZP <span class="text-gray-600 text-xs">5pi</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa B</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="third_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Gods of 5PD <span class="text-gray-600 text-xs">5pd</span> vs Virtus Noobs <span class="text-gray-600 text-xs">1i</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa C</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="third_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Szach Mat <span class="text-gray-600 text-xs">3d</span> vs JUK ESPORT <span class="text-gray-600 text-xs">2e</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa C</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="third_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Upos Banditos <span class="text-gray-600 text-xs">2bt</span> vs Informatycy z przypadku <span class="text-gray-600 text-xs">3i</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa D</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="third_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Papiery rumiankowe Velvet <span class="text-gray-600 text-xs">1b</span> vs VIKINGS 1G <span class="text-gray-600 text-xs">1g</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa D</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- <li>
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-red-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500"><span class="theme-text">Koniec</span> trzeciej rundy</p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-28">10 marca</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
+
+                <li class="fourth_round_control hover:bg-slate-500/25 hover:cursor-pointer">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full theme-bg flex items-center justify-center ring-8 ring-[#0e0e0e]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div class="flex flex-row items-center justify-center roll_out">
+                          <p class="text-sm text-gray-500"><span class="theme-text">Czwarta</span> runda w grupach</p>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 ">
+                            <path class="arrow" fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-28">10-13 marca</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="fourth_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">G4rnuchy <span class="text-gray-600 text-xs">4k</span> vs Upos Banditos <span class="text-gray-600 text-xs">2bt</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa D</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="fourth_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Informatycy z przypadku <span class="text-gray-600 text-xs">3i</span> vs VIKINGS 1G <span class="text-gray-600 text-xs">1g</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa D</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- <li>
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-red-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500"><span class="theme-text">Koniec</span> czwartej rundy</p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-28">13 marca</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
+
+                <li class="fiveth_round_control hover:bg-slate-500/25 hover:cursor-pointer">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full theme-bg flex items-center justify-center ring-8 ring-[#0e0e0e]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div class="flex flex-row items-center justify-center roll_out">
+                          <p class="text-sm text-gray-500"><span class="theme-text">Piąta</span> runda w grupach</p>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 ">
+                            <path class="arrow" fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-28">13-16 marca</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="fiveth_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">G4rnuchy <span class="text-gray-600 text-xs">4k</span> vs VIKINGS 1G <span class="text-gray-600 text-xs">1g</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa D</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="fiveth_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Papiery rumiankowe Velvet <span class="text-gray-600 text-xs">1b</span> vs Informatycy z przypadku <span class="text-gray-600 text-xs">3i</span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Grupa D</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- <li>
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-red-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500"><span class="theme-text">Koniec</span> piątej rundy</p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-28">16 marca</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
+
                 <li>
                   <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
@@ -663,34 +1497,265 @@
                           <p class="text-sm text-gray-500">Koniec <span class="theme-text">fazy grupowej</p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">20 styczeń</time>
+                          <time datetime="2020-09-30">16 marca</time>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
+
                 <li>
                   <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
                       <div>
-                        <span class="h-8 w-8 rounded-full bg-purple-600 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+                        <span class="h-8 w-8 rounded-full bg-green-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
-                            <path d="M4.5 4.5a3 3 0 00-3 3v9a3 3 0 003 3h8.25a3 3 0 003-3v-9a3 3 0 00-3-3H4.5zM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06z" />
-                          </svg>
+                            <path fill-rule="evenodd" d="M3 2.25a.75.75 0 01.75.75v.54l1.838-.46a9.75 9.75 0 016.725.738l.108.054a8.25 8.25 0 005.58.652l3.109-.732a.75.75 0 01.917.81 47.784 47.784 0 00.005 10.337.75.75 0 01-.574.812l-3.114.733a9.75 9.75 0 01-6.594-.77l-.108-.054a8.25 8.25 0 00-5.69-.625l-2.202.55V21a.75.75 0 01-1.5 0V3A.75.75 0 013 2.25z" clip-rule="evenodd" />
+                          </svg> 
+
                         </span>
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">Transmisja na żywo <a href="" target="_blank" class="text-gray-600 text-xs theme-text-hover duration-150">twitch.tv/zs14</a></p>
+                          <p class="text-sm text-gray-500">Początek <span class="theme-text">fazy play-off</p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">8:00 2 luteń</time>
+                          <time datetime="2020-09-30">16 marca</time>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
+
+                <li class="quarter_round_control hover:bg-slate-500/25 hover:cursor-pointer">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full theme-bg flex items-center justify-center ring-8 ring-[#0e0e0e]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div class="flex flex-row items-center justify-center roll_out">
+                          <p class="text-sm text-gray-500"><span class="theme-text">Runda</span> Ćwierćfinałowa</p>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 ">
+                            <path class="arrow" fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-28">16-20 marca</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="quarter_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">I miejsce grupy A <span class="text-gray-600 text-xs"></span> vs II miejsce grupy B <span class="text-gray-600 text-xs"></span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Ćwierćfinał</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="quarter_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">I miejsce grupy B <span class="text-gray-600 text-xs"></span> vs II miejsce grupy A <span class="text-gray-600 text-xs"></span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Ćwierćfinał</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="quarter_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">I miejsce grupy C <span class="text-gray-600 text-xs"></span> vs II miejsce grupy D <span class="text-gray-600 text-xs"></span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Ćwierćfinał</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="quarter_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">I miejsce grupy D <span class="text-gray-600 text-xs"></span> vs II miejsce grupy C <span class="text-gray-600 text-xs"></span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Ćwierćfinał</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="half_round_control hover:bg-slate-500/25 hover:cursor-pointer">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full theme-bg flex items-center justify-center ring-8 ring-[#0e0e0e]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div class="flex flex-row items-center justify-center roll_out">
+                          <p class="text-sm text-gray-500"><span class="theme-text">Runda</span> półfinałowa</p>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3 ">
+                            <path class="arrow" fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-28">20-23 marca</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="half_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Wygrany spotkania: A1/B2 <span class="text-gray-600 text-xs"></span> <span class="theme-text">vs</span> Wygrany spotkania: C1/D2 <span class="text-gray-600 text-xs"></span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Półfinał</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="half_round">
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                          </svg>
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Wygrany spotkania: B1/A2 <span class="text-gray-600 text-xs"></span> <span class="theme-text">vs</span> Wygrany spotkania: D1/C2 <span class="text-gray-600 text-xs"></span></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">Półfinał</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-red-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path fill-rule="evenodd" d="M3 2.25a.75.75 0 01.75.75v.54l1.838-.46a9.75 9.75 0 016.725.738l.108.054a8.25 8.25 0 005.58.652l3.109-.732a.75.75 0 01.917.81 47.784 47.784 0 00.005 10.337.75.75 0 01-.574.812l-3.114.733a9.75 9.75 0 01-6.594-.77l-.108-.054a8.25 8.25 0 00-5.69-.625l-2.202.55V21a.75.75 0 01-1.5 0V3A.75.75 0 013 2.25z" clip-rule="evenodd" />
+                          </svg> 
+
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Koniec <span class="theme-text">fazy play-off</p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30">23 marca</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
                 <li>
                   <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
@@ -706,15 +1771,39 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500"><span class="theme-text">Finał</span> - Essa byq <span class="text-gray-600 text-xs">5pi</span> vs Ostry Cień Mgły <span class="text-gray-600 text-xs">5pi</span></p>
+                          <p class="text-sm text-gray-500"><span class="theme-text">Finał</span> - wygrany A1/B2vsC1/D2 <span class="text-gray-600 text-xs"></span> <span class="theme-text">vs</span> wygrany B1/A2vsD1/C2 <span class="text-gray-600 text-xs"></span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">8:00 2 luteń</time>
+                          <time datetime="2020-09-30" class="truncate">Nie ustalono</time>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
+
+                <li>
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3">
+                      <div>
+                        <span class="h-8 w-8 rounded-full bg-purple-600 flex items-center justify-center ring-8 ring-[#0e0e0e]">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                            <path d="M4.5 4.5a3 3 0 00-3 3v9a3 3 0 003 3h8.25a3 3 0 003-3v-9a3 3 0 00-3-3H4.5zM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06z" />
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p class="text-sm text-gray-500">Transmisja na żywo <a href="https://www.twitch.tv/events_szanajcy" target="_blank" class="text-gray-600 text-xs theme-text-hover duration-150">twitch.tv/eventy_szanajcy</a></p>
+                        </div>
+                        <div class="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time datetime="2020-09-30" class="truncate">Nie ustalono</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
                 <li>
                   <div class="relative pb-8">
                     <div class="relative flex space-x-3">
@@ -732,14 +1821,14 @@
                           <p class="text-sm text-gray-500">Ogłoszenie wyników</p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-10-04">12:00 2 luteń</time>
+                          <time datetime="2020-10-04" class="truncate">Nie ustalono</time>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
               </ul>
-            </div> -->
+            </div>
 
             </div>
           </div>
@@ -950,6 +2039,140 @@ echo $result;
     </div>
   </div>
 </div>
+<script>
+
+  var arrows = document.querySelectorAll('.arrow');
+
+  var firstRoundControl = document.querySelector('.first_round_control');
+  var firstRounds = document.querySelectorAll('.first_round');
+
+  var alternativeArrow = 'M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z';
+  var defaultArrow = 'M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z';
+
+  firstRounds.forEach((e)=>{
+    e.classList.add('hidden');
+  })
+
+  firstRoundControl.addEventListener("click", ()=>{
+    firstRounds.forEach((e)=>{
+      e.classList.toggle('hidden');
+      if(!e.classList.contains('hidden')){
+        arrows[0].setAttribute('d', alternativeArrow)
+      } else{
+        arrows[0].setAttribute('d', defaultArrow)
+      }
+    })
+  })
+
+  var secondRoundControl = document.querySelector('.second_round_control');
+  var secondRounds = document.querySelectorAll('.second_round');
+
+  secondRounds.forEach((e)=>{
+    e.classList.add('hidden');
+  })
+
+  secondRoundControl.addEventListener("click", ()=>{
+    secondRounds.forEach((e)=>{
+      e.classList.toggle('hidden');
+      if(!e.classList.contains('hidden')){
+        arrows[1].setAttribute('d', alternativeArrow)
+      } else{
+        arrows[1].setAttribute('d', defaultArrow)
+      }
+    })
+  })
+
+  var thirdRoundControl = document.querySelector('.third_round_control');
+  var thirdRounds = document.querySelectorAll('.third_round');
+
+  thirdRounds.forEach((e)=>{
+    e.classList.add('hidden');
+  })
+
+  thirdRoundControl.addEventListener("click", ()=>{
+    thirdRounds.forEach((e)=>{
+      e.classList.toggle('hidden');
+      if(!e.classList.contains('hidden')){
+        arrows[2].setAttribute('d', alternativeArrow)
+      } else{
+        arrows[2].setAttribute('d', defaultArrow)
+      }
+    })
+  })
+
+  var fourthRoundControl = document.querySelector('.fourth_round_control');
+  var fourthRounds = document.querySelectorAll('.fourth_round');
+
+  fourthRounds.forEach((e)=>{
+    e.classList.add('hidden');
+  })
+
+  fourthRoundControl.addEventListener("click", ()=>{
+    fourthRounds.forEach((e)=>{
+      e.classList.toggle('hidden');
+      if(!e.classList.contains('hidden')){
+        arrows[3].setAttribute('d', alternativeArrow)
+      } else{
+        arrows[3].setAttribute('d', defaultArrow)
+      }
+    })
+  })
+
+  var fivethRoundControl = document.querySelector('.fiveth_round_control');
+  var fivethRounds = document.querySelectorAll('.fiveth_round');
+
+  fivethRounds.forEach((e)=>{
+    e.classList.add('hidden');
+  })
+
+  fivethRoundControl.addEventListener("click", ()=>{
+    fivethRounds.forEach((e)=>{
+      e.classList.toggle('hidden');
+      if(!e.classList.contains('hidden')){
+        arrows[4].setAttribute('d', alternativeArrow)
+      } else{
+        arrows[4].setAttribute('d', defaultArrow)
+      }
+    })
+  })
+
+  var playOffQuarterRoundControl = document.querySelector('.quarter_round_control');
+  var QuarterRounds = document.querySelectorAll('.quarter_round');
+  
+  QuarterRounds.forEach((e)=>{
+    e.classList.add('hidden');
+  })
+
+  playOffQuarterRoundControl.addEventListener("click", ()=>{
+    QuarterRounds.forEach((e)=>{
+      e.classList.toggle('hidden');
+      if(!e.classList.contains('hidden')){
+        arrows[5].setAttribute('d', alternativeArrow)
+      } else{
+        arrows[5].setAttribute('d', defaultArrow)
+      }
+    })
+  })
+
+  var playOffHalfRoundControl = document.querySelector('.half_round_control');
+  var HalfRounds = document.querySelectorAll('.half_round');
+  
+  HalfRounds.forEach((e)=>{
+    e.classList.add('hidden');
+  })
+
+    playOffHalfRoundControl.addEventListener("click", ()=>{
+    HalfRounds.forEach((e)=>{
+      e.classList.toggle('hidden');
+      if(!e.classList.contains('hidden')){
+        arrows[6].setAttribute('d', alternativeArrow)
+      } else{
+        arrows[6].setAttribute('d', defaultArrow)
+      }
+    })
+  })
+
+</script>
 <script>
 
     function openTab(tabName) {
