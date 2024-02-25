@@ -639,7 +639,7 @@
                           <p class="text-sm text-gray-500">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span> vs UHO BOYS <span class="text-gray-600 text-xs">3gt</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Grupa B</time>
+                          <time datetime="2020-09-30">17:00 25.02.2024 | Grupa B</time>
                         </div>
                       </div>
                     </div>
