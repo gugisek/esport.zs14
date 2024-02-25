@@ -626,6 +626,16 @@
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div>
                         </div>
+                        <div class="border-b-[1px] border-[#3d3d3d] py-2 flex items-center justify-between">
+                            <div>
+                                <h1 class="text-gray-200 font-[poppins] font-semibold">Gods of 5PD <span class="text-gray-600 text-xs">5pd</span> vs JUK ESPORT <span class="text-gray-600 text-xs">2e</span></h1>
+                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 1 | Grupa <span class="theme-text">C</span></p>
+                            </div>
+                            <div>
+                                <p class="theme-text">19:00<span class="text-sm text-gray-300"> 25.02.2024</span></p>
+                                <p class="text-xs text-gray-500 text-right">Online</p>
+                            </div>
+                        </div>
                         <div class="border-b-[1px] text-gray-200     border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
                                 <h1 class="font-[poppins] font-semibold">Miernotki <span class="text-gray-600 text-xs">2i</span> vs Zabrakło Cala <span class="text-gray-600 text-xs">4i</span></h1>

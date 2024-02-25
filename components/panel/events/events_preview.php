@@ -664,7 +664,7 @@
                           <p class="text-sm text-gray-500">Gods of 5PD <span class="text-gray-600 text-xs">5pd</span> vs JUK ESPORT <span class="text-gray-600 text-xs">2e</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Grupa C</time>
+                          <time datetime="2020-09-30">19:00 25.02.2024 | Grupa C</time>
                         </div>
                       </div>
                     </div>
