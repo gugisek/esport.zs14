@@ -639,7 +639,7 @@
                           <p class="text-sm text-gray-500">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span> vs UHO BOYS <span class="text-gray-600 text-xs">3gt</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Rozegrano</time>
+                          <time datetime="2020-09-30">2:0 | Grupa B</time>
                         </div>
                       </div>
                     </div>
@@ -664,7 +664,7 @@
                           <p class="text-sm text-gray-500">Gods of 5PD <span class="text-gray-600 text-xs">5pd</span> vs JUK ESPORT <span class="text-gray-600 text-xs">2e</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">19:00 25.02.2024 | Grupa C</time>
+                          <time datetime="2020-09-30">2:0 | Grupa C</time>
                         </div>
                       </div>
                     </div>
@@ -689,7 +689,7 @@
                           <p class="text-sm text-gray-500">Szach Mat <span class="text-gray-600 text-xs">3d</span> vs Virtus Noobs <span class="text-gray-600 text-xs">1i</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">19:00 25.02.2024 | Grupa C</time>
+                          <time datetime="2020-09-30">0:2 | Grupa C</time>
                         </div>
                       </div>
                     </div>
@@ -714,7 +714,7 @@
                           <p class="text-sm text-gray-500">G4rnuchy <span class="text-gray-600 text-xs">4k</span> vs Informatycy z przypadku <span class="text-gray-600 text-xs">3i</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Rozegrano</time>
+                          <time datetime="2020-09-30">2:0 | Grupa D</time>
                         </div>
                       </div>
                     </div>
