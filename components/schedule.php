@@ -606,16 +606,16 @@
                 <div class="bg-[#0e0e0ec0] py-4 px-4 h-full w-full rounded-2xl flex flex-col justify-between">
                     <div>
                         <p class="font-[poppins] text-xs text-gray-100 text-gray-300 pb-4 uppercase  text-center border-b-[1px] border-[#3d3d3d]">Następne mecze</p>              
-                        <!-- <div class="border-b-[1px] border-[#3d3d3d] py-2 flex items-center justify-between">
+                        <div class="border-b-[1px] border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
                                 <h1 class="text-gray-200 font-[poppins] font-semibold">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span> vs UHO BOYS <span class="text-gray-600 text-xs">3gt</span></h1>
                                 <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 1 | Grupa <span class="theme-text">A</span></p>
                             </div>
                             <div>
-                                <p class="theme-text">17:00/18:00<span class="text-sm text-gray-300">25.02.2024</span></p>
+                                <p class="theme-text">17:00<span class="text-sm text-gray-300">25.02.2024</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div>
-                        </div> -->
+                        </div>
                         <div class="border-b-[1px] border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
                                 <h1 class="text-gray-200 font-[poppins] font-semibold">Szach Mat <span class="text-gray-600 text-xs">3d</span> vs Virtus Noobs <span class="text-gray-600 text-xs">1i</span></h1>
