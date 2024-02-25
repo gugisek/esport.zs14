@@ -1761,7 +1761,7 @@
                           <p class="text-sm text-gray-500"><span class="theme-text">Finał</span> - wygrany A1/B2vsC1/D2 <span class="text-gray-600 text-xs"></span> <span class="theme-text">vs</span> wygrany B1/A2vsD1/C2 <span class="text-gray-600 text-xs"></span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Ostatni tydzień marca</time>
+                          <time datetime="2020-09-30" class="truncate">Nie ustalono</time>
                         </div>
                       </div>
                     </div>
@@ -1784,7 +1784,7 @@
                           <p class="text-sm text-gray-500">Transmisja na żywo <a href="https://www.twitch.tv/events_szanajcy" target="_blank" class="text-gray-600 text-xs theme-text-hover duration-150">twitch.tv/eventy_szanajcy</a></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Ostatni tydzień marca</time>
+                          <time datetime="2020-09-30" class="truncate">Nie ustalono</time>
                         </div>
                       </div>
                     </div>
@@ -1808,7 +1808,7 @@
                           <p class="text-sm text-gray-500">Ogłoszenie wyników</p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-10-04">Ostatni tydzień marca</time>
+                          <time datetime="2020-10-04" class="truncate">Nie ustalono</time>
                         </div>
                       </div>
                     </div>
