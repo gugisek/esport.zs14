@@ -75,7 +75,7 @@ include "../../scripts/security.php";
                 <p class=""><span class="text-green-500">'.$row2['winner'].' </span><span class="text-xs">[Mapy: '.$row2['maps_win'].', Rundy: '.$row2['rounds_win'].']</span> <span class=" text-xs">vs</span> <span class="text-red-500">'.$row2['loser'].' </span><span class="text-xs">[Mapy: '.$row2['maps_los'].', Rundy: '.$row2['rounds_los'].']</span></p>
                 </td>
                 <td><span class="text-gray-600 text-xs">Faza '.$row2['faza'].'</span></td>
-                <td class="text-gray-500 text-xs">'.$row2['date_of_spotkanie'].'</td>
+                <td class="text-gray-500 text-right text-xs">'.$row2['date_of_spotkanie'].'</td>
               </tr>
             ';
           }
