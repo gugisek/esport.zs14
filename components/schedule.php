@@ -612,7 +612,7 @@
                                 <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 1 | Grupa <span class="theme-text">A</span></p>
                             </div>
                             <div>
-                                <p class="theme-text">17:00<span class="text-sm text-gray-300">25.02.2024</span></p>
+                                <p class="theme-text">17:00 <span class="text-sm text-gray-300">25.02.2024</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div>
                         </div>
