@@ -350,32 +350,45 @@
                       echo '<p class="text-xs text-gray-400 py-2 uppercase">'.$row3['name'].'</p>';
                       echo '<hr class="border-white/10">';
                       echo '<table class="w-full text-xs text-gray-500 my-4">';
-                      $sql2 = "select teams.name, teams.class, teams.profile_img, team_status.name as status from teams join team_status on team_status.status_id=teams.status_id where group_id = '".$row3['group_id']."' and event_id = '".$id."' order by teams.name asc";
+                      $sql2 = "select teams.team_id, teams.name, teams.class, teams.profile_img, team_status.name as status, count(wyniki.wynik_id) as 'points' from teams join team_status on team_status.status_id=teams.status_id left join wyniki on wyniki.team_win=teams.team_id where group_id = '".$row3['group_id']."' and teams.event_id = '".$id."' GROUP by teams.team_id order by points desc, teams.name asc";
                       $result2 = mysqli_query($conn, $sql2);
                       if (mysqli_num_rows($result2) > 0) {
                         while($row2 = mysqli_fetch_assoc($result2)) {
                           if($row2['profile_img'] == "") {
                             $row2['profile_img'] = "team_default.png";
                           }
-                          echo '<tr class="py-2 hover:bg-black/30 transition-all duration-150">
+                          echo '<tr onclick="expandResultsToggle(`'.$row2['team_id'].'`)" class="py-2 hover:bg-white/10 cursor-pointer transition-all duration-150">
                             <td class="text-sm flex flex-row gap-2 items-center">
                             <img src="public/img/teams/'.$row2['profile_img'].'" alt="team_profile" class="aspect-square object-cover max-w-[25px] my-1 rounded-full">
                             
                             '.$row2['name'].' <span class="text-gray-600 text-xs">'.$row2['class'].'</span></td>
                             <td>';
                             if($row2['status'] == 'zakwalifikowana'){
-                              echo 'w turnieju';
+                              echo 'W turnieju';
                             }elseif($row2['status'] == 'zdyskwalifikowana'){
-                              echo '<span class="text-red-500">zdyskwalifikowana</span>';
+                              echo '<span class="text-red-500">Zdyskwalifikowana</span>';
                             }elseif($row2['status'] == 'wyszli z grupy'){
-                              echo '<span class="text-green-500">zakwalifikowana</span>';
+                              echo '<span class="text-green-500"Zakwalifikowana</span>';
                             }elseif($row2['status'] == 'niezakwalifikowana'){
-                              echo '<span class="text-red-500">niezakwalifikowana</span>';
+                              echo '<span class="text-red-500">Niezakwalifikowana</span>';
+                            }elseif($row2['status'] == 'wygrała turniej'){
+                              echo '<span class="flex flex-row items-center gap-1 text-yellow-500">Wygrała turniej!
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
+                              </svg>
+                              </span>';
+                            }elseif($row2['status'] == 'zakwalifikowana do kolejnej fazy'){
+                              echo '<span class="theme-text">Zakwalifikowana do kolejnej fazy</span>';
+                            }elseif($row2['status'] == 'nie wyszła z grupy'){
+                              echo '<span class="">Nie wyszła z grupy</span>';
                             }else{
                               echo $row2['status'];
                             }
                             echo '</td>
-                            <td>0</td>
+                            <td>'.$row2['points'].'</td>
+                          </tr>
+                          <tr>
+                          <td style="scale: 0; height: 0;" colspan="3" id="result_'.$row2['team_id'].'" class="transition-all duration-150 px-2 border-[#1c1c1c] hidden border-y sm:mt-0 text-gray-500 col-span-3"></td>
                           </tr>
                           ';
                         }
@@ -794,7 +807,29 @@
                           <span class="tooltip-text">Kapitan: discorduser#2137</span>
                       </div>
                 </td> --!>
-                <td class="'.$color.'">'.$row2['status_name'].'</td>
+                <td class="'.$color.' text-xs">';
+                if($row2['status_name'] == 'zakwalifikowana'){
+                              echo 'Zakwalifikowana';
+                            }elseif($row2['status_name'] == 'zdyskwalifikowana'){
+                              echo '<span class="text-red-500">Zdyskwalifikowana</span>';
+                            }elseif($row2['status_name'] == 'wyszli z grupy'){
+                              echo '<span class="text-green-500"Zakwalifikowana</span>';
+                            }elseif($row2['status_name'] == 'niezakwalifikowana'){
+                              echo '<span class="text-red-500">Niezakwalifikowana</span>';
+                            }elseif($row2['status_name'] == 'wygrała turniej'){
+                              echo '<span class="flex flex-row items-center gap-1 text-yellow-500">Wygrała turniej!
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
+                              </svg>
+                              </span>';
+                            }elseif($row2['status_name'] == 'zakwalifikowana do kolejnej fazy'){
+                              echo '<span class="theme-text">Zakwalifikowana do kolejnej fazy</span>';
+                            }elseif($row2['status_name'] == 'nie wyszła z grupy'){
+                              echo '<span class="">Nie wyszła z grupy</span>';
+                            }else{
+                              echo $row2['status_name'];
+                            }
+                echo '</td>
                 <td class="text-right">'.$acsual_team_players_count.'/'.$row['max_players_in_team'].'</td>
                 <td class="ml-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor" class="w-5 h-5">
@@ -969,6 +1004,50 @@ function expandTeamsToggle(event_id) {
         target.style.display = 'table-row';
           target.style.height = 'auto';
       }
+    }
+  }
+
+  function expandResultsToggle(event_id) {
+    var target = document.getElementById("result_"+event_id);
+    if (target) {
+      const expanded = target.getAttribute('aria-expanded') === 'true';
+
+      // Zmień stan aria-expanded na przeciwny (true na false, false na true)
+      target.setAttribute('aria-expanded', !expanded);
+
+      // Zmień ikonę rozwijania/zwijania
+      const icon = document.getElementById("svg_event_"+event_id);
+      if (icon) {
+        icon.classList.toggle('rotate-0', expanded);
+        icon.classList.toggle('-rotate-180', !expanded);
+      }
+
+      // Pokaż lub ukryj odpowiedź na pytanie
+      if (expanded) {
+        target.style.scale = '0';
+        target.style.height = '0';
+        target.style.display = 'none';
+      } else {
+        target.style.scale = '1';
+        target.style.display = 'table-cell';
+          target.style.height = 'auto';
+      }
+      const url_select = "components/panel/events/events_result_of_team_preview.php?id="+event_id;
+      fetch(url_select)
+        .then(response => response.text())
+        .then(data => {
+          const parser = new DOMParser();
+          const parsedDocument = parser.parseFromString(data, "text/html");
+          target.innerHTML = parsedDocument.body.innerHTML;
+
+          // Przechodź przez znalezione skrypty i wykonuj je
+          // const scripts = parsedDocument.querySelectorAll("script");
+          // scripts.forEach(script => {
+          //   const scriptElement = document.createElement("script");
+          //   scriptElement.textContent = script.textContent;
+          //   document.body.appendChild(scriptElement);
+          // });
+        });
     }
   }
 

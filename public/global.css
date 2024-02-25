@@ -597,3 +597,7 @@ input[type="checkbox"]::before:focus {
   outline: none;
   --tw-ring-inset: inset;
 }
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
