@@ -5,7 +5,9 @@ $id = $_GET['id'];
 include "../../../scripts/conn_db.php";
 $sql = "SELECT wyniki.wynik_id, a.name as 'winner', b.name as 'loser', a.class as 'class_win', b.class as 'class_los', fazy.name as 'faza', wyniki.date_of_spotkanie, wyniki.team_win, wyniki.team_los, wyniki.maps_win, wyniki.rounds_win, wyniki.maps_los, wyniki.rounds_los from wyniki join teams a on a.team_id=wyniki.team_win join teams b on b.team_id=wyniki.team_los join fazy on fazy.faza_id=wyniki.faza_id where wyniki.team_win = '$id' or wyniki.team_los = '$id' order by wyniki.date_of_spotkanie desc;";
 $result = $conn->query($sql);
-while ($row4 = $result->fetch_assoc()) {
+
+if ($result->num_rows > 0) {
+    while ($row4 = $result->fetch_assoc()) {
     $row4['date_of_spotkanie'] = date("d.m.Y H:i", strtotime($row4['date_of_spotkanie']));
     echo '
         
@@ -61,6 +63,9 @@ while ($row4 = $result->fetch_assoc()) {
         
     ';
 }
-?>
+} else {
+    echo '<tr><td colspan="4" class="text-center text-xs">Drużyna nie rozegrała jeszcze meczy.</td></tr>';
+}
+  ?>
 </table>
 
