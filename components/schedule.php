@@ -110,6 +110,10 @@
                                     <th class="font-[poppins] text-sm text-start text-gray-300 py-2">TEAM</th>
                                     <th class="font-[poppins] text-sm text-start text-gray-300 py-2">PKT</th>
                                 </tr>
+                                <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
+                                    <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span></td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
+                                </tr>
                                 <tr class="border-b-[1px] border-t-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">chude byki <span class="text-gray-600 text-xs"></span>3a</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
@@ -117,10 +121,6 @@
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">SZPFZP <span class="text-gray-600 text-xs">5pi</span></td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                </tr>
-                                <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
-                                    <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                 </tr>
                                 <tr class="hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">UHO BOYS <span class="text-gray-600 text-xs">3gt</span></td>
