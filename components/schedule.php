@@ -280,11 +280,7 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-t-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">G4rnuchy <span class="text-gray-600 text-xs">4k</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                </tr>
-                                <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
-                                    <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Informatycy z przypadku <span class="text-gray-600 text-xs">3i</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Papiery rumiankowe Velvet <span class="text-gray-600 text-xs">1b</span></td>
@@ -294,10 +290,14 @@
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Upos Banditos <span class="text-gray-600 text-xs">2bt</span></td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
                                 </tr>
-                                <tr class="hover:bg-[#232323]">
+                                <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">VIKINGS 1G <span class="text-gray-600 text-xs">1g</span></td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                </tr>    
+                                </tr>
+                                <tr class="hover:bg-[#232323]">
+                                    <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Informatycy z przypadku <span class="text-gray-600 text-xs">3i</span></td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
+                                </tr>
                             </table>
                         </div>  
                     </div>
@@ -317,23 +317,13 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-t-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">G4rnuchy <span class="text-gray-600 text-xs">4k</span></td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                </tr>
-                                <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
-                                    <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Informatycy z przypadku <span class="text-gray-600 text-xs">3i</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">26</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">15</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">11</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Papiery rumiankowe Velvet <span class="text-gray-600 text-xs">1b</span></td>
@@ -355,7 +345,7 @@
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
                                 </tr>
-                                <tr class="hover:bg-[#232323]">
+                                <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">VIKINGS 1G <span class="text-gray-600 text-xs">1g</span></td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
@@ -365,6 +355,16 @@
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
                                 </tr>    
+                                <tr class=" hover:bg-[#232323]">
+                                    <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Informatycy z przypadku <span class="text-gray-600 text-xs">3i</span></td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">15</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">26</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">-11</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
+                                </tr>
                             </table>
                         </div>
                     </div>
@@ -606,16 +606,6 @@
                 <div class="bg-[#0e0e0ec0] py-4 px-4 h-full w-full rounded-2xl flex flex-col justify-between">
                     <div>
                         <p class="font-[poppins] text-xs text-gray-100 text-gray-300 pb-4 uppercase  text-center border-b-[1px] border-[#3d3d3d]">Następne mecze</p>              
-                        <div class="border-b-[1px] border-[#3d3d3d] py-2 flex items-center justify-between">
-                            <div>
-                                <h1 class="text-gray-200 font-[poppins] font-semibold">Informatycy z przypadku <span class="text-gray-600 text-xs">3i</span> vs G4rnuchy <span class="text-gray-600 text-xs">4k</span></h1>
-                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 1 | Grupa <span class="theme-text">D</span></p>
-                            </div>
-                            <div>
-                                <p class="theme-text">17:30 <span class="text-sm text-gray-300">25.02.2024</span></p>
-                                <p class="text-xs text-gray-500 text-right">Online</p>
-                            </div>
-                        </div>
                         <div class="border-b-[1px] border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
                                 <h1 class="text-gray-200 font-[poppins] font-semibold">Szach Mat <span class="text-gray-600 text-xs">3d</span> vs Virtus Noobs <span class="text-gray-600 text-xs">1i</span></h1>
