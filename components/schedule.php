@@ -374,7 +374,7 @@
                         <div class="flex justify-center items-center">
                             <h1 class="text-2xl theme-text text-center">Ćwierćfinał</h1>
                         </div>
-                        <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between">
+                        <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
                             <div class="px-4 bg-slate-100 flex flex-row items-center justify-between w-full">
                                 <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">1 miejsce Grupy A</p>
                                 <p class="text-sm font-bold text-slate-800">win/loss</p>
@@ -386,7 +386,7 @@
                                 <p class="text-sm font-bold text-slate-800">win/loss</p>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between">
+                        <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
                             <div class="px-4 bg-slate-100 flex flex-row items-center justify-between w-full">
                                 <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">1 miejsce Grupy B</p>
                                 <p class="text-sm font-bold text-slate-800">win/loss</p>
@@ -398,7 +398,7 @@
                                 <p class="text-sm font-bold text-slate-800">win/loss</p>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between">
+                        <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
                             <div class="px-4 bg-slate-100 flex flex-row items-center justify-between w-full">
                                 <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">1 miejsce Grupy C</p>
                                 <p class="text-sm font-bold text-slate-800">win/loss</p>
@@ -410,7 +410,7 @@
                                 <p class="text-sm font-bold text-slate-800">win/loss</p>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between">
+                        <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
                             <div class="px-4 bg-slate-100 flex flex-row items-center justify-between w-full">
                                 <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">2 miejsce Grupy C</p>
                                 <p class="text-sm font-bold text-slate-800">win/loss</p>
@@ -423,11 +423,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid grid-rows-4 gap-10 2xl:pl-8 lg:pl-8">
+                    <div class="grid grid-rows-3 gap-10 2xl:pl-8 lg:pl-8">
                         <div class="flex justify-center items-center">
                             <h1 class="text-2xl theme-text text-center">Półfinał</h1>
                         </div>
-                        <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between">
+                        <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
                             <div class="px-4 bg-slate-100 flex flex-row items-center justify-between w-full">
                                 <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">Wygrany A1vsB2</p>
                                 <p class="text-sm font-bold text-slate-800">win/loss</p>
@@ -438,7 +438,7 @@
                                 <p class="text-sm font-bold text-slate-800">win/loss</p>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between">
+                        <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
                             <div class="px-4 bg-slate-100 flex flex-row items-center justify-between w-full">
                                 <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">Wygrany B1vsA2</p>
                                 <p class="text-sm font-bold text-slate-800">win/loss</p>
@@ -450,12 +450,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid grid-rows-5 gap-10 2xl:pl-8 lg:pl-8">
+                    <div class="grid grid-rows-4 gap-10 2xl:pl-8 lg:pl-8">
                         <div class="flex justify-center items-center">
                             <h1 class="text-2xl theme-text text-center">Finał</h1>
                         </div>
                         <div></div>
-                        <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between">
+                        <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
                             <div class="px-4 bg-slate-100 flex flex-row items-center justify-between w-full">
                                 <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">wygrany A1/B2vsC1/D2</p>
                                 <p class="text-sm font-bold text-slate-800">win/loss</p>
