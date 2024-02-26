@@ -350,13 +350,36 @@
                       echo '<p class="text-xs text-gray-400 py-2 uppercase">'.$row3['name'].'</p>';
                       echo '<hr class="border-white/10">';
                       echo '<table class="w-full text-xs text-gray-500 my-4">';
-                      $sql2 = "select teams.team_id, teams.name, teams.class, teams.profile_img, team_status.name as status, count(wyniki.wynik_id) as 'points' from teams join team_status on team_status.status_id=teams.status_id left join wyniki on wyniki.team_win=teams.team_id where group_id = '".$row3['group_id']."' and teams.event_id = '".$id."' GROUP by teams.team_id order by points desc, teams.name asc";
+                      $sql2 = "
+                      SELECT 
+                            teams.team_id, 
+                            teams.name, 
+                            teams.class, 
+                            teams.profile_img, 
+                            team_status.name AS status, 
+                            COALESCE(points.points, 0) AS points, 
+                            COALESCE(przegrane.przegrane, 0) AS przegrane
+                        FROM 
+                            teams
+                        JOIN 
+                            team_status ON team_status.status_id = teams.status_id
+                        LEFT JOIN 
+                            (SELECT team_win, COUNT(wynik_id) AS points FROM wyniki GROUP BY team_win) AS points ON points.team_win = teams.team_id
+                        LEFT JOIN 
+                            (SELECT team_los, COUNT(wynik_id) AS przegrane FROM wyniki GROUP BY team_los) AS przegrane ON przegrane.team_los = teams.team_id
+                        where group_id = '".$row3['group_id']."' and teams.event_id = '".$id."'
+                        GROUP BY 
+                            teams.team_id
+                        ORDER BY 
+                            points DESC, przegrane DESC, teams.name ASC";
+
                       $result2 = mysqli_query($conn, $sql2);
                       if (mysqli_num_rows($result2) > 0) {
                         while($row2 = mysqli_fetch_assoc($result2)) {
                           if($row2['profile_img'] == "") {
                             $row2['profile_img'] = "team_default.png";
                           }
+                          $mecze = $row2['points'] + $row2['przegrane'];
                           echo '<tr onclick="expandResultsToggle(`'.$row2['team_id'].'`)" class="py-2 hover:bg-white/10 cursor-pointer transition-all duration-150">
                             <td class="text-sm flex flex-row gap-2 items-center">
                             <img src="public/img/teams/'.$row2['profile_img'].'" alt="team_profile" class="aspect-square object-cover max-w-[25px] my-1 rounded-full">
@@ -385,10 +408,24 @@
                               echo $row2['status'];
                             }
                             echo '</td>
-                            <td>'.$row2['points'].'</td>
+                            <td>
+                            <span class="flex flex-row items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 36" aria-hidden="true" role="img" class="w-3.5 h-3.5 iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#CCD6DD" d="M24 29l5-5L6 1H1v5z"/><path fill="#9AAAB4" d="M1 1v5l23 23l2.5-2.5z"/><path fill="#D99E82" d="M33.424 32.808c.284-.284.458-.626.531-.968l-5.242-6.195l-.701-.702c-.564-.564-1.57-.473-2.248.205l-.614.612c-.677.677-.768 1.683-.204 2.247l.741.741l6.15 5.205c.345-.072.688-.247.974-.532l.613-.613z"/><path d="M33.424 32.808c.284-.284.458-.626.531-.968l-1.342-1.586l-.737 3.684c.331-.077.661-.243.935-.518l.613-.612zm-3.31-5.506l-.888 4.441l1.26 1.066l.82-4.1zm-1.401-1.657l-.701-.702a1.2 1.2 0 0 0-.326-.224l-.978 4.892l1.26 1.066l.957-4.783l-.212-.249zm-2.401-.888a2.02 2.02 0 0 0-.548.392l-.614.611a1.981 1.981 0 0 0-.511.86c-.142.51-.046 1.035.307 1.387l.596.596l.77-3.846c0-.001 0-.001 0 0z" fill="#BF6952"/><circle fill="#8A4633" cx="33.25" cy="33.25" r="2.75"/><path fill="#FFAC33" d="M29.626 22.324a1.033 1.033 0 0 1 0 1.462l-6.092 6.092a1.033 1.033 0 1 1-1.462-1.462l6.092-6.092a1.033 1.033 0 0 1 1.462 0z"/><circle fill="#FFAC33" cx="22.072" cy="29.877" r="1.75"/><circle fill="#FFAC33" cx="29.626" cy="22.323" r="1.75"/><circle fill="#FFCC4D" cx="22.072" cy="29.877" r="1"/><circle fill="#FFCC4D" cx="29.626" cy="22.323" r="1"/><path fill="#FFAC33" d="M33.903 29.342a.762.762 0 0 1 0 1.078l-3.476 3.475a.762.762 0 1 1-1.078-1.078l3.476-3.475a.762.762 0 0 1 1.078 0z"/><path fill="#CCD6DD" d="M12 29l-5-5L30 1h5v5z"/><path fill="#9AAAB4" d="M35 1v5L12 29l-2.5-2.5z"/><path fill="#D99E82" d="M2.576 32.808a1.946 1.946 0 0 1-.531-.968l5.242-6.195l.701-.702c.564-.564 1.57-.473 2.248.205l.613.612c.677.677.768 1.683.204 2.247l-.741.741l-6.15 5.205a1.946 1.946 0 0 1-.974-.532l-.612-.613z"/><path d="M2.576 32.808a1.946 1.946 0 0 1-.531-.968l1.342-1.586l.737 3.684a1.932 1.932 0 0 1-.935-.518l-.613-.612zm3.31-5.506l.888 4.441l-1.26 1.066l-.82-4.1zm1.401-1.657l.701-.702a1.2 1.2 0 0 1 .326-.224l.978 4.892l-1.26 1.066l-.957-4.783l.212-.249zm2.401-.888c.195.095.382.225.548.392l.613.612c.254.254.425.554.511.86c.142.51.046 1.035-.307 1.387l-.596.596l-.769-3.847c0-.001 0-.001 0 0z" fill="#BF6952"/><circle fill="#8A4633" cx="2.75" cy="33.25" r="2.75"/><path fill="#FFAC33" d="M6.374 22.324a1.033 1.033 0 0 0 0 1.462l6.092 6.092a1.033 1.033 0 1 0 1.462-1.462l-6.092-6.092a1.033 1.033 0 0 0-1.462 0z"/><circle fill="#FFAC33" cx="13.928" cy="29.877" r="1.75"/><circle fill="#FFAC33" cx="6.374" cy="22.323" r="1.75"/><circle fill="#FFCC4D" cx="13.928" cy="29.877" r="1"/><circle fill="#FFCC4D" cx="6.374" cy="22.323" r="1"/><path fill="#FFAC33" d="M2.097 29.342a.762.762 0 0 0 0 1.078l3.476 3.475a.762.762 0 1 0 1.078-1.078l-3.476-3.475a.762.762 0 0 0-1.078 0z"/></svg>
+                            '.$mecze.'
+                            </span>
+                            </td>
+                            <td >
+                            <span class="flex flex-row items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-yellow-600">
+  <path fill-rule="evenodd" d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 0 0-.584.859 6.753 6.753 0 0 0 6.138 5.6 6.73 6.73 0 0 0 2.743 1.346A6.707 6.707 0 0 1 9.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 0 0-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 0 1-1.112-3.173 6.73 6.73 0 0 0 2.743-1.347 6.753 6.753 0 0 0 6.139-5.6.75.75 0 0 0-.585-.858 47.077 47.077 0 0 0-3.07-.543V2.62a.75.75 0 0 0-.658-.744 49.22 49.22 0 0 0-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 0 0-.657.744Zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 0 1 3.16 5.337a45.6 45.6 0 0 1 2.006-.343v.256Zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 0 1-2.863 3.207 6.72 6.72 0 0 0 .857-3.294Z" clip-rule="evenodd" />
+</svg>
+
+                            '.$row2['points'].'
+                            </span>
+                            </td>
                           </tr>
                           <tr>
-                          <td style="scale: 0; height: 0;" colspan="3" id="result_'.$row2['team_id'].'" class="transition-all duration-150 px-2 border-[#1c1c1c] hidden border-y sm:mt-0 text-gray-500 col-span-3"></td>
+                          <td style="scale: 0; height: 0;" colspan="4" id="result_'.$row2['team_id'].'" class="transition-all duration-150 px-2 border-[#1c1c1c] hidden border-y sm:mt-0 text-gray-500 col-span-3"></td>
                           </tr>
                           ';
                         }
