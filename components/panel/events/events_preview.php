@@ -639,7 +639,7 @@
                           <p class="text-sm text-gray-500">Miernotki <span class="text-gray-600 text-xs">2i</span> vs Zabrakło Cala <span class="text-gray-600 text-xs">4i</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">19:00 26.02.2024 | Grupa A</time>
+                          <time datetime="2020-09-30">0:2 | Grupa A</time>
                         </div>
                       </div>
                     </div>
