@@ -608,16 +608,16 @@
                 <div class="bg-[#0e0e0ec0] py-4 px-4 h-full w-full rounded-2xl flex flex-col justify-between">
                     <div>
                         <p class="font-[poppins] text-xs text-gray-100 text-gray-300 pb-4 uppercase  text-center border-b-[1px] border-[#3d3d3d]">Następne mecze</p>              
-                        <div class=" text-gray-200     border-[#3d3d3d] py-2 flex items-center justify-between">
-                            <div>
+                        <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
+                            <!-- <div>
                                 <h1 class="font-[poppins] font-semibold">SZPFZP <span class="text-gray-600 text-xs">5pi</span> vs chude byki <span class="text-gray-600 text-xs">3a</span></h1>
                                 <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 1 | Grupa <span class="theme-text">B</span></p>
                             </div>
                             <div>
                                 <p class="theme-text">20:30<span class="text-sm text-gray-300"> 27.02.2024</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
-                            </div>
-                            <!-- <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center" >Nie zaplanowano jeszcze następnych spotkań</p> -->
+                            </div> -->
+                            <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p>
                         </div>
                     </div>
                     <a href="index.php" class="text-xs text-gray-400 text-end w-full flex flex-row gap-2 items-center justify-end uppercase font-[poppins] theme-text-hover duration-300">
