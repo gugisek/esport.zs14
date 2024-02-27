@@ -31,11 +31,11 @@
                                     <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                 </tr>
                                 <tr class="border-b-[1px] border-t-[1px] border-gray-600 hover:bg-[#232323]">
-                                    <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">ELTK <span class="text-gray-600 text-xs">2p</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
+                                    <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">KLAN AZAZELA <span class="text-gray-600 text-xs">4i</span></td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
-                                    <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">KLAN AZAZELA <span class="text-gray-600 text-xs">4i</span></td>
+                                    <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">ELTK <span class="text-gray-600 text-xs">2p</span></td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
                                 </tr>
                                 <tr class=" hover:bg-[#232323]">
@@ -70,23 +70,23 @@
                                     <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                 </tr>
                                 <tr class="border-b-[1px] border-t-[1px] border-gray-600 hover:bg-[#232323]">
-                                    <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">ELTK <span class="text-gray-600 text-xs">2p</span></td>
+                                    <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">KLAN AZAZELA <span class="text-gray-600 text-xs">4i</span></td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">26</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">12</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">14</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
-                                    <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">KLAN AZAZELA <span class="text-gray-600 text-xs">4i</span></td>
+                                    <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">ELTK <span class="text-gray-600 text-xs">2p</span></td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">12</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">26</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">-14</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
                                 </tr>
                                 <tr class=" hover:bg-[#232323]">
