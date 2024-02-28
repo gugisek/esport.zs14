@@ -630,7 +630,17 @@
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div>
                         </div>
-                        
+                        <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
+                            <div>
+                                <h1 class="font-[poppins] font-semibold">SZPFZP <span class="text-gray-600 text-xs">5pi</span> vs UHO BOYS <span class="text-gray-600 text-xs">3gt</span></h1>
+                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 2 | Grupa <span class="theme-text">B</span></p>
+                            </div>
+                            <div>
+                                <p class="theme-text">19:00<span class="text-sm text-gray-300"> 29.02.2024</span></p>
+                                <p class="text-xs text-gray-500 text-right">Online</p>
+                            </div>
+                            <!-- <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p> -->
+                        </div>
                     </div>
                     <a href="index.php" class="text-xs text-gray-400 text-end w-full flex flex-row gap-2 items-center justify-end uppercase font-[poppins] theme-text-hover duration-300">
                         Zobacz więcej
