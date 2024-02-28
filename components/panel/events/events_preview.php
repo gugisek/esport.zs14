@@ -581,7 +581,7 @@
                 </li>
 
                 <li class="first_round">
-                  <div class="relative pb-4">
+                  <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
                       <div>
