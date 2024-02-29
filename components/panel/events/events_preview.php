@@ -964,7 +964,7 @@
                           <p class="text-sm text-gray-500">Gods of 5PD <span class="text-gray-600 text-xs">5pd</span> vs Szach Mat <span class="text-gray-600 text-xs">3d</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Grupa C</time>
+                          <time datetime="2020-09-30">2:0 | Grupa C</time>
                         </div>
                       </div>
                     </div>
