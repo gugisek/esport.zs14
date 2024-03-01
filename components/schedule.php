@@ -36,7 +36,7 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">ELTK <span class="text-gray-600 text-xs">2p</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                 </tr>
                                 <tr class=" hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Miernotki <span class="text-gray-600 text-xs">2i</span></td>
@@ -81,22 +81,22 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">ELTK <span class="text-gray-600 text-xs">2p</span></td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">2</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">1</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">1</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">12</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">26</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">-14</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">37</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">32</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">5</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                 </tr>
                                 <tr class=" hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Miernotki <span class="text-gray-600 text-xs">2i</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">2</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">26</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">-24</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">2</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">8</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">51</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">-43</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
                                 </tr>  
                             </table>
@@ -622,15 +622,15 @@
                             </div>
                         </div> -->
                         <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
-                            <div>
+                            <!-- <div>
                                 <h1 class="font-[poppins] font-semibold">ELTK <span class="text-gray-600 text-xs">2p</span> vs Miernotki <span class="text-gray-600 text-xs">2i</span></h1>
                                 <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 2 | Grupa <span class="theme-text">A</span></p>
                             </div>
                             <div>
                                 <p class="theme-text">20:00<span class="text-sm text-gray-300"> 01.03.2024</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
-                            </div>
-                            <!-- <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p> -->
+                            </div> -->
+                            <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p>
                         </div>
                         <!-- <div class=" text-gray-200 border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>

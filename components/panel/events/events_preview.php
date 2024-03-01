@@ -864,7 +864,7 @@
                           <p class="text-sm text-gray-500">ELTK <span class="text-gray-600 text-xs">2p</span> vs Miernotki <span class="text-gray-600 text-xs">2i</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Grupa A</time>
+                          <time datetime="2020-09-30">2:0 | Grupa A</time>
                         </div>
                       </div>
                     </div>
