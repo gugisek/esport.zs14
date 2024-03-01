@@ -645,7 +645,7 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">chude byki <span class="text-gray-600 text-xs">3a</span> vs SZPFZP <span class="text-gray-600 text-xs">5pi</span></p>
+                          <p class="text-sm text-gray-500">chude byki <span class="text-gray-600 text-xs">3a</span> vs KOKENERGY <span class="text-gray-600 text-xs">5pi</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-30">Grupa B</time>
@@ -936,10 +936,10 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">SZPFZP <span class="text-gray-600 text-xs">5pi</span> vs UHO BOYS <span class="text-gray-600 text-xs">3gt</span></p>
+                          <p class="text-sm text-gray-500">KOKENERGY <span class="text-gray-600 text-xs">5pi</span> vs UHO BOYS <span class="text-gray-600 text-xs">3gt</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Grupa B</time>
+                          <time datetime="2020-09-30">1:2 | Grupa B</time>
                         </div>
                       </div>
                     </div>
@@ -1185,7 +1185,7 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span> vs SZPFZP <span class="text-gray-600 text-xs">5pi</span></p>
+                          <p class="text-sm text-gray-500">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span> vs KOKENERGY <span class="text-gray-600 text-xs">5pi</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-30">Grupa B</time>
