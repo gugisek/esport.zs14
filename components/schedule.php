@@ -631,14 +631,14 @@
                             </div>
                         </div>
                         <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
-                            <!-- <div>
-                                <h1 class="font-[poppins] font-semibold">ELTK <span class="text-gray-600 text-xs">2p</span> vs Miernotki <span class="text-gray-600 text-xs">2i</span></h1>
-                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 2 | Grupa <span class="theme-text">A</span></p>
+                            <div>
+                                <h1 class="font-[poppins] font-semibold">Papiery rumiankowe Velvet <span class="text-gray-600 text-xs">1b</span> vs Upos Banditos <span class="text-gray-600 text-xs">2bt</span></h1>
+                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 1 | Grupa <span class="theme-text">D</span></p>
                             </div>
                             <div>
-                                <p class="theme-text">20:00<span class="text-sm text-gray-300"> 01.03.2024</span></p>
+                                <p class="theme-text">19:00<span class="text-sm text-gray-300"> 05.03.2024</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
-                            </div> -->
+                            </div>
                             <!-- <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p> -->
                         </div>
                     </div>
