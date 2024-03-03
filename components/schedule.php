@@ -610,17 +610,26 @@
                 <div class="bg-[#0e0e0ec0] py-4 px-4 h-full w-full rounded-2xl flex flex-col justify-between">
                     <div>
                         <p class="font-[poppins] text-xs text-gray-100 text-gray-300 pb-4 uppercase  text-center border-b-[1px] border-[#3d3d3d]">Następne mecze</p>              
-                        <!-- <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
-                            
+                        <div class=" text-gray-200 border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
-                                <h1 class="font-[poppins] font-semibold">Papiery rumiankowe Velvet <span class="text-gray-600 text-xs">1b</span> vs Upos Banditos <span class="text-gray-600 text-xs">2bt</span></h1>
-                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 1 | Grupa <span class="theme-text">D</span></p>
+                                <h1 class="font-[poppins] font-semibold">JUK ESPORT <span class="text-gray-600 text-xs">2e</span> vs Virtus Noobs <span class="text-gray-600 text-xs">1i</span></h1>
+                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 2 | Grupa <span class="theme-text">C</span></p>
                             </div>
                             <div>
-                                <p class="theme-text">18:30<span class="text-sm text-gray-300"> 29.02.2024</span></p>
+                                <p class="theme-text">19:30<span class="text-sm text-gray-300"> 03.03.2024</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div>
-                        </div> -->
+                        </div>
+                        <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
+                            <div>
+                                <h1 class="font-[poppins] font-semibold">chude byki <span class="text-gray-600 text-xs">3a</span> vs KOKENERGY <span class="text-gray-600 text-xs">5pi</span></h1>
+                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 1 | Grupa <span class="theme-text">B</span></p>
+                            </div>
+                            <div>
+                                <p class="theme-text">20:00<span class="text-sm text-gray-300"> 03.03.2024</span></p>
+                                <p class="text-xs text-gray-500 text-right">Online</p>
+                            </div>
+                        </div>
                         <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
                             <!-- <div>
                                 <h1 class="font-[poppins] font-semibold">ELTK <span class="text-gray-600 text-xs">2p</span> vs Miernotki <span class="text-gray-600 text-xs">2i</span></h1>
@@ -630,18 +639,8 @@
                                 <p class="theme-text">20:00<span class="text-sm text-gray-300"> 01.03.2024</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div> -->
-                            <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p>
+                            <!-- <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p> -->
                         </div>
-                        <!-- <div class=" text-gray-200 border-[#3d3d3d] py-2 flex items-center justify-between">
-                            <div>
-                                <h1 class="font-[poppins] font-semibold">Szach Mat <span class="text-gray-600 text-xs">3d</span> vs Gods of 5PD <span class="text-gray-600 text-xs">5pd</span></h1>
-                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 2 | Grupa <span class="theme-text">C</span></p>
-                            </div>
-                            <div>
-                                <p class="theme-text">19:00<span class="text-sm text-gray-300"> 29.02.2024</span></p>
-                                <p class="text-xs text-gray-500 text-right">Online</p>
-                            </div>
-                        </div> -->
                     </div>
                     <a href="index.php" class="text-xs text-gray-400 text-end w-full flex flex-row gap-2 items-center justify-end uppercase font-[poppins] theme-text-hover duration-300">
                         Zobacz więcej
