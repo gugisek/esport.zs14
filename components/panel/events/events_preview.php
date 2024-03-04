@@ -648,7 +648,7 @@
                           <p class="text-sm text-gray-500">chude byki <span class="text-gray-600 text-xs">3a</span> vs KOKENERGY <span class="text-gray-600 text-xs">5pi</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Grupa B</time>
+                          <time datetime="2020-09-30">2:0 | Grupa B</time>
                         </div>
                       </div>
                     </div>
@@ -989,7 +989,7 @@
                           <p class="text-sm text-gray-500">JUK ESPORT <span class="text-gray-600 text-xs">2e</span> vs Virtus Noobs <span class="text-gray-600 text-xs">1i</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Grupa C</time>
+                          <time datetime="2020-09-30">2:1 | Grupa C</time>
                         </div>
                       </div>
                     </div>
