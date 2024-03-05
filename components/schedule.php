@@ -632,6 +632,16 @@
                         </div>
                         <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
+                                <h1 class="font-[poppins] font-semibold">ELTK <span class="text-gray-600 text-xs">2p</span> vs Zabrakło Cala <span class="text-gray-600 text-xs">4i</span></h1>
+                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 3 | Grupa <span class="theme-text">A</span></p>
+                            </div>
+                            <div>
+                                <p class="theme-text">19:30<span class="text-sm text-gray-300"> 07.03.2024</span></p>
+                                <p class="text-xs text-gray-500 text-right">Online</p>
+                            </div>
+                        </div>
+                        <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
+                            <div>
                                 <h1 class="font-[poppins] font-semibold">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span> vs chude byki <span class="text-gray-600 text-xs">3a</span></h1>
                                 <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 2 | Grupa <span class="theme-text">B</span></p>
                             </div>
