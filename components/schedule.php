@@ -609,16 +609,6 @@
                 <div class="bg-[#0e0e0ec0] py-4 px-4 h-full w-full rounded-2xl flex flex-col justify-between">
                     <div>
                         <p class="font-[poppins] text-xs text-gray-100 text-gray-300 pb-4 uppercase  text-center border-b-[1px] border-[#3d3d3d]">Następne mecze</p>              
-                        <div class=" text-gray-200 border-[#3d3d3d] py-2 flex items-center justify-between">
-                            <div>
-                                <h1 class="font-[poppins] font-semibold">JUK ESPORT <span class="text-gray-600 text-xs">2e</span> vs Szach Mat <span class="text-gray-600 text-xs">3d</span></h1>
-                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 3 | Grupa <span class="theme-text">C</span></p>
-                            </div>
-                            <div>
-                                <p class="theme-text">20:00<span class="text-sm text-gray-300"> 04.03.2024</span></p>
-                                <p class="text-xs text-gray-500 text-right">Online</p>
-                            </div>
-                        </div>
                         <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
                                 <h1 class="font-[poppins] font-semibold">Papiery rumiankowe Velvet <span class="text-gray-600 text-xs">1b</span> vs Upos Banditos <span class="text-gray-600 text-xs">2bt</span></h1>
@@ -647,6 +637,16 @@
                             </div>
                             <div>
                                 <p class="theme-text">20:00<span class="text-sm text-gray-300"> 08.03.2024</span></p>
+                                <p class="text-xs text-gray-500 text-right">Online</p>
+                            </div>
+                        </div>
+                        <div class=" text-gray-200 border-[#3d3d3d] py-2 flex items-center justify-between">
+                            <div>
+                                <h1 class="font-[poppins] font-semibold">JUK ESPORT <span class="text-gray-600 text-xs">2e</span> vs Szach Mat <span class="text-gray-600 text-xs">3d</span></h1>
+                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 3 | Grupa <span class="theme-text">C</span></p>
+                            </div>
+                            <div>
+                                <p class="theme-text"><span class="text-sm text-gray-300"> (Przełożony)</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div>
                         </div>
