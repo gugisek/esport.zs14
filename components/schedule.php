@@ -287,7 +287,7 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Upos Banditos <span class="text-gray-600 text-xs">2bt</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">VIKINGS 1G <span class="text-gray-600 text-xs">1g</span></td>
@@ -330,13 +330,13 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Upos Banditos <span class="text-gray-600 text-xs">2bt</span></td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">26</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">12</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">14</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">VIKINGS 1G <span class="text-gray-600 text-xs">1g</span></td>
@@ -360,12 +360,12 @@
                                 </tr>
                                 <tr class=" hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Papiery rumiankowe Velvet <span class="text-gray-600 text-xs">1b</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">2</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">5</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">26</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">-21</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">2</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">17</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">52</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">-35</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
                                 </tr>
                             </table>
@@ -609,7 +609,7 @@
                 <div class="bg-[#0e0e0ec0] py-4 px-4 h-full w-full rounded-2xl flex flex-col justify-between">
                     <div>
                         <p class="font-[poppins] text-xs text-gray-100 text-gray-300 pb-4 uppercase  text-center border-b-[1px] border-[#3d3d3d]">Następne mecze</p>              
-                        <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
+                        <!-- <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
                                 <h1 class="font-[poppins] font-semibold">Papiery rumiankowe Velvet <span class="text-gray-600 text-xs">1b</span> vs Upos Banditos <span class="text-gray-600 text-xs">2bt</span></h1>
                                 <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 1 | Grupa <span class="theme-text">D</span></p>
@@ -618,8 +618,8 @@
                                 <p class="theme-text">19:00<span class="text-sm text-gray-300"> 05.03.2024</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div>
-                            <!-- <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p> -->
-                        </div>
+                            <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p>
+                        </div> -->
                         <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
                                 <h1 class="font-[poppins] font-semibold">Virtus Noobs <span class="text-gray-600 text-xs">1i</span> vs Gods of 5PD <span class="text-gray-600 text-xs">5pd</span></h1>
