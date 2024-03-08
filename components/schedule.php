@@ -32,7 +32,7 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-t-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Zabrakło Cala <span class="text-gray-600 text-xs">4i</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">6</td>
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">ELTK <span class="text-gray-600 text-xs">2p</span></td>
@@ -71,22 +71,22 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-t-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Zabrakło Cala <span class="text-gray-600 text-xs">4i</span></td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">2</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">1</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">63</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">37</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">26</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">89</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">56</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">33</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">6</td>
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">ELTK <span class="text-gray-600 text-xs">2p</span></td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">2</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">37</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">32</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">5</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">54</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">58</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">-4</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                 </tr>
                                 <tr class=" hover:bg-[#232323]">
@@ -197,7 +197,7 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-t-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">GODS of 5PD <span class="text-gray-600 text-xs">5pd</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">6</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">9</td>
                                 </tr>
                                 <tr class=" border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">JUK ESPORT <span class="text-gray-600 text-xs">2e</span></td>
@@ -232,13 +232,13 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-t-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">GODS of 5PD <span class="text-gray-600 text-xs">5pd</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">2</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">2</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">52</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">6</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">46</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">6</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">78</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">14</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">64</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">9</td>
                                 </tr>
                                 <tr class="  hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">JUK ESPORT <span class="text-gray-600 text-xs">2e</span></td>
@@ -252,12 +252,12 @@
                                 </tr>
                                 <tr class=" border-t-[1px] border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Virtus Noobs <span class="text-gray-600 text-xs">1i</span></td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">2</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">59</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">55</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">4</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">67</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">75</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">-8</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                 </tr>
                                 <tr class=" border-gray-600 hover:bg-[#232323]">
@@ -609,17 +609,7 @@
                 <div class="bg-[#0e0e0ec0] py-4 px-4 h-full w-full rounded-2xl flex flex-col justify-between">
                     <div>
                         <p class="font-[poppins] text-xs text-gray-100 text-gray-300 pb-4 uppercase  text-center border-b-[1px] border-[#3d3d3d]">Następne mecze</p>              
-                        <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
-                            <div>
-                                <h1 class="font-[poppins] font-semibold">Virtus Noobs <span class="text-gray-600 text-xs">1i</span> vs Gods of 5PD <span class="text-gray-600 text-xs">5pd</span></h1>
-                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 3 | Grupa <span class="theme-text">C</span></p>
-                            </div>
-                            <div>
-                                <p class="theme-text">19:00<span class="text-sm text-gray-300"> 07.03.2024</span></p>
-                                <p class="text-xs text-gray-500 text-right">Online</p>
-                            </div>
-                        </div>
-                        <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
+                        <!-- <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
                                 <h1 class="font-[poppins] font-semibold">ELTK <span class="text-gray-600 text-xs">2p</span> vs Zabrakło Cala <span class="text-gray-600 text-xs">4i</span></h1>
                                 <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 3 | Grupa <span class="theme-text">A</span></p>
@@ -628,17 +618,27 @@
                                 <p class="theme-text">19:30<span class="text-sm text-gray-300"> 07.03.2024</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div>
-                        </div>
+                        </div> -->
                         <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
                                 <h1 class="font-[poppins] font-semibold">Miernotki <span class="text-gray-600 text-xs">2i</span> vs Klan Azazaela <span class="text-gray-600 text-xs">4i</span></h1>
-                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 1 | Grupa <span class="theme-text">D</span></p>
+                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 3 | Grupa <span class="theme-text">A</span></p>
                             </div>
                             <div>
                                 <p class="theme-text">17:30<span class="text-sm text-gray-300"> 08.03.2024</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div>
                             <!-- <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p> -->
+                        </div>
+                        <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
+                            <div>
+                                <h1 class="font-[poppins] font-semibold">Informatycy z Przypadku <span class="text-gray-600 text-xs">3i</span> vs Upos Banditos <span class="text-gray-600 text-xs">2bt</span></h1>
+                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 3 | Grupa <span class="theme-text">D</span></p>
+                            </div>
+                            <div>
+                                <p class="theme-text">20:00<span class="text-sm text-gray-300"> 08.03.2024</span></p>
+                                <p class="text-xs text-gray-500 text-right">Online</p>
+                            </div>
                         </div>
                         <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
@@ -656,7 +656,7 @@
                                 <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 3 | Grupa <span class="theme-text">C</span></p>
                             </div>
                             <div>
-                                <p class="theme-text"><span class="text-sm text-gray-300"> (Przełożony)</span></p>
+                                <p class="theme-text"><span class="text-sm text-gray-300"> (1:0) | (Przełożony)</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div>
                         </div>
