@@ -1362,7 +1362,7 @@
                           <p class="text-sm text-gray-500">G4rnuchy <span class="text-gray-600 text-xs">4k</span> vs Upos Banditos <span class="text-gray-600 text-xs">2bt</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Grupa D</time>
+                          <time datetime="2020-09-30">1:2 | Grupa D</time>
                         </div>
                       </div>
                     </div>

@@ -283,7 +283,7 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-t-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Upos Banditos <span class="text-gray-600 text-xs">2bt</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">9</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">12</td>
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">G4rnuchy <span class="text-gray-600 text-xs">4k</span></td>
@@ -320,22 +320,22 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-t-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Upos Banditos <span class="text-gray-600 text-xs">2bt</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">4</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">4</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">89</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">44</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">45</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">9</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">125</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">78</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">47</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">12</td>
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">G4rnuchy <span class="text-gray-600 text-xs">4k</span></td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">2</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">2</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">0</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">52</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">20</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">32</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">86</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">56</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">30</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">6</td>
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
