@@ -616,7 +616,7 @@
                                 <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 3 | Grupa <span class="theme-text">B</span></p>
                             </div>
                             <div>
-                                <p class="theme-text">19:00<span class="text-sm text-gray-300"> 14.03.2024</span></p>
+                                <p class="theme-text">20:00<span class="text-sm text-gray-300"> 14.03.2024</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div>
                             <!-- <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p> -->

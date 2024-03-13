@@ -1303,7 +1303,7 @@
                 </li> -->
 
                 <li class="fourth_round_control hover:bg-slate-500/25 hover:cursor-pointer">
-                  <div class="relative pb-4">
+                  <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
                       <div>
@@ -1322,22 +1322,6 @@
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-28">10-13 marca</time>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="relative pb-8">
-                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
-                    <div class="relative flex space-x-3 border-b theme-border ml-4">
-                      <div>
-                      </div>
-                      <div class="flex min-w-0 flex-1 justify-between space-x-4">
-                        <div></div>
-                        <div class="whitespace-nowrap text-right text-xs font-medium theme-text italic uppercase">
-                          <time datetime="2020-09-30">Aktualnie</time>
                         </div>
                       </div>
                     </div>
@@ -1418,7 +1402,7 @@
                 </li> -->
 
                 <li class="fiveth_round_control hover:bg-slate-500/25 hover:cursor-pointer">
-                  <div class="relative pb-8">
+                  <div class="relative pb-4">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
                       <div>
@@ -1437,6 +1421,22 @@
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-28">13-16 marca</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3 border-b theme-border ml-4">
+                      <div>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4">
+                        <div></div>
+                        <div class="whitespace-nowrap text-right text-xs font-medium theme-text italic uppercase">
+                          <time datetime="2020-09-30">Aktualnie</time>
                         </div>
                       </div>
                     </div>
