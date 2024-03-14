@@ -1657,7 +1657,7 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">I miejsce grupy C <span class="text-gray-600 text-xs"></span> vs II miejsce grupy D <span class="text-gray-600 text-xs"></span></p>
+                          <p class="text-sm text-gray-500">GODS of 5PD <span class="text-gray-600 text-xs">5pd</span> vs II miejsce grupy D <span class="text-gray-600 text-xs"></span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-30">Ćwierćfinał</time>
@@ -1682,7 +1682,7 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">I miejsce grupy D <span class="text-gray-600 text-xs"></span> vs II miejsce grupy C <span class="text-gray-600 text-xs"></span></p>
+                          <p class="text-sm text-gray-500">I miejsce grupy D <span class="text-gray-600 text-xs"></span> vs JUK ESPORT <span class="text-gray-600 text-xs">2e</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-30">Ćwierćfinał</time>

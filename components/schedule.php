@@ -404,7 +404,7 @@
                         </div>
                         <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
                             <div class="px-4 bg-slate-100 flex flex-row items-center justify-between w-full">
-                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">1 miejsce Grupy C</p>
+                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">GODS of 5PD <span class="text-gray-600 text-xs">5pd</span></p>
                                 <p class="text-sm font-bold text-slate-800"></p>
                             </div>
                             <p class="h-[0px]">vs</p>
@@ -416,7 +416,7 @@
                         </div>
                         <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
                             <div class="px-4 bg-slate-100 flex flex-row items-center justify-between w-full">
-                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">2 miejsce Grupy C</p>
+                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">JUK ESPORT <span class="text-gray-600 text-xs">2e</span></p>
                                 <p class="text-sm font-bold text-slate-800"></p>
                             </div>
                             <p class="h-[0px]">vs</p>
