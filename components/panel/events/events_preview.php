@@ -1172,7 +1172,7 @@
                           <p class="text-sm text-gray-500">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span> vs KOKENERGY <span class="text-gray-600 text-xs">5pi</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Grupa B</time>
+                          <time datetime="2020-09-30">2:0 | Walkover | Grupa B</time>
                         </div>
                       </div>
                     </div>
@@ -1222,7 +1222,7 @@
                           <p class="text-sm text-gray-500">Szach Mat <span class="text-gray-600 text-xs">3d</span> vs JUK ESPORT <span class="text-gray-600 text-xs">2e</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Grupa C</time>
+                          <time datetime="2020-09-30">0:2 | Grupa C</time>
                         </div>
                       </div>
                     </div>
