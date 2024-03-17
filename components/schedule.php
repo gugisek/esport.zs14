@@ -116,7 +116,7 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-t-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">UHO BOYS <span class="text-gray-600 text-xs">3gt</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">6</td>
                                 </tr>
                                 <tr class="border-b-[1px]  border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">chude byki <span class="text-gray-600 text-xs"></span>3a</td>
@@ -155,22 +155,22 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-t-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">UHO BOYS <span class="text-gray-600 text-xs">3gt</span></td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">2</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">1</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">46</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">51</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">-5</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">72</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">60</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">12</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">6</td>
                                 </tr>
                                 <tr class="border-b-[1px]  border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">chude byki <span class="text-gray-600 text-xs">3a</span></td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">2</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">28</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">40</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">-12</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">37</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">66</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">-29</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                 </tr>
                                 <tr class=" hover:bg-[#232323]">
@@ -386,13 +386,13 @@
                             <p class="h-[0px]">vs</p>
                             <hr>
                             <div class="px-4 bg-slate-200 flex flex-row items-center justify-between w-full">
-                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">2 miejsce Grupy B</p>
+                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">UHO BOYS <span class="text-gray-600 text-xs">3gt</span></p>
                                 <p class="text-sm font-bold text-slate-800"></p>
                             </div>
                         </div>
                         <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
                             <div class="px-4 bg-slate-100 flex flex-row items-center justify-between w-full">
-                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">1 miejsce Grupy B</p>
+                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span></p>
                                 <p class="text-sm font-bold text-slate-800"></p>
                             </div>
                             <p class="h-[0px]">vs</p>
