@@ -291,7 +291,7 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Informatycy z przypadku <span class="text-gray-600 text-xs">3i</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">6</td>
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Papiery rumiankowe Velvet <span class="text-gray-600 text-xs">1b</span></td>
@@ -341,22 +341,22 @@
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Informatycy z przypadku <span class="text-gray-600 text-xs">3i</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">1</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">4</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">2</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">73</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">2</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">99</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">63</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">10</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">36</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">6</td>
                                 </tr>
                                 <tr class="border-b-[1px] border-gray-600 hover:bg-[#232323]">
                                     <td class="font-[poppins] text-sm text-gray-300 py-2 text-ellipsis">Papiery rumiankowe Velvet <span class="text-gray-600 text-xs">1b</span></td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">4</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">1</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">2</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">43</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">52</td>
-                                    <td class="text-sm font-[poppins] theme-text text-center">9</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">78</td>
+                                    <td class="text-sm font-[poppins] theme-text text-center">-35</td>
                                     <td class="text-sm font-[poppins] theme-text text-center">3</td>
                                 </tr>
                                 <tr class="hover:bg-[#232323]">
@@ -410,7 +410,7 @@
                             <p class="h-[0px]">vs</p>
                             <hr>
                             <div class="px-4 bg-slate-200 flex flex-row items-center justify-between w-full">
-                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">2 miejsce Grupy D</p>
+                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">G4rnuchy <span class="text-gray-600 text-xs">4k</span></p>
                                 <p class="text-sm font-bold text-slate-800"></p>
                             </div>
                         </div>
@@ -422,7 +422,7 @@
                             <p class="h-[0px]">vs</p>
                             <hr>
                             <div class="px-4 bg-slate-200 flex flex-row items-center justify-between w-full">
-                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">1 miejsce grupy D</p>
+                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">Upos Banditos <span class="text-gray-600 text-xs">2bt</span></p>
                                 <p class="text-sm font-bold text-slate-800"></p>
                             </div>
                         </div>
@@ -619,18 +619,18 @@
                                 <p class="theme-text">20:00<span class="text-sm text-gray-300"> 14.03.2024</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div> -->
-                            <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p>
+                            <!-- <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p> -->
                         <!-- </div> -->
-                        <!-- <div class=" text-gray-200 border-[#3d3d3d] py-2 flex items-center justify-between">
+                        <div class=" text-gray-200 border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
-                                <h1 class="font-[poppins] font-semibold">JUK ESPORT <span class="text-gray-600 text-xs">2e</span> vs Szach Mat <span class="text-gray-600 text-xs">3d</span></h1>
-                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 3 | Grupa <span class="theme-text">C</span></p>
+                                <h1 class="font-[poppins] font-semibold">JUK ESPORT <span class="text-gray-600 text-xs">2e</span> vs Upos Banditos <span class="text-gray-600 text-xs">2bt</span></h1>
+                                <p class="uppercase theme-text font-[poppins] text-xs"><span class="theme-text">Ćwierćfinał</span></p>
                             </div>
                             <div>
-                                <p class="theme-text"><span class="text-sm text-gray-300"> (1:0) | (Przełożony)</span></p>
+                                <p class="theme-text">19:40<span class="text-sm text-gray-300"> 17.03.2024</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div>
-                        </div> -->
+                        </div>
                         
                     </div>
                     <a href="index.php" class="text-xs text-gray-400 text-end w-full flex flex-row gap-2 items-center justify-end uppercase font-[poppins] theme-text-hover duration-300">

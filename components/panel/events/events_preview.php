@@ -1470,7 +1470,7 @@
                           <p class="text-sm text-gray-500">Papiery rumiankowe Velvet <span class="text-gray-600 text-xs">1b</span> vs Informatycy z przypadku <span class="text-gray-600 text-xs">3i</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Grupa D</time>
+                          <time datetime="2020-09-30">0:2 | Walkover | Grupa D</time>
                         </div>
                       </div>
                     </div>
@@ -1657,7 +1657,7 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">GODS of 5PD <span class="text-gray-600 text-xs">5pd</span> vs II miejsce grupy D <span class="text-gray-600 text-xs"></span></p>
+                          <p class="text-sm text-gray-500">GODS of 5PD <span class="text-gray-600 text-xs">5pd</span> vs G4rnuchy <span class="text-gray-600 text-xs">4k</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-30">Ćwierćfinał</time>
@@ -1682,7 +1682,7 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">I miejsce grupy D <span class="text-gray-600 text-xs"></span> vs JUK ESPORT <span class="text-gray-600 text-xs">2e</span></p>
+                          <p class="text-sm text-gray-500">Upos Banditos <span class="text-gray-600 text-xs">2bt</span> vs JUK ESPORT <span class="text-gray-600 text-xs">2e</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-30">Ćwierćfinał</time>
