@@ -610,24 +610,35 @@
                 <div class="bg-[#0e0e0ec0] py-4 px-4 h-full w-full rounded-2xl flex flex-col justify-between">
                     <div>
                         <p class="font-[poppins] text-xs text-gray-100 text-gray-300 pb-4 uppercase  text-center border-b-[1px] border-[#3d3d3d]">Następne mecze</p>              
-                        <!-- <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
+                        <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
-                                <h1 class="font-[poppins] font-semibold">KOKENERGY <span class="text-gray-600 text-xs">5pi</span> vs TurlajBeczke <span class="text-gray-600 text-xs">5pi</span></h1>
-                                <p class="uppercase theme-text font-[poppins] text-xs">Faza Grupowa | Runda 3 | Grupa <span class="theme-text">B</span></p>
+                                <h1 class="font-[poppins] font-semibold">Zabrakło Cala <span class="text-gray-600 text-xs">4i</span> vs TurlajBeczke <span class="text-gray-600 text-xs">5pi</span></h1>
+                                <p class="uppercase theme-text font-[poppins] text-xs"><span class="theme-text">Ćwierćfinał</span></p>
                             </div>
                             <div>
-                                <p class="theme-text">20:00<span class="text-sm text-gray-300"> 14.03.2024</span></p>
+                                <p class="theme-text">19:00<span class="text-sm text-gray-300"> 19.03.2024</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
-                            </div> -->
+                            </div>
                             <!-- <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p> -->
-                        <!-- </div> -->
+                        </div>
+                        <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
+                            <div>
+                                <h1 class="font-[poppins] font-semibold">Klan Azazela <span class="text-gray-600 text-xs">4i</span> vs UHO BOYS <span class="text-gray-600 text-xs">3gt</span></h1>
+                                <p class="uppercase theme-text font-[poppins] text-xs"><span class="theme-text">Ćwierćfinał</span></p>
+                            </div>
+                            <div>
+                                <p class="theme-text">20:00<span class="text-sm text-gray-300"> 20.03.2024</span></p>
+                                <p class="text-xs text-gray-500 text-right">Online</p>
+                            </div>
+                            <!-- <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p> -->
+                        </div>
                         <div class=" text-gray-200 border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
                                 <h1 class="font-[poppins] font-semibold">JUK ESPORT <span class="text-gray-600 text-xs">2e</span> vs Upos Banditos <span class="text-gray-600 text-xs">2bt</span></h1>
                                 <p class="uppercase theme-text font-[poppins] text-xs"><span class="theme-text">Ćwierćfinał</span></p>
                             </div>
                             <div>
-                                <p class="theme-text">19:40<span class="text-sm text-gray-300"> 17.03.2024</span></p>
+                                <p class="theme-text">Przełożony<span class="text-sm text-gray-300"> 1:1</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div>
                         </div>
