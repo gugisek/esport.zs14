@@ -337,7 +337,159 @@
             <br/>
             <p class="text-xs theme-text text-gray-300 font-semibold py-2 uppercase">Faza pucharowa</p>
             <hr class="border-white/10">
-            <p class="text-xs text-gray-500 py-4 px-2">Aktualnie brak wyników w tej fazie.</p>
+            <div class="text-xs text-gray-500 py-4 px-2">
+              <?php
+              $sql = "SELECT * from wyniki where wyniki.event_id = $id and wyniki.faza_id != 1";
+              $result = mysqli_query($conn, $sql);
+              if(mysqli_num_rows($result) > 0){
+                $sql2 = "SELECT wyniki.wynik_id, a.name as 'winner', a.profile_img as 'winner_img', b.profile_img as 'loser_img', b.name as 'loser', a.class as 'class_win', b.class as 'class_los', fazy.name as 'faza', wyniki.date_of_spotkanie, wyniki.team_win, wyniki.team_los, wyniki.maps_win, wyniki.rounds_win, wyniki.maps_los, wyniki.rounds_los from wyniki join teams a on a.team_id=wyniki.team_win join teams b on b.team_id=wyniki.team_los join fazy on fazy.faza_id=wyniki.faza_id where wyniki.event_id = $id and wyniki.faza_id = 4 order by wyniki.date_of_spotkanie desc;";
+                $result2 = mysqli_query($conn, $sql2);
+                if(mysqli_num_rows($result2) > 0){
+                  echo '<p class="text-xs text-yellow-600 text-center border-b border-white/10 pb-2 my-1">Finały</p>
+                  <table class="w-full">';
+                  while($row = mysqli_fetch_assoc($result2)) {
+                    if($row['winner_img'] == "") {
+                              $row['winner_img'] = "team_default.png";
+                    }
+                    if($row['loser_img'] == "") {
+                              $row['loser_img'] = "team_default.png";
+                    }
+                    echo '
+                      <tr class="hover:bg-black/30">
+                        <td class="text-sm flex flex-wrap flex-row gap-2 items-center">
+                          <span class="flex flex-row gap-2 items-center">
+                            <img src="public/img/teams/'.$row['winner_img'].'" alt="team_profile" class="aspect-square object-cover max-w-[25px] my-1 rounded-full">
+                            <span class="text-green-600">'.$row['winner'].'</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-yellow-600">
+                              <path fill-rule="evenodd" d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 0 0-.584.859 6.753 6.753 0 0 0 6.138 5.6 6.73 6.73 0 0 0 2.743 1.346A6.707 6.707 0 0 1 9.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 0 0-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 0 1-1.112-3.173 6.73 6.73 0 0 0 2.743-1.347 6.753 6.753 0 0 0 6.139-5.6.75.75 0 0 0-.585-.858 47.077 47.077 0 0 0-3.07-.543V2.62a.75.75 0 0 0-.658-.744 49.22 49.22 0 0 0-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 0 0-.657.744Zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 0 1 3.16 5.337a45.6 45.6 0 0 1 2.006-.343v.256Zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 0 1-2.863 3.207 6.72 6.72 0 0 0 .857-3.294Z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-gray-600 text-xs">'.$row['class_win'].'</span>
+                          </span>
+                          vs
+                          <span class="flex flex-row gap-2 items-center">
+                            <img src="public/img/teams/'.$row['loser_img'].'" alt="team_profile" class="aspect-square object-cover max-w-[25px] my-1 rounded-full">
+                            <span class="">'.$row['loser'].'</span>
+                            <span class="text-gray-600 text-xs">'.$row['class_los'].'</span>
+                          </span>
+                        </td>
+                        <td class="text-right">
+                            <span class="text-xs">Mapy: </span>
+                            <span class="text-xs text-green-600">'.$row['maps_win'].'</span>
+                             : 
+                            <span class="text-xs">'.$row['maps_los'].'</span>
+                        </td>
+                        <td class="text-right">
+                            <span class="text-xs">Rundy: </span>
+                            <span class="text-xs text-green-600">'.$row['rounds_win'].'</span>
+                             : 
+                            <span class="text-xs">'.$row['rounds_los'].'</span>
+                        </td>
+                      </tr>
+                    ';
+                  }
+                  echo '</table>';
+                }
+
+                $sql3 = "SELECT wyniki.wynik_id, a.name as 'winner', a.profile_img as 'winner_img', b.profile_img as 'loser_img', b.name as 'loser', a.class as 'class_win', b.class as 'class_los', fazy.name as 'faza', wyniki.date_of_spotkanie, wyniki.team_win, wyniki.team_los, wyniki.maps_win, wyniki.rounds_win, wyniki.maps_los, wyniki.rounds_los from wyniki join teams a on a.team_id=wyniki.team_win join teams b on b.team_id=wyniki.team_los join fazy on fazy.faza_id=wyniki.faza_id where wyniki.event_id = $id and wyniki.faza_id = 3 order by wyniki.date_of_spotkanie desc;";
+                $result3 = mysqli_query($conn, $sql3);
+                if(mysqli_num_rows($result3) > 0){
+                  echo '<p class="text-xs text-gray-500 text-center border-b border-white/10 pb-2 my-1">Półfinały</p>
+                  <table class="w-full">';
+                  while($row = mysqli_fetch_assoc($result3)) {
+                    if($row['winner_img'] == "") {
+                              $row['winner_img'] = "team_default.png";
+                    }
+                    if($row['loser_img'] == "") {
+                              $row['loser_img'] = "team_default.png";
+                    }
+                    echo '
+                      <tr class="hover:bg-black/30">
+                        <td class="text-sm flex flex-wrap flex-row gap-2 items-center">
+                          <span class="flex flex-row gap-2 items-center">
+                            <img src="public/img/teams/'.$row['winner_img'].'" alt="team_profile" class="aspect-square object-cover max-w-[25px] my-1 rounded-full">
+                            <span class="text-green-600">'.$row['winner'].'</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-yellow-600">
+                              <path fill-rule="evenodd" d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 0 0-.584.859 6.753 6.753 0 0 0 6.138 5.6 6.73 6.73 0 0 0 2.743 1.346A6.707 6.707 0 0 1 9.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 0 0-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 0 1-1.112-3.173 6.73 6.73 0 0 0 2.743-1.347 6.753 6.753 0 0 0 6.139-5.6.75.75 0 0 0-.585-.858 47.077 47.077 0 0 0-3.07-.543V2.62a.75.75 0 0 0-.658-.744 49.22 49.22 0 0 0-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 0 0-.657.744Zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 0 1 3.16 5.337a45.6 45.6 0 0 1 2.006-.343v.256Zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 0 1-2.863 3.207 6.72 6.72 0 0 0 .857-3.294Z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-gray-600 text-xs">'.$row['class_win'].'</span>
+                          </span>
+                          vs
+                          <span class="flex flex-row gap-2 items-center">
+                            <img src="public/img/teams/'.$row['loser_img'].'" alt="team_profile" class="aspect-square object-cover max-w-[25px] my-1 rounded-full">
+                            <span class="">'.$row['loser'].'</span>
+                            <span class="text-gray-600 text-xs">'.$row['class_los'].'</span>
+                          </span>
+                        </td>
+                        <td class="text-right">
+                            <span class="text-xs">Mapy: </span>
+                            <span class="text-xs text-green-600">'.$row['maps_win'].'</span>
+                             : 
+                            <span class="text-xs">'.$row['maps_los'].'</span>
+                        </td>
+                        <td class="text-right">
+                            <span class="text-xs">Rundy: </span>
+                            <span class="text-xs text-green-600">'.$row['rounds_win'].'</span>
+                             : 
+                            <span class="text-xs">'.$row['rounds_los'].'</span>
+                        </td>
+                      </tr>
+                    ';
+                  }
+                  echo '</table>';
+                }
+
+                $sql4 = "SELECT wyniki.wynik_id, a.name as 'winner', a.profile_img as 'winner_img', b.profile_img as 'loser_img', b.name as 'loser', a.class as 'class_win', b.class as 'class_los', fazy.name as 'faza', wyniki.date_of_spotkanie, wyniki.team_win, wyniki.team_los, wyniki.maps_win, wyniki.rounds_win, wyniki.maps_los, wyniki.rounds_los from wyniki join teams a on a.team_id=wyniki.team_win join teams b on b.team_id=wyniki.team_los join fazy on fazy.faza_id=wyniki.faza_id where wyniki.event_id = $id and wyniki.faza_id = 2 order by wyniki.date_of_spotkanie desc;";
+                $result4 = mysqli_query($conn, $sql4);
+                if(mysqli_num_rows($result4) > 0){
+                  echo '<p class="text-xs text-gray-500 text-center border-b border-white/10 pb-2 my-1">Ćwierćfinały</p>
+                  <table class="w-full">';
+                  while($row = mysqli_fetch_assoc($result4)) {
+                    if($row['winner_img'] == "") {
+                              $row['winner_img'] = "team_default.png";
+                    }
+                    if($row['loser_img'] == "") {
+                              $row['loser_img'] = "team_default.png";
+                    }
+                    echo '
+                      <tr class="hover:bg-black/30">
+                        <td class="text-sm flex flex-wrap flex-row gap-2 items-center">
+                          <span class="flex flex-row gap-2 items-center">
+                            <img src="public/img/teams/'.$row['winner_img'].'" alt="team_profile" class="aspect-square object-cover max-w-[25px] my-1 rounded-full">
+                            <span class="text-green-600">'.$row['winner'].'</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-yellow-600">
+                              <path fill-rule="evenodd" d="M5.166 2.621v.858c-1.035.148-2.059.33-3.071.543a.75.75 0 0 0-.584.859 6.753 6.753 0 0 0 6.138 5.6 6.73 6.73 0 0 0 2.743 1.346A6.707 6.707 0 0 1 9.279 15H8.54c-1.036 0-1.875.84-1.875 1.875V19.5h-.75a2.25 2.25 0 0 0-2.25 2.25c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-2.25-2.25h-.75v-2.625c0-1.036-.84-1.875-1.875-1.875h-.739a6.706 6.706 0 0 1-1.112-3.173 6.73 6.73 0 0 0 2.743-1.347 6.753 6.753 0 0 0 6.139-5.6.75.75 0 0 0-.585-.858 47.077 47.077 0 0 0-3.07-.543V2.62a.75.75 0 0 0-.658-.744 49.22 49.22 0 0 0-6.093-.377c-2.063 0-4.096.128-6.093.377a.75.75 0 0 0-.657.744Zm0 2.629c0 1.196.312 2.32.857 3.294A5.266 5.266 0 0 1 3.16 5.337a45.6 45.6 0 0 1 2.006-.343v.256Zm13.5 0v-.256c.674.1 1.343.214 2.006.343a5.265 5.265 0 0 1-2.863 3.207 6.72 6.72 0 0 0 .857-3.294Z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-gray-600 text-xs">'.$row['class_win'].'</span>
+                          </span>
+                          vs
+                          <span class="flex flex-row gap-2 items-center">
+                            <img src="public/img/teams/'.$row['loser_img'].'" alt="team_profile" class="aspect-square object-cover max-w-[25px] my-1 rounded-full">
+                            <span class="">'.$row['loser'].'</span>
+                            <span class="text-gray-600 text-xs">'.$row['class_los'].'</span>
+                          </span>
+                        </td>
+                        <td class="text-right">
+                            <span class="text-xs">Mapy: </span>
+                            <span class="text-xs text-green-600">'.$row['maps_win'].'</span>
+                             : 
+                            <span class="text-xs">'.$row['maps_los'].'</span>
+                        </td>
+                        <td class="text-right">
+                            <span class="text-xs">Rundy: </span>
+                            <span class="text-xs text-green-600">'.$row['rounds_win'].'</span>
+                             : 
+                            <span class="text-xs">'.$row['rounds_los'].'</span>
+                        </td>
+                      </tr>
+                    ';
+                  }
+                  echo '</table>';
+                }
+              }else{
+                echo 'Aktualnie brak wyników w tej fazie.';
+              }
+              ?>
+            </div>
             <br/>
             <p class="text-xs theme-text text-gray-300 font-semibold py-2 uppercase">Faza grupowa</p>
             <hr class="border-white/10 pb-4">
@@ -364,9 +516,9 @@
                         JOIN 
                             team_status ON team_status.status_id = teams.status_id
                         LEFT JOIN 
-                            (SELECT team_win, COUNT(wynik_id) AS points FROM wyniki GROUP BY team_win) AS points ON points.team_win = teams.team_id
+                            (SELECT team_win, COUNT(wynik_id) AS points FROM wyniki where faza_id = 1 GROUP BY team_win) AS points ON points.team_win = teams.team_id
                         LEFT JOIN 
-                            (SELECT team_los, COUNT(wynik_id) AS przegrane FROM wyniki GROUP BY team_los) AS przegrane ON przegrane.team_los = teams.team_id
+                            (SELECT team_los, COUNT(wynik_id) AS przegrane FROM wyniki where faza_id = 1 GROUP BY team_los) AS przegrane ON przegrane.team_los = teams.team_id
                         where group_id = '".$row3['group_id']."' and teams.event_id = '".$id."'
                         GROUP BY 
                             teams.team_id

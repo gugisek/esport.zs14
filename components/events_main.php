@@ -48,7 +48,7 @@
                     <div onclick="openPopupEvents('.$row['event_id'].')" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100">
                         <div style="background-image: url('.$row['img'].');" class="relative active:scale-95 bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
                             <div class="absolute top-0 z-100 rounded-t-lg w-full theme-bg opacity-[0.92] flex flex-row items-center justify-start align-right">
-                                <h1 class="white pl-2 truncate">AKTUALNIE TRWA</h1>
+                                <h1 class="white pl-2 truncate text-sm font-semibold">AKTUALNIE TRWA</h1>
                                 <svg class="h-[24px] w-[24px]">
                                     <circle class = "innerCircle" cx = "50%" cy = "50%" r = "30%" fill = "none" stroke = "#FF0000" stroke-width = "10%">
                                     <animate attributeType="SVG" attributeName="r" begin="0s" dur="1.5s" repeatCount="indefinite" from="1%" to="30%"/>
