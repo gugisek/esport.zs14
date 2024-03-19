@@ -1787,7 +1787,7 @@
                           <p class="text-sm text-gray-500">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span> vs Zabrakło Cala <span class="text-gray-600 text-xs">4i</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Ćwierćfinał</time>
+                          <time datetime="2020-09-30">2:0 | Ćwierćfinał</time>
                         </div>
                       </div>
                     </div>
@@ -1910,7 +1910,7 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">Wygrany spotkania: B1/A2 <span class="text-gray-600 text-xs"></span> <span class="theme-text">vs</span> Wygrany spotkania: D1/C2 <span class="text-gray-600 text-xs"></span></p>
+                          <p class="text-sm text-gray-500">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span><span class="theme-text"> vs</span> Wygrany spotkania: D1/C2 <span class="text-gray-600 text-xs"></span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-30">Półfinał</time>
