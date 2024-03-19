@@ -2035,7 +2035,7 @@
               <div class="px-2 my-4 w-full">
                 <table class="w-full">
                   <?php
-                  $sql = "SELECT teams.team_id, teams.name, team_groups.name as group_name, teams.class, teams.players, teams.profile_img, team_status.name as status_name FROM teams join team_status on team_status.status_id=teams.status_id left join team_groups on team_groups.group_id=teams.group_id WHERE teams.event_id = ".$id." order by team_id desc";
+                  $sql = "SELECT teams.team_id, teams.name, team_groups.name as group_name, teams.class, teams.players, teams.profile_img, team_status.name as status_name, events.max_players_in_team as max_players_in_team FROM teams join events on events.event_id = teams.event_id join team_status on team_status.status_id=teams.status_id left join team_groups on team_groups.group_id=teams.group_id WHERE teams.event_id = ".$id." order by team_id DESC";
                   $result2 = mysqli_query($conn, $sql);
           if(mysqli_num_rows($result2) > 0) {
 
