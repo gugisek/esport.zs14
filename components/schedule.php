@@ -623,6 +623,17 @@
                         </div>
                         <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
+                                <h1 class="font-[poppins] font-semibold">Gods of 5PD <span class="text-gray-600 text-xs">5pd</span> vs G4rnuchy <span class="text-gray-600 text-xs">4k</span></h1>
+                                <p class="uppercase theme-text font-[poppins] text-xs"><span class="theme-text">Ćwierćfinał</span></p>
+                            </div>
+                            <div>
+                                <p class="theme-text">20:30<span class="text-sm text-gray-300"> 19.03.2024</span></p>
+                                <p class="text-xs text-gray-500 text-right">Online</p>
+                            </div>
+                            <!-- <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p> -->
+                        </div>
+                        <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
+                            <div>
                                 <h1 class="font-[poppins] font-semibold">Klan Azazela <span class="text-gray-600 text-xs">4i</span> vs UHO BOYS <span class="text-gray-600 text-xs">3gt</span></h1>
                                 <p class="uppercase theme-text font-[poppins] text-xs"><span class="theme-text">Ćwierćfinał</span></p>
                             </div>
