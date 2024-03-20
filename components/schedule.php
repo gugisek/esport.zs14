@@ -405,13 +405,13 @@
                         <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
                             <div class="px-4 bg-slate-100 flex flex-row items-center justify-between w-full">
                                 <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">GODS of 5PD <span class="text-gray-600 text-xs">5pd</span></p>
-                                <p class="text-sm font-bold text-slate-800"></p>
+                                <p class="text-sm font-bold text-slate-800">2</p>
                             </div>
                             <p class="h-[0px]">vs</p>
                             <hr>
                             <div class="px-4 bg-slate-200 flex flex-row items-center justify-between w-full">
                                 <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">G4rnuchy <span class="text-gray-600 text-xs">4k</span></p>
-                                <p class="text-sm font-bold text-slate-800"></p>
+                                <p class="text-sm font-bold text-slate-800">0</p>
                             </div>
                         </div>
                         <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
@@ -438,7 +438,7 @@
                             </div>
                             <hr>
                             <div class="px-4 bg-slate-200 flex flex-row items-center justify-between w-full">
-                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">Wygrany C1vsD2</p>
+                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">GODS of 5P <span class="text-gray-600 text-xs">5pd</span></p>
                                 <p class="text-sm font-bold text-slate-800"></p>
                             </div>
                         </div>
@@ -610,17 +610,6 @@
                 <div class="bg-[#0e0e0ec0] py-4 px-4 h-full w-full rounded-2xl flex flex-col justify-between">
                     <div>
                         <p class="font-[poppins] text-xs text-gray-100 text-gray-300 pb-4 uppercase  text-center border-b-[1px] border-[#3d3d3d]">Następne mecze</p>              
-                        <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
-                            <div>
-                                <h1 class="font-[poppins] font-semibold">Gods of 5PD <span class="text-gray-600 text-xs">5pd</span> vs G4rnuchy <span class="text-gray-600 text-xs">4k</span></h1>
-                                <p class="uppercase theme-text font-[poppins] text-xs"><span class="theme-text">Ćwierćfinał</span></p>
-                            </div>
-                            <div>
-                                <p class="theme-text">20:30<span class="text-sm text-gray-300"> 19.03.2024</span></p>
-                                <p class="text-xs text-gray-500 text-right">Online</p>
-                            </div>
-                            <!-- <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p> -->
-                        </div>
                         <div class=" text-gray-200   border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
                                 <h1 class="font-[poppins] font-semibold">Klan Azazela <span class="text-gray-600 text-xs">4i</span> vs UHO BOYS <span class="text-gray-600 text-xs">3gt</span></h1>
