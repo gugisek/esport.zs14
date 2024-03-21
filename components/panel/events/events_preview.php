@@ -1762,7 +1762,7 @@
                           <p class="text-sm text-gray-500">Klan Azazela <span class="text-gray-600 text-xs">4i</span> vs UHO BOYS <span class="text-gray-600 text-xs">3gt</p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Ćwierćfinał</time>
+                          <time datetime="2020-09-30">1:2 | Ćwierćfinał</time>
                         </div>
                       </div>
                     </div>
