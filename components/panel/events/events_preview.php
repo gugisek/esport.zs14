@@ -2205,6 +2205,9 @@ echo $result;
 
             <dl>
               <?php 
+              $sql_inf = "SELECT * FROM events where event_id = ".$id."";
+              $result_inf = mysqli_query($conn, $sql_inf);
+              if($row = mysqli_fetch_assoc($result_inf)){
                 if($row['infos']=='' || $row['infos']=='NULL' || $row['infos']=='off' || $row['infos']==NULL){
                     echo '';
                 } else{
@@ -2219,6 +2222,7 @@ echo $result;
                     //     </article>
                     //     ';
                     }
+                  }
                 ?>
               <!-- More FAQs... -->
             </dl>
