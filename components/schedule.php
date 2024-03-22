@@ -417,13 +417,13 @@
                         <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
                             <div class="px-4 bg-slate-100 flex flex-row items-center justify-between w-full">
                                 <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">JUK ESPORT <span class="text-gray-600 text-xs">2e</span></p>
-                                <p class="text-sm font-bold text-slate-800"></p>
+                                <p class="text-sm font-bold text-slate-800">1</p>
                             </div>
                             <p class="h-[0px]">vs</p>
                             <hr>
                             <div class="px-4 bg-slate-200 flex flex-row items-center justify-between w-full">
                                 <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">Upos Banditos <span class="text-gray-600 text-xs">2bt</span></p>
-                                <p class="text-sm font-bold text-slate-800"></p>
+                                <p class="text-sm font-bold text-slate-800">2</p>
                             </div>
                         </div>
                     </div>
@@ -434,12 +434,12 @@
                         <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
                             <div class="px-4 bg-slate-100 flex flex-row items-center justify-between w-full">
                                 <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">UHO BOYS <span class="text-gray-600 text-xs">3gt</span></p>
-                                <p class="text-sm font-bold text-slate-800"></p>
+                                <p class="text-sm font-bold text-slate-800">1</p>
                             </div>
                             <hr>
                             <div class="px-4 bg-slate-200 flex flex-row items-center justify-between w-full">
                                 <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">GODS of 5P <span class="text-gray-600 text-xs">5pd</span></p>
-                                <p class="text-sm font-bold text-slate-800"></p>
+                                <p class="text-sm font-bold text-slate-800">2</p>
                             </div>
                         </div>
                         <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
@@ -449,7 +449,7 @@
                             </div>
                             <hr>
                             <div class="px-4 bg-slate-200 flex flex-row items-center justify-between w-full">
-                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">Wygrany D1vsC2</p>
+                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">Upos Banditos <span class="text-gray-600 text-xs">2bt</span></p>
                                 <p class="text-sm font-bold text-slate-800"></p>
                             </div>
                         </div>
@@ -461,7 +461,7 @@
                         <div></div>
                         <div class="flex flex-col items-center border-[1px] border-gray-200 justify-between h-fit">
                             <div class="px-4 bg-slate-100 flex flex-row items-center justify-between w-full">
-                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">wygrany A1/B2vsC1/D2</p>
+                                <p class="text-sm font-bold text-slate-800 py-2 font-[poppins] italic">GODS of 5P <span class="text-gray-600 text-xs">5pd</span></p>
                                 <p class="text-sm font-bold text-slate-800"></p>
                             </div>
                             <hr>
@@ -619,9 +619,9 @@
                                 <p class="theme-text">20:00<span class="text-sm text-gray-300"> 20.03.2024</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div> -->
-                            <!-- <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p> -->
+                            <p class=" text-gray-200 text-sm border-[#3d3d3d] py-2 text-center w-full" >Nie zaplanowano jeszcze następnych spotkań</p>
                         <!-- </div> -->
-                        <div class=" text-gray-200 border-[#3d3d3d] py-2 flex items-center justify-between">
+                        <!-- <div class=" text-gray-200 border-[#3d3d3d] py-2 flex items-center justify-between">
                             <div>
                                 <h1 class="font-[poppins] font-semibold">JUK ESPORT <span class="text-gray-600 text-xs">2e</span> vs Upos Banditos <span class="text-gray-600 text-xs">2bt</span></h1>
                                 <p class="uppercase theme-text font-[poppins] text-xs"><span class="theme-text">Ćwierćfinał</span></p>
@@ -630,7 +630,7 @@
                                 <p class="theme-text">Przełożony<span class="text-sm text-gray-300"> 1:1</span></p>
                                 <p class="text-xs text-gray-500 text-right">Online</p>
                             </div>
-                        </div>
+                        </div> -->
                         
                     </div>
                     <a href="index.php" class="text-xs text-gray-400 text-end w-full flex flex-row gap-2 items-center justify-end uppercase font-[poppins] theme-text-hover duration-300">

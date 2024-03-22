@@ -1759,7 +1759,7 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">Klan Azazela <span class="text-gray-600 text-xs">4i</span> vs UHO BOYS <span class="text-gray-600 text-xs">3gt</p>
+                          <p class="text-sm text-gray-500">Klan Azazela <span class="text-gray-600 text-xs">4i</span> vs UHO BOYS <span class="text-gray-600 text-xs">3gt</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-30">1:2 | Ćwierćfinał</time>
@@ -1837,7 +1837,7 @@
                           <p class="text-sm text-gray-500">Upos Banditos <span class="text-gray-600 text-xs">2bt</span> vs JUK ESPORT <span class="text-gray-600 text-xs">2e</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Ćwierćfinał</time>
+                          <time datetime="2020-09-30">2:1 | Ćwierćfinał</time>
                         </div>
                       </div>
                     </div>
@@ -1885,10 +1885,10 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">Wygrany spotkania: A1/B2 <span class="text-gray-600 text-xs"></span> <span class="theme-text">vs</span> Gods of 5PD <span class="text-gray-600 text-xs">5pd</span></p>
+                          <p class="text-sm text-gray-500">UHO BOYS <span class="text-gray-600 text-xs">3gt</span> <span class="theme-text">vs</span> Gods of 5PD <span class="text-gray-600 text-xs">5pd</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Półfinał</time>
+                          <time datetime="2020-09-30">1:2 | Półfinał</time>
                         </div>
                       </div>
                     </div>
@@ -1910,7 +1910,7 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span><span class="theme-text"> vs</span> Wygrany spotkania: D1/C2 <span class="text-gray-600 text-xs"></span></p>
+                          <p class="text-sm text-gray-500">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span><span class="theme-text"> vs</span> Upos Banditos <span class="text-gray-600 text-xs">2bt</span></span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-30">Półfinał</time>
@@ -1960,7 +1960,7 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500"><span class="theme-text">Finał</span> - wygrany A1/B2vsC1/D2 <span class="text-gray-600 text-xs"></span> <span class="theme-text">vs</span> wygrany B1/A2vsD1/C2 <span class="text-gray-600 text-xs"></span></p>
+                          <p class="text-sm text-gray-500"><span class="theme-text">Finał</span> - Gods of 5PD <span class="text-gray-600 text-xs">5pd</span> <span class="theme-text">vs</span> wygrany B1/A2vsD1/C2 <span class="text-gray-600 text-xs"></span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-30" class="truncate">Nie ustalono</time>
