@@ -1829,7 +1829,7 @@
                 </li>
 
                 <li class="half_round_control hover:bg-slate-500/25 hover:cursor-pointer">
-                  <div class="relative pb-4">
+                  <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
                       <div>
@@ -1848,22 +1848,6 @@
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
                           <time datetime="2020-09-28">20-23 marca</time>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="relative pb-8">
-                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
-                    <div class="relative flex space-x-3 border-b theme-border ml-4">
-                      <div>
-                      </div>
-                      <div class="flex min-w-0 flex-1 justify-between space-x-4">
-                        <div></div>
-                        <div class="whitespace-nowrap text-right text-xs font-medium theme-text italic uppercase">
-                          <time datetime="2020-09-30">Aktualnie</time>
                         </div>
                       </div>
                     </div>
@@ -1913,7 +1897,7 @@
                           <p class="text-sm text-gray-500">TurlajBeczke <span class="text-gray-600 text-xs">5pi</span><span class="theme-text"> vs</span> Upos Banditos <span class="text-gray-600 text-xs">2bt</span></span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30">Półfinał</time>
+                          <time datetime="2020-09-30">2:0 | Półfinał</time>
                         </div>
                       </div>
                     </div>
@@ -1921,7 +1905,7 @@
                 </li>
 
                 <li>
-                  <div class="relative pb-8">
+                  <div class="relative pb-4">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
                       <div>
@@ -1948,6 +1932,22 @@
                 <li>
                   <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
+                    <div class="relative flex space-x-3 border-b theme-border ml-4">
+                      <div>
+                      </div>
+                      <div class="flex min-w-0 flex-1 justify-between space-x-4">
+                        <div></div>
+                        <div class="whitespace-nowrap text-right text-xs font-medium theme-text italic uppercase">
+                          <time datetime="2020-09-30">Aktualnie</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="relative pb-8">
+                    <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
                       <div>
                         <span class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center ring-8 ring-[#0e0e0e]">
@@ -1960,10 +1960,10 @@
                       </div>
                       <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                         <div>
-                          <p class="text-sm text-gray-500"><span class="theme-text">Finał</span> - Gods of 5PD <span class="text-gray-600 text-xs">5pd</span> <span class="theme-text">vs</span> wygrany B1/A2vsD1/C2 <span class="text-gray-600 text-xs"></span></p>
+                          <p class="text-sm text-gray-500"><span class="theme-text">Finał</span> - Gods of 5PD <span class="text-gray-600 text-xs">5pd</span> <span class="theme-text">vs</span> TurlajBeczke <span class="text-gray-600 text-xs">5pi</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30" class="truncate">Nie ustalono</time>
+                          <time datetime="2020-09-30" class="truncate">27 marca</time>
                         </div>
                       </div>
                     </div>
@@ -2010,7 +2010,7 @@
                           <p class="text-sm text-gray-500">Ogłoszenie wyników</p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-10-04" class="truncate">Nie ustalono</time>
+                          <time datetime="2020-10-04" class="truncate">27 marca</time>
                         </div>
                       </div>
                     </div>
