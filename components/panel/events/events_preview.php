@@ -1905,7 +1905,7 @@
                 </li>
 
                 <li>
-                  <div class="relative pb-4">
+                  <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3">
                       <div>
@@ -1929,7 +1929,7 @@
                   </div>
                 </li>
 
-                <li>
+                <!-- <li>
                   <div class="relative pb-8">
                     <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-[#3d3d3d]" aria-hidden="true"></span>
                     <div class="relative flex space-x-3 border-b theme-border ml-4">
@@ -1943,7 +1943,7 @@
                       </div>
                     </div>
                   </div>
-                </li>
+                </li> -->
 
                 <li>
                   <div class="relative pb-8">
@@ -1963,7 +1963,7 @@
                           <p class="text-sm text-gray-500"><span class="theme-text">Finał</span> - Gods of 5PD <span class="text-gray-600 text-xs">5pd</span> <span class="theme-text">vs</span> TurlajBeczke <span class="text-gray-600 text-xs">5pi</span></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30" class="truncate">27 marca</time>
+                          <time datetime="2020-09-30" class="truncate">1:2 | 27 marca</time>
                         </div>
                       </div>
                     </div>
@@ -1986,7 +1986,7 @@
                           <p class="text-sm text-gray-500">Transmisja na żywo <a href="https://www.twitch.tv/events_szanajcy" target="_blank" class="text-gray-600 text-xs theme-text-hover duration-150">twitch.tv/eventy_szanajcy</a></p>
                         </div>
                         <div class="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time datetime="2020-09-30" class="truncate">Nie ustalono</time>
+                          <time datetime="2020-09-30" class="truncate">27 marca 12:00</time>
                         </div>
                       </div>
                     </div>

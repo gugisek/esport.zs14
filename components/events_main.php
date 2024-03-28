@@ -43,7 +43,7 @@
                     $row['data'] = $today;
                 }
                 $current = date("Y-m-d");
-                if($dateofe < $current){
+                if($dateofe < $current && $current < "2023-03-27"){
                     echo '
                     <div onclick="openPopupEvents('.$row['event_id'].')" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100">
                         <div style="background-image: url('.$row['img'].');" class="relative active:scale-95 bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
