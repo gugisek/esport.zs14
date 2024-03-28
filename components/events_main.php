@@ -43,7 +43,7 @@
                     $row['data'] = $today;
                 }
                 $current = date("Y-m-d");
-                if($dateofe < $current && $current < "2023-03-27"){
+                if($dateofe < $current && $current < "2024-03-27"){
                     echo '
                     <div onclick="openPopupEvents('.$row['event_id'].')" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100">
                         <div style="background-image: url('.$row['img'].');" class="relative active:scale-95 bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
@@ -56,6 +56,22 @@
                                     <animate attributeType="CSS" attributeName="opacity" begin="0s"  dur="1.5s" repeatCount="indefinite" from="1" to="0"/>
                                     </circle>
                                 </svg>
+                            </div>
+                            <div class="2xl:pb-6 pb-4 pt-32 px-4 rounded-xl bg-gradient-to-t from-black">
+                                <p class="font-[poppins] theme-text 2xl:text-sm text-xs uppercase">'.$row["destiny"].'</p>
+                                <h1 class="font-[poppins] 2xl:text-2xl md:text-xl text-lg font-medium">'.$row["name"].'</h1>
+                                <p class="font-[poppins] text-gray-400 2xl:text-lg md:text-sm text-xs pt-2 uppercase">'.$row['data'].'</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    ';
+                } elseif($current > "2024-03-27"){
+                    echo '
+                    <div onclick="openPopupEvents('.$row['event_id'].')" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="100">
+                        <div style="background-image: url('.$row['img'].');" class="relative active:scale-95 bg-zoom cursor-pointer hover:scale-105 duration-300 hover:shadow-[0px_15px_20px_#3d3d3d] aspect-[3/4] flex flex-col justify-end rounded-xl bg-center">
+                            <div class="absolute top-0 z-100 rounded-t-lg w-full theme-bg opacity-[0.92] flex flex-row items-center justify-start align-right">
+                                <h1 class="white pl-2 truncate text-sm font-semibold">Zakończono</h1>
                             </div>
                             <div class="2xl:pb-6 pb-4 pt-32 px-4 rounded-xl bg-gradient-to-t from-black">
                                 <p class="font-[poppins] theme-text 2xl:text-sm text-xs uppercase">'.$row["destiny"].'</p>
